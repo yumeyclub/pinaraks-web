@@ -1147,26 +1147,26 @@ body.luxury-dark {
 }
 
 .visual-stack-card {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .stack-main-img {
   width: 100%;
   border-radius: 16px;
   border: 1px solid var(--border-gold);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
 }
 
 .stack-sub-card {
-  position: absolute;
-  bottom: -30px;
-  right: -30px;
-  width: 300px;
+  position: static;
+  width: 100%;
   background: #0e1118;
   border: 1px solid var(--border-gold);
   border-radius: 12px;
   padding: 16px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
   display: flex;
   gap: 14px;
   align-items: center;
@@ -1539,38 +1539,58 @@ body.luxury-dark {
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: contrast(1.18) saturate(1.15) brightness(1.02) drop-shadow(0 20px 30px rgba(0, 0, 0, 0.95));
+  border-radius: 8px;
+  filter: contrast(1.15) saturate(1.12) brightness(1.02) drop-shadow(0 15px 25px rgba(0, 0, 0, 0.85));
   transition: transform 0.6s var(--ease-luxury), filter 0.4s ease;
   position: relative;
   z-index: 2;
 }
 
 .runway-card:hover .card-visual-chamber img {
-  transform: scale(1.08) translateY(-6px);
-  filter: contrast(1.22) saturate(1.22) brightness(1.08) drop-shadow(0 25px 40px rgba(199, 167, 108, 0.35));
-}
-
-.card-tag {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  background: rgba(6, 7, 9, 0.88);
-  backdrop-filter: blur(8px);
-  padding: 5px 12px;
-  border-radius: 99px;
-  font-family: var(--font-body);
-  font-size: 0.68rem;
-  letter-spacing: 1.5px;
-  font-weight: 700;
-  color: var(--gold-champagne);
-  border: 1px solid var(--border-gold);
+  transform: scale(1.06);
+  filter: contrast(1.2) saturate(1.18) brightness(1.06) drop-shadow(0 20px 35px rgba(199, 167, 108, 0.3));
 }
 
 .card-body {
-  padding: 28px 24px;
+  padding: 24px 22px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.card-meta-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.card-tag {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(199, 167, 108, 0.1);
+  border: 1px solid rgba(199, 167, 108, 0.3);
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: var(--gold-champagne);
+  white-space: nowrap;
+  max-width: 65%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-sku {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: var(--text-muted);
+  white-space: nowrap;
 }
 
 .card-sku {
@@ -1691,6 +1711,12 @@ body.luxury-dark {
   align-items: center;
 }
 
+.heritage-visual-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .heritage-image-frame {
   position: relative;
   border-radius: 16px;
@@ -1704,18 +1730,16 @@ body.luxury-dark {
   display: block;
 }
 
-.heritage-stamp {
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
-  background: rgba(6, 7, 9, 0.92);
-  backdrop-filter: blur(12px);
-  border: 1px solid var(--gold-antique);
-  padding: 10px 20px;
-  border-radius: 99px;
+.heritage-stamp-bar {
+  background: rgba(199, 167, 108, 0.08);
+  border: 1px solid var(--border-gold);
+  padding: 12px 24px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
+  gap: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .sedex-mini-badge {
@@ -1725,8 +1749,8 @@ body.luxury-dark {
 
 .stamp-text {
   font-family: var(--font-body);
-  font-size: 0.74rem;
-  letter-spacing: 1.5px;
+  font-size: 0.78rem;
+  letter-spacing: 2px;
   font-weight: 800;
   color: #fff;
 }

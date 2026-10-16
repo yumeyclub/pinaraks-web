@@ -608,11 +608,13 @@ function initLookbookRail(filter) {
     card.setAttribute('data-cursor', 'İNCELE');
     card.innerHTML = `
       <div class="card-visual-chamber" onclick="openCoutureModal('${item.id}')">
-        <span class="card-tag">${localizedTag}</span>
         <img src="${item.img}" alt="${localizedName}" loading="lazy">
       </div>
       <div class="card-body">
-        <span class="card-sku">${item.sku}</span>
+        <div class="card-meta-line">
+          <span class="card-tag">${localizedTag}</span>
+          <span class="card-sku">${item.sku}</span>
+        </div>
         <h3 class="card-name">${localizedName}</h3>
         <p class="card-lead">${localizedDesc}</p>
         <div class="card-actions">

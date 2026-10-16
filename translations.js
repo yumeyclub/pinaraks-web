@@ -218,7 +218,7 @@ const TRANSLATIONS = {
     quote_3_author: "Nu İstanbul Tasarım Ailesi",
     quote_3_brand: "Nu Giyim Sanayi",
 
-    quote_4_p: "\"Sektörde işini hızlı ve titizlik ile yürüten, özellikle Seda hanımın ilgisi ve özverili servisi ile Pınar Aksesuarla çalışmak her zaman keyifli olmuştur.\"",
+    quote_4_p: "\"Sektörde işini hızlı ve titizlik ile yürüten, özellikle Gökçe hanımın ilgisi ve özverili servisi ile Pınar Aksesuarla çalışmak her zaman keyifli olmuştur.\"",
     quote_4_author: "Koleksiyon Yöneticisi",
     quote_4_brand: "Hazır Giyim İhracat Evi",
 
@@ -235,13 +235,13 @@ const TRANSLATIONS = {
 
     // Form
     form_label_name: "Adınız Soyadınız *",
-    form_ph_name: "Örn: Seda Kaya",
+    form_ph_name: "Örn: Gökçe Kaya",
     form_label_brand: "Firma / Marka Adınız *",
     form_ph_brand: "Örn: İpekyol Tekstil",
     form_label_phone: "Telefon Numaranız *",
     form_ph_phone: "Örn: +90 543 697 07 55",
     form_label_email: "Kurumsal E-Posta *",
-    form_ph_email: "Örn: seda@ipekyol.com.tr",
+    form_ph_email: "Örn: gokce@ipekyol.com.tr",
     form_label_discipline: "İlgilendiğiniz Uzmanlık Alanı",
     form_opt_disc_1: "Nikel-Free Metal & Döküm Donanım",
     form_opt_disc_2: "Hotfix Lazer Taş & Zımba Baskı",
@@ -512,7 +512,7 @@ const TRANSLATIONS = {
     quote_3_author: "Nu Istanbul Design Collective",
     quote_3_brand: "Nu Apparel Industries",
 
-    quote_4_p: "\"Their agility, obsessive precision, and dedicated customer care make collaborating with Pınaraks an absolute pleasure season after season.\"",
+    quote_4_p: "\"Their agility, obsessive precision, and especially Ms. Gökçe's dedicated service make collaborating with Pınaraks an absolute pleasure season after season.\"",
     quote_4_author: "Head of Collection",
     quote_4_brand: "European Fashion Export House",
 
@@ -806,7 +806,7 @@ const TRANSLATIONS = {
     quote_3_author: "فريق تصميم Nu إسطنبول",
     quote_3_brand: "شركة Nu لصناعة الملابس",
 
-    quote_4_p: "\"إن سرعة إنجازهم والاهتمام البالغ بكل تفصيلة، ولا سيما الخدمة المتفانية والراقية، جعلت العمل مع بيناراكس تجربة رائعة ومستمرة.\"",
+    quote_4_p: "\"إن سرعة إنجازهم والاهتمام البالغ بكل تفصيلة، ولا سيما الخدمة المتفانية والاهتمام المتميز من السيدة غوكشه (Gökçe)، جعلت العمل مع بيناراكس تجربة رائعة ومستمرة.\"",
     quote_4_author: "مدير المجموعات",
     quote_4_brand: "دار تصدير ملابس جاهزة أوروبية",
 
