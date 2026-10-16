@@ -25,7 +25,7 @@ const TRANSLATIONS = {
     nav_defile: "DEFİLE",
     nav_hakkimizda: "HAKKIMIZDA",
     nav_uretim: "ÜRETİM & AR-GE",
-    nav_koleksiyon: "BRANŞLARIMIZ & İŞLERİMİZ",
+    nav_koleksiyon: "BRANŞLARIMIZ & ÇALIŞMALARIMIZ",
     nav_makro: "0.1MM BÜYÜTEÇ",
     nav_sedex: "SEDEX & ETİK",
     nav_referanslar: "REFERANSLAR",
@@ -45,7 +45,7 @@ const TRANSLATIONS = {
     hero_sub: "KÜRESEL MODA DEVLERİ VE HAUTE COUTURE İÇİN DONANIM MİMARİSİ",
     hero_lead: "Pınaraks olarak 35 yıllık kurumsal Ar-Ge ve imalat tecrübemizle; Zara, Beymen Club ve dünya moda haftalarında yürüyen küresel markaların nikel-free metal donanım, lazer kalıplı taş baskı ve zanaatkar kadın emeği vizyonunu inşa ediyoruz.",
     hero_cta_defile: "CANLI DEFİLEYİ İZLE",
-    hero_cta_catalog: "YAPTIĞIMIZ İŞLER & BRANŞLAR",
+    hero_cta_catalog: "YAPTIĞIMIZ ÇALIŞMALAR & BRANŞLAR",
     scroll_text: "DEFİLE VE DETAYLAR",
 
     // Section 1: Defile Stage
@@ -169,9 +169,9 @@ const TRANSLATIONS = {
     sec_05_num: "05",
     sec_05_eyebrow: "BÜNYEMİZDEKİ UZMANLIK BRANŞLARI & ATÖLYE İCRAATLERİMİZ",
     sec_05_h_light: "Bünyemizdeki Branşlar &",
-    sec_05_h_bold: "YAPTIĞIMIZ İŞLER",
+    sec_05_h_bold: "YAPTIĞIMIZ ÇALIŞMALAR",
     sec_05_desc: "Burada sergilenen parçalar sıradan bir ürün kataloğu değil; Pınaraks bünyesinde barındırdığımız entegre üretim branşlarının ve dünya markalarına sunduğumuz zanaat kabiliyetlerinin somut referanslarıdır. Metal dökümden BSN apliklere, lazer taş baskıdan kadın zanaatkarlarımızın el işlemesine kadar her branşı kendi atölyelerimizde icra ediyor, markanıza özel numuneler üretiyoruz.",
-    tab_all: "TÜM BRANŞLAR & İŞLER",
+    tab_all: "TÜM BRANŞLAR & ÇALIŞMALAR",
     tab_metal: "METAL & TAŞLI DONANIM",
     tab_hotfix: "HOTFIX & TAŞ BASKI",
     tab_bsn: "BSN & APLİK UYGULAMA",
@@ -181,7 +181,7 @@ const TRANSLATIONS = {
     cursor_inspect: "İNCELE",
     cursor_zoom: "BÜYÜT",
     cursor_defile: "DEFİLE",
-    cursor_catalog: "İŞLERİMİZ",
+    cursor_catalog: "ÇALIŞMALARIMIZ",
 
     // Section 6: Sedex & Heritage
     sec_06_num: "06",
@@ -269,7 +269,7 @@ const TRANSLATIONS = {
     // Sample Bag Drawer
     drawer_title: "B2B NUMUNE ÇANTANIZ",
     drawer_empty_title: "Çantanızda henüz numune bulunmuyor",
-    drawer_empty_desc: "Bünyemizdeki branşlar ve yaptığımız işler altındaki '+ NUMUNE EKLE' butonuna tıklayarak incelemek istediğiniz referans modelleri listenize dahil edin.",
+    drawer_empty_desc: "Bünyemizdeki branşlar ve yaptığımız çalışmalar altındaki '+ NUMUNE EKLE' butonuna tıklayarak incelemek istediğiniz referans modelleri listenize dahil edin.",
     drawer_count_label: "Seçilen Numune Adedi:",
     drawer_count_unit: "Model Parça",
     drawer_btn_wa: "NUMUNE LİSTESİNİ WHATSAPP İLE GÖNDER",
@@ -290,12 +290,12 @@ const TRANSLATIONS = {
     alert_form_thanks: "Talebiniz Pınaraks atölye ve Ar-Ge ekibimize iletilmiştir. 24 saat içinde dönüş sağlanacaktır.",
     prompt_wa_speedup: "Talebinizi hızlandırmak için doğrudan Showroom WhatsApp hattımıza aktarmak ister misiniz?",
     alert_bag_empty: "Lütfen önce numune çantanıza en az bir model ekleyin.",
-    wa_sample_header: "Merhaba Pınaraks Showroom, Web sitenizdeki bünyenizde bulunan branşlar ve yaptığınız işler üzerinden aşağıdaki referans modeller için fiziksel numune talep ediyorum:\n\n",
+    wa_sample_header: "Merhaba Pınaraks Showroom, Web sitenizdeki bünyenizde bulunan branşlar ve yaptığınız çalışmalar üzerinden aşağıdaki referans modeller için fiziksel numune talep ediyorum:\n\n",
     wa_sample_footer: "\nFirma ve teslimat adresimizi paylaşabilmemiz için dönüş rica ederim.",
     wa_single_ask: "Merhaba Pınaraks Showroom, {sku} kodlu \"{name}\" modeli hakkında detaylı numune ve termin bilgisi almak istiyorum.",
     wa_form_msg: "Merhaba Pınaraks Showroom, Web sitenizden teklif/numune talebi gönderdim:\nİsim: {name}\nFirma: {brand}\nBranş: {disc}\nNot: {note}",
     mail_sample_subject: "Pınaraks Web Sitesi Numune Talebi",
-    mail_sample_body_header: "Merhaba Pınaraks Satış Ekibi,%0D%0A%0D%0ABünyenizdeki branşlar ve yaptığınız işler arasından aşağıdaki referans modeller için fiziksel numune talep ediyorum:%0D%0A%0D%0A",
+    mail_sample_body_header: "Merhaba Pınaraks Satış Ekibi,%0D%0A%0D%0ABünyenizdeki branşlar ve yaptığınız çalışmalar arasından aşağıdaki referans modeller için fiziksel numune talep ediyorum:%0D%0A%0D%0A",
     mail_sample_body_footer: "%0D%0AFirma Adı:%0D%0ATelefon / Yetkili:%0D%0ATeslimat Adresi:%0D%0A"
   },
 
