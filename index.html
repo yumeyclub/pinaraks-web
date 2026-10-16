@@ -131,9 +131,74 @@
         <a href="#iletisim" class="btn-haute hover-reveal">
           <span data-i18n="btn_quote_showroom">TEKLİF & SHOWROOM</span>
         </a>
+
+        <!-- Mobil Menü Hamburger Butonu -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Mobil Menüyü Aç" aria-expanded="false" type="button">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
       </div>
     </div>
   </header>
+
+  <!-- Mobil Menü Çekmecesi & Karartma -->
+  <div class="mobile-nav-scrim" id="mobileNavScrim"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobil Menü">
+    <div class="mobile-drawer-top">
+      <a href="#hero" class="mobile-drawer-brand" id="mobileBrandSig">
+        <img src="assets/ref/pinaraks_logo.png" alt="PINARAKS" class="mobile-drawer-logo">
+      </a>
+      <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Menüyü Kapat">&times;</button>
+    </div>
+
+    <!-- Mobil Hızlı Dil Değiştirici -->
+    <div class="mobile-drawer-lang">
+      <span class="mobile-drawer-lang-title" data-i18n="mobile_lang_title">DİL SEÇİMİ</span>
+      <div class="mobile-lang-pills">
+        <button class="mobile-lang-pill active" data-lang="tr" type="button">
+          <span class="pill-flag">🇹🇷</span>
+          <span>Türkçe</span>
+        </button>
+        <button class="mobile-lang-pill" data-lang="en" type="button">
+          <span class="pill-flag">🇬🇧</span>
+          <span>English</span>
+        </button>
+        <button class="mobile-lang-pill" data-lang="ar" type="button">
+          <span class="pill-flag">🇸🇦</span>
+          <span>العربية</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobil Navigasyon Linkleri -->
+    <nav class="mobile-drawer-links" id="mobileNavLinks">
+      <a href="#defile" class="mobile-link"><span class="m-num">01</span><span class="m-text" data-i18n="nav_defile">DEFİLE</span></a>
+      <a href="#hakkimizda" class="mobile-link"><span class="m-num">02</span><span class="m-text" data-i18n="nav_hakkimizda">HAKKIMIZDA</span></a>
+      <a href="#uretim-gucu" class="mobile-link"><span class="m-num">03</span><span class="m-text" data-i18n="nav_uretim">ÜRETİM & AR-GE</span></a>
+      <a href="#koleksiyon" class="mobile-link"><span class="m-num">04</span><span class="m-text" data-i18n="nav_koleksiyon">KOLEKSİYON</span></a>
+      <a href="#makro-lens" class="mobile-link"><span class="m-num">05</span><span class="m-text" data-i18n="nav_makro">0.1MM BÜYÜTEÇ</span></a>
+      <a href="#sedex" class="mobile-link"><span class="m-num">06</span><span class="m-text" data-i18n="nav_sedex">SEDEX & ETİK</span></a>
+      <a href="#referanslar" class="mobile-link"><span class="m-num">07</span><span class="m-text" data-i18n="nav_referanslar">REFERANSLAR</span></a>
+      <a href="#iletisim" class="mobile-link"><span class="m-num">08</span><span class="m-text" data-i18n="nav_iletisim">İLETİŞİM</span></a>
+    </nav>
+
+    <!-- Mobil İletişim & Aksiyon Kartı -->
+    <div class="mobile-drawer-footer">
+      <a href="#iletisim" class="btn-mobile-quote" id="mobileBtnQuote">
+        <span data-i18n="btn_quote_showroom">TEKLİF & SHOWROOM</span>
+      </a>
+      <div class="mobile-contact-actions">
+        <a href="tel:+905436970755" class="mobile-action-call">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <span>0543 697 07 55</span>
+        </a>
+        <a href="https://wa.me/905436970755" target="_blank" class="mobile-action-wa" id="mobileDrawerWa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.586-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.18-.54-1.896-.782-3.117-2.73-3.212-2.857-.095-.128-.772-1.029-.772-1.961 0-.933.489-1.391.662-1.583.174-.192.379-.24.506-.24.127 0 .254.002.365.008.118.006.276-.045.431.328.16.386.549 1.339.598 1.437.049.098.082.213.016.344-.066.13-.099.212-.196.326-.098.115-.206.257-.294.345-.098.098-.2.205-.086.401.114.196.508.838 1.09 1.356.749.667 1.381.873 1.577.971.196.098.311.082.425-.049.115-.131.492-.573.623-.77.131-.197.262-.164.442-.098.18.066 1.146.54 1.343.639.197.098.328.147.377.23.049.082.049.475-.095.88zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.98-1.306C8.423 21.536 10.153 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+          <span data-i18n="mobile_quick_wa">WhatsApp Hattı</span>
+        </a>
+      </div>
+    </div>
+  </aside>
 
   <!-- Ana Hero Açılış -->
   <section class="hero-runway" id="hero">
@@ -956,6 +1021,25 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Mobil Sabit Hızlı Erişim Barı (Alt Kısım) -->
+  <div class="mobile-quick-bar" id="mobileQuickBar">
+    <a href="tel:+905436970755" class="mq-btn mq-call" title="Telefonla Ara">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      <span data-i18n="mobile_quick_call">Ara</span>
+    </a>
+    <a href="https://wa.me/905436970755" target="_blank" class="mq-btn mq-wa" id="mobileQuickWa" title="WhatsApp Showroom">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.586-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.18-.54-1.896-.782-3.117-2.73-3.212-2.857-.095-.128-.772-1.029-.772-1.961 0-.933.489-1.391.662-1.583.174-.192.379-.24.506-.24.127 0 .254.002.365.008.118.006.276-.045.431.328.16.386.549 1.339.598 1.437.049.098.082.213.016.344-.066.13-.099.212-.196.326-.098.115-.206.257-.294.345-.098.098-.2.205-.086.401.114.196.508.838 1.09 1.356.749.667 1.381.873 1.577.971.196.098.311.082.425-.049.115-.131.492-.573.623-.77.131-.197.262-.164.442-.098.18.066 1.146.54 1.343.639.197.098.328.147.377.23.049.082.049.475-.095.88zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.98-1.306C8.423 21.536 10.153 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <button class="mq-btn mq-bag" id="mobileQuickBag" type="button" title="Numune Çantası">
+      <span class="mq-bag-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4H6zM3 6h18M16 10a4 4 0 01-8 0"/></svg>
+        <span class="mq-badge" id="mobileQuickBadge">0</span>
+      </span>
+      <span data-i18n="btn_sample_bag">Numuneler</span>
+    </button>
   </div>
 
   <script src="translations.js"></script>

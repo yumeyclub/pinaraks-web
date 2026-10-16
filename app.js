@@ -1,6 +1,7 @@
 /**
  * PINARAKS HAUTE ATELIER & HARDWARE
  * Çok Dilli (TR / EN / AR) - Sinematik Defile & Podyum Motoru
+ * Kusursuz Mobil & Dokunmatik Ergonomi
  * İletişim Hattı: 05436970755 / +90 543 697 07 55
  */
 
@@ -114,6 +115,19 @@ const currentLangCode = document.getElementById('currentLangCode');
 const langOptions = document.querySelectorAll('.lang-option');
 const ribbonLangBtns = document.querySelectorAll('.ribbon-lang-btn');
 
+// Mobil Menü & Bar Elemanları
+const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+const mobileNavDrawer = document.getElementById('mobileNavDrawer');
+const mobileNavScrim = document.getElementById('mobileNavScrim');
+const mobileDrawerClose = document.getElementById('mobileDrawerClose');
+const mobileNavLinks = document.querySelectorAll('.mobile-link');
+const mobileLangPills = document.querySelectorAll('.mobile-lang-pill');
+const mobileQuickBag = document.getElementById('mobileQuickBag');
+const mobileQuickBadge = document.getElementById('mobileQuickBadge');
+const mobileQuickWa = document.getElementById('mobileQuickWa');
+const mobileDrawerWa = document.getElementById('mobileDrawerWa');
+const mobileBtnQuote = document.getElementById('mobileBtnQuote');
+
 // Başlatma
 document.addEventListener('DOMContentLoaded', () => {
   initLanguage();
@@ -124,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLookbookRail('all');
   initEventListeners();
   initLanguageSwitcher();
+  initMobileNavigation();
 });
 
 // ==========================================================================
@@ -171,25 +186,29 @@ function applyLanguage(lang) {
   if (currentLangFlag) currentLangFlag.textContent = flagMap[lang] || '🇹🇷';
   if (currentLangCode) currentLangCode.textContent = codeMap[lang] || 'TR';
 
-  // Dropdown ve ribbon aktif sınıfları
+  // Dropdown, ribbon ve mobil pill aktif sınıfları
   langOptions.forEach(opt => {
     opt.classList.toggle('active', opt.getAttribute('data-lang') === lang);
   });
   ribbonLangBtns.forEach(btn => {
     btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
   });
+  mobileLangPills.forEach(pill => {
+    pill.classList.toggle('active', pill.getAttribute('data-lang') === lang);
+  });
 
-  // WhatsApp doğrudan bağlantısı
-  if (directWaLink) {
-    const defaultWaText = encodeURIComponent(
-      lang === 'ar'
-        ? "مرحباً صالة عرض بيناراكس PINARAKS، أتواصل معكم عبر موقعكم للاستفسار عن العينات والمجموعات."
-        : lang === 'en'
-        ? "Hello Pınaraks Showroom, I am contacting you via your website to inquire about physical samples and collections."
-        : "Merhaba, Pınaraks web sitenizden ulaşıyorum. Numune ve koleksiyonlarınız hakkında görüşmek istiyorum."
-    );
-    directWaLink.href = `https://wa.me/${PHONE_NUMBER}?text=${defaultWaText}`;
-  }
+  // WhatsApp bağlantı metinleri
+  const defaultWaText = encodeURIComponent(
+    lang === 'ar'
+      ? "مرحباً صالة عرض بيناراكس PINARAKS، أتواصل معكم عبر موقعكم للاستفسار عن العينات والمجموعات."
+      : lang === 'en'
+      ? "Hello Pınaraks Showroom, I am contacting you via your website to inquire about physical samples and collections."
+      : "Merhaba, Pınaraks web sitenizden ulaşıyorum. Numune ve koleksiyonlarınız hakkında görüşmek istiyorum."
+  );
+
+  if (directWaLink) directWaLink.href = `https://wa.me/${PHONE_NUMBER}?text=${defaultWaText}`;
+  if (mobileQuickWa) mobileQuickWa.href = `https://wa.me/${PHONE_NUMBER}?text=${defaultWaText}`;
+  if (mobileDrawerWa) mobileDrawerWa.href = `https://wa.me/${PHONE_NUMBER}?text=${defaultWaText}`;
 
   // Defile slide başlığı
   updateCinemaCaption();
@@ -244,10 +263,74 @@ function initLanguageSwitcher() {
       applyLanguage(selected);
     });
   });
+
+  mobileLangPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      const selected = pill.getAttribute('data-lang');
+      applyLanguage(selected);
+    });
+  });
 }
 
 // ==========================================================================
-// 2. Açılış Preloader
+// 2. Mobil Menü ve Gezinme Sistemi
+// ==========================================================================
+function initMobileNavigation() {
+  if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', () => {
+      if (mobileNavDrawer && mobileNavDrawer.classList.contains('active')) {
+        closeMobileDrawer();
+      } else {
+        openMobileDrawer();
+      }
+    });
+  }
+
+  if (mobileDrawerClose) {
+    mobileDrawerClose.addEventListener('click', closeMobileDrawer);
+  }
+
+  if (mobileNavScrim) {
+    mobileNavScrim.addEventListener('click', closeMobileDrawer);
+  }
+
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      closeMobileDrawer();
+    });
+  });
+
+  if (mobileBtnQuote) {
+    mobileBtnQuote.addEventListener('click', closeMobileDrawer);
+  }
+
+  if (mobileQuickBag) {
+    mobileQuickBag.addEventListener('click', openDrawer);
+  }
+}
+
+function openMobileDrawer() {
+  if (mobileNavDrawer) mobileNavDrawer.classList.add('active');
+  if (mobileNavScrim) mobileNavScrim.classList.add('active');
+  if (mobileMenuToggle) {
+    mobileMenuToggle.classList.add('active');
+    mobileMenuToggle.setAttribute('aria-expanded', 'true');
+  }
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMobileDrawer() {
+  if (mobileNavDrawer) mobileNavDrawer.classList.remove('active');
+  if (mobileNavScrim) mobileNavScrim.classList.remove('active');
+  if (mobileMenuToggle) {
+    mobileMenuToggle.classList.remove('active');
+    mobileMenuToggle.setAttribute('aria-expanded', 'false');
+  }
+  document.body.style.overflow = '';
+}
+
+// ==========================================================================
+// 3. Açılış Preloader
 // ==========================================================================
 function initPreloader() {
   let count = 0;
@@ -268,9 +351,11 @@ function initPreloader() {
 }
 
 // ==========================================================================
-// 3. Manyetik Lüks İmleç
+// 4. Manyetik Lüks İmleç (Yalnızca Masaüstü)
 // ==========================================================================
 function initMagneticCursor() {
+  // Dokunmatik cihazlarda imleç motorunu çalıştırma
+  if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) return;
   if (!cursorDot || !cursorRing || !cursorText) return;
 
   let mouseX = window.innerWidth / 2;
@@ -322,7 +407,7 @@ function bindCursorHoverEvents() {
 }
 
 // ==========================================================================
-// 4. Canlı Defile Podyumu & Video-Vari Geçiş Motoru
+// 5. Canlı Defile Podyumu & Video-Vari Geçiş Motoru
 // ==========================================================================
 function initRunwayCinema() {
   updateCinemaSlide(0);
@@ -420,7 +505,7 @@ function toggleCinemaPlayPause() {
 }
 
 // ==========================================================================
-// 5. 0.1mm Büyüteç (Macro Loupe)
+// 6. 0.1mm Büyüteç (Macro Loupe) - Masaüstü & Dokunmatik Desteği
 // ==========================================================================
 function initMacroLoupe() {
   if (!loupeStage || !loupeBaseImg || !loupeLens) return;
@@ -428,6 +513,7 @@ function initMacroLoupe() {
   const zoomFactor = 2.5;
   loupeLens.style.backgroundImage = `url('${loupeBaseImg.src}')`;
 
+  // Masaüstü Fare Olayları
   loupeStage.addEventListener('mouseenter', () => {
     loupeLens.style.display = 'block';
   });
@@ -458,10 +544,50 @@ function initMacroLoupe() {
     loupeLens.style.backgroundSize = `${rect.width * zoomFactor}px ${rect.height * zoomFactor}px`;
     loupeLens.style.backgroundPosition = `${bgX}% ${bgY}%`;
   });
+
+  // Mobil Dokunmatik Olayları
+  function handleLoupeTouch(e) {
+    if (!e.touches || e.touches.length === 0) return;
+    const touch = e.touches[0];
+    const rect = loupeBaseImg.getBoundingClientRect();
+    const x = touch.clientX - rect.left;
+    const y = touch.clientY - rect.top;
+
+    if (x < 0 || x > rect.width || y < 0 || y > rect.height) {
+      loupeLens.style.display = 'none';
+      return;
+    }
+
+    loupeLens.style.display = 'block';
+
+    const lensRadius = loupeLens.offsetWidth / 2;
+    // Parmak görüntüyü engellemesin diye büyüteci parmağın hafif yukarısına konumlandır
+    loupeLens.style.left = `${x - lensRadius}px`;
+    loupeLens.style.top = `${y - lensRadius - 60}px`;
+
+    const bgX = (x / rect.width) * 100;
+    const bgY = (y / rect.height) * 100;
+
+    loupeLens.style.backgroundSize = `${rect.width * zoomFactor}px ${rect.height * zoomFactor}px`;
+    loupeLens.style.backgroundPosition = `${bgX}% ${bgY}%`;
+  }
+
+  loupeStage.addEventListener('touchstart', (e) => {
+    loupeLens.style.display = 'block';
+    handleLoupeTouch(e);
+  }, { passive: true });
+
+  loupeStage.addEventListener('touchmove', (e) => {
+    handleLoupeTouch(e);
+  }, { passive: true });
+
+  loupeStage.addEventListener('touchend', () => {
+    loupeLens.style.display = 'none';
+  });
 }
 
 // ==========================================================================
-// 6. Lookbook & Ürün Vitrini (Çok Dilli)
+// 7. Lookbook & Ürün Vitrini (Çok Dilli)
 // ==========================================================================
 function initLookbookRail(filter) {
   if (!runwayRail) return;
@@ -507,7 +633,7 @@ function initLookbookRail(filter) {
 }
 
 // ==========================================================================
-// 7. Olay Dinleyicileri
+// 8. Olay Dinleyicileri
 // ==========================================================================
 function initEventListeners() {
   // Filtre Sekmeleri
@@ -522,13 +648,13 @@ function initEventListeners() {
   // Ray İleri / Geri Butonları
   if (railPrev && runwayRailContainer) {
     railPrev.addEventListener('click', () => {
-      const scrollDist = htmlRoot.getAttribute('dir') === 'rtl' ? 420 : -420;
+      const scrollDist = htmlRoot.getAttribute('dir') === 'rtl' ? 360 : -360;
       runwayRailContainer.scrollBy({ left: scrollDist, behavior: 'smooth' });
     });
   }
   if (railNext && runwayRailContainer) {
     railNext.addEventListener('click', () => {
-      const scrollDist = htmlRoot.getAttribute('dir') === 'rtl' ? -420 : 420;
+      const scrollDist = htmlRoot.getAttribute('dir') === 'rtl' ? -360 : 360;
       runwayRailContainer.scrollBy({ left: scrollDist, behavior: 'smooth' });
     });
   }
@@ -580,7 +706,7 @@ function initEventListeners() {
 }
 
 // ==========================================================================
-// 8. Numune Çantası İşlemleri
+// 9. Numune Çantası İşlemleri
 // ==========================================================================
 window.addSampleToBag = function(id) {
   const item = HAUTE_EDITIONS.find(p => p.id === id);
@@ -604,6 +730,7 @@ window.removeSampleFromBag = function(id) {
 
 function renderBagUI() {
   if (bagBadge) bagBadge.textContent = sampleBag.length;
+  if (mobileQuickBadge) mobileQuickBadge.textContent = sampleBag.length;
   if (drawerItemsCount) drawerItemsCount.textContent = `${sampleBag.length} ${t('drawer_count_unit')}`;
 
   if (!drawerEmptyState || !drawerBagItems) return;
@@ -645,7 +772,7 @@ function closeDrawer() {
 }
 
 // ==========================================================================
-// 9. Lightbox Modal (Çok Dilli)
+// 10. Lightbox Modal (Çok Dilli)
 // ==========================================================================
 window.openCoutureModal = function(id) {
   const item = HAUTE_EDITIONS.find(p => p.id === id);
@@ -693,7 +820,7 @@ function closeModal() {
 }
 
 // ==========================================================================
-// 10. WhatsApp & Mail Gönderimi (05436970755 & Çok Dilli)
+// 11. WhatsApp & Mail Gönderimi (05436970755 & Çok Dilli)
 // ==========================================================================
 function dispatchSampleBagViaWhatsApp() {
   if (sampleBag.length === 0) {
@@ -730,7 +857,7 @@ function dispatchSampleBagViaMail() {
 }
 
 // ==========================================================================
-// 11. Defile Ambiyans Sesi (Web Audio API)
+// 12. Defile Ambiyans Sesi (Web Audio API)
 // ==========================================================================
 function toggleAmbientSound() {
   if (!audioContext) {

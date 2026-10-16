@@ -2008,7 +2008,8 @@ body.luxury-dark {
   outline: none;
 }
 
-.btn-concierge-submit {
+.btn-concierge-submit,
+.btn-submit-vip {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2022,11 +2023,13 @@ body.luxury-dark {
   font-weight: 800;
   letter-spacing: 2px;
   border: none;
+  cursor: pointer;
   margin-top: 10px;
   transition: all 0.3s var(--ease-luxury);
 }
 
-.btn-concierge-submit:hover {
+.btn-concierge-submit:hover,
+.btn-submit-vip:hover {
   filter: brightness(1.15);
   transform: translateY(-2px);
   box-shadow: 0 6px 30px rgba(199, 167, 108, 0.45);
@@ -2529,11 +2532,362 @@ body.luxury-dark {
 }
 
 /* ==========================================================================
-   Responsive Uyarlamalar
+   KUSURSUZ MOBİL & DUYARLI (RESPONSIVE) SİSTEM
    ========================================================================== */
+
+/* Dokunmatik Cihazlarda Manyetik İmleci Gizle */
+@media (hover: none) and (pointer: coarse) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none !important;
+  }
+  body, a, button, input, select, textarea {
+    cursor: auto !important;
+  }
+}
+
+/* Mobil Hamburger Menü Butonu */
+.mobile-menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  border-radius: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s var(--ease-luxury);
+  flex-shrink: 0;
+}
+
+.mobile-menu-toggle:hover,
+.mobile-menu-toggle.active {
+  border-color: var(--gold-antique);
+  background: rgba(199, 167, 108, 0.15);
+}
+
+.burger-bar {
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.mobile-menu-toggle.active .burger-bar:nth-child(1) {
+  transform: translateY(3.5px) rotate(45deg);
+  background: var(--gold-champagne);
+}
+
+.mobile-menu-toggle.active .burger-bar:nth-child(2) {
+  transform: translateY(-3.5px) rotate(-45deg);
+  background: var(--gold-champagne);
+}
+
+/* Mobil Menü Çekmecesi */
+.mobile-nav-scrim {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 5, 7, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  z-index: 2500;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s var(--ease-luxury);
+}
+
+.mobile-nav-scrim.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: min(380px, 92vw);
+  height: 100vh;
+  height: 100dvh;
+  background: #080a0e;
+  border-left: 1px solid var(--border-gold);
+  z-index: 2501;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -20px 0 60px rgba(0, 0, 0, 0.9);
+  transition: right 0.45s var(--ease-luxury);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 24px 20px;
+}
+
+.mobile-nav-drawer.active {
+  right: 0;
+}
+
+html[dir="rtl"] .mobile-nav-drawer {
+  right: auto;
+  left: -100%;
+  border-left: none;
+  border-right: 1px solid var(--border-gold);
+  box-shadow: 20px 0 60px rgba(0, 0, 0, 0.9);
+  transition: left 0.45s var(--ease-luxury);
+}
+
+html[dir="rtl"] .mobile-nav-drawer.active {
+  left: 0;
+  right: auto;
+}
+
+.mobile-drawer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 20px;
+}
+
+.mobile-drawer-logo {
+  height: 48px;
+  width: auto;
+}
+
+.mobile-drawer-close {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 2.2rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.mobile-drawer-close:hover {
+  color: #fff;
+}
+
+.mobile-drawer-lang {
+  margin-bottom: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.mobile-drawer-lang-title {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--gold-antique);
+  margin-bottom: 10px;
+}
+
+.mobile-lang-pills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.mobile-lang-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  color: #cfd6e4;
+  font-size: 0.76rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mobile-lang-pill:hover,
+.mobile-lang-pill.active {
+  border-color: var(--gold-antique);
+  background: rgba(199, 167, 108, 0.18);
+  color: var(--gold-champagne);
+}
+
+.mobile-drawer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-grow: 1;
+  margin-bottom: 24px;
+}
+
+.mobile-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #e2e8f0;
+  transition: all 0.25s;
+}
+
+.mobile-link:hover,
+.mobile-link:active {
+  background: rgba(199, 167, 108, 0.1);
+  color: var(--gold-champagne);
+}
+
+.m-num {
+  font-family: var(--font-fashion);
+  font-size: 0.72rem;
+  color: var(--gold-antique);
+  font-weight: 800;
+}
+
+.m-text {
+  font-family: var(--font-fashion);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.mobile-drawer-footer {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.btn-mobile-quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  background: var(--gold-gradient);
+  color: #060709;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.mobile-contact-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.mobile-action-call,
+.mobile-action-wa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.mobile-action-call {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  color: #fff;
+}
+
+.mobile-action-wa {
+  background: #25d366;
+  color: #060709;
+  font-weight: 800;
+}
+
+/* Mobil Sabit Hızlı Erişim Barı (Bottom FAB) */
+.mobile-quick-bar {
+  display: none;
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1800;
+  background: rgba(8, 10, 15, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-gold);
+  border-radius: 999px;
+  padding: 6px 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), var(--gold-glow);
+  gap: 8px;
+  align-items: center;
+  width: min(360px, calc(100vw - 32px));
+}
+
+.mq-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 6px;
+  border-radius: 99px;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.mq-call {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.mq-wa {
+  background: #25d366;
+  color: #060709;
+  font-weight: 800;
+}
+
+.mq-bag {
+  background: rgba(199, 167, 108, 0.15);
+  color: var(--gold-champagne);
+  border: 1px solid var(--border-gold);
+}
+
+.mq-bag-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.mq-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: var(--gold-antique);
+  color: #060709;
+  font-size: 0.62rem;
+  font-weight: 800;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 1200px Tablet Breakpoint */
 @media (max-width: 1200px) {
-  .headline-part.sans-bold { font-size: 5rem; }
-  .headline-part.italic-serif { font-size: 3.8rem; }
   .brands-grid-showcase { grid-template-columns: repeat(4, 1fr); }
   .pillars-master-grid { grid-template-columns: repeat(2, 1fr); }
   .testimonials-deck { grid-template-columns: repeat(2, 1fr); }
@@ -2544,33 +2898,490 @@ body.luxury-dark {
   .footer-cols { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 768px) {
-  .editorial-ribbon { display: none; }
+/* 992px Hamburger Menu Geçişi */
+@media (max-width: 992px) {
   .couture-nav { display: none; }
-  .header-inner { padding: 0 20px; }
-  .section-couture { padding: 80px 20px; }
-  .headline-part.sans-bold { font-size: 3.4rem; }
-  .headline-part.italic-serif { font-size: 2.4rem; }
-  .brands-grid-showcase { grid-template-columns: repeat(2, 1fr); }
-  .pillars-master-grid { grid-template-columns: 1fr; }
-  .testimonials-deck { grid-template-columns: 1fr; }
-  .hero-bottom-bar { flex-direction: column; align-items: flex-start; }
-  .hero-cta-cluster { width: 100%; flex-direction: column; }
-  .btn-couture-primary, .btn-couture-ghost { width: 100%; justify-content: center; }
-  .runway-cinema-stage { aspect-ratio: 4/3; }
-  .cinema-stage-overlay { padding: 24px; }
-  .cinema-look-title { font-size: 1.4rem; }
-  .modal-two-columns { grid-template-columns: 1fr; }
-  .input-duo { grid-template-columns: 1fr; }
-  .certs-master-grid { grid-template-columns: 1fr; }
-  .footer-cols { grid-template-columns: 1fr; }
-  .footer-marquee-line { flex-direction: column; gap: 10px; }
-  .stack-sub-card { display: none; }
-  .lang-current-btn { padding: 8px 12px; font-size: 0.72rem; gap: 6px; }
-  .header-right { gap: 8px; }
-  .sample-bag-trigger { padding: 9px 12px; }
-  .bag-text { display: none; }
-  .btn-haute { padding: 9px 14px; font-size: 0.72rem; }
+  .mobile-menu-toggle { display: flex; }
+}
+
+/* 768px Mobil Breakpoint */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  body {
+    padding-bottom: 74px; /* Alt bar için güvenli boşluk */
+  }
+
+  .mobile-quick-bar {
+    display: flex;
+  }
+
+  .editorial-ribbon {
+    display: none;
+  }
+
+  .couture-header {
+    top: 0;
+  }
+
+  .header-inner {
+    height: 72px;
+    padding: 0 16px;
+  }
+
+  .brand-logo-img {
+    height: 46px;
+    max-width: 140px;
+  }
+
+  .header-right {
+    gap: 8px;
+  }
+
+  .header-right .btn-haute {
+    display: none; /* Mobilde çekmece ve sabit bara taşındı */
+  }
+
+  .sample-bag-trigger {
+    padding: 8px 12px;
+  }
+
+  .bag-text {
+    display: none;
+  }
+
+  .lang-current-btn {
+    padding: 8px 11px;
+    font-size: 0.72rem;
+    gap: 5px;
+  }
+
+  .lang-name {
+    display: none;
+  }
+
+  .lang-options-menu {
+    min-width: 130px;
+  }
+
+  /* Hero Bölümü */
+  .hero-runway {
+    min-height: auto;
+    padding: 30px 0 60px;
+  }
+
+  .hero-content-frame {
+    padding: 0 16px;
+  }
+
+  .hero-tag-block {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .editorial-coordinates {
+    font-size: 0.7rem;
+  }
+
+  .hero-brand-top-motto {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-brand-top-motto::after {
+    display: none;
+  }
+
+  .hero-brand-monolith {
+    font-size: clamp(2.3rem, 11vw, 3.6rem);
+    letter-spacing: clamp(3px, 1vw, 6px);
+    line-height: 1;
+    margin: 4px 0 10px;
+    word-break: keep-all;
+  }
+
+  .hero-brand-bottom-sub {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    line-height: 1.4;
+  }
+
+  .hero-bottom-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding-top: 24px;
+  }
+
+  .hero-lead-editorial {
+    font-size: 0.94rem;
+    line-height: 1.7;
+  }
+
+  .hero-cta-cluster {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-couture-primary,
+  .btn-couture-ghost {
+    width: 100%;
+    justify-content: center;
+    padding: 16px 20px;
+    font-size: 0.82rem;
+  }
+
+  .scroll-pillar {
+    display: none;
+  }
+
+  /* Defile Podyum Sahnesi */
+  .section-couture {
+    padding: 60px 16px;
+  }
+
+  .section-headline {
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
+    letter-spacing: 1.5px;
+  }
+
+  .section-desc {
+    font-size: 0.94rem;
+    line-height: 1.7;
+  }
+
+  .runway-cinema-stage {
+    aspect-ratio: auto;
+    min-height: 480px;
+    max-height: 520px;
+    border-radius: 14px;
+  }
+
+  .cinema-stage-overlay {
+    padding: 20px 16px;
+  }
+
+  .live-ticker-badge {
+    font-size: 0.68rem;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .cinema-meta-tag {
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+  }
+
+  .cinema-look-title {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+
+  .cinema-controls-bar {
+    gap: 10px;
+    padding-top: 12px;
+  }
+
+  .stage-ctrl-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .stage-play-pause-btn {
+    padding: 8px 14px;
+    font-size: 0.74rem;
+  }
+
+  .cinema-step-count {
+    font-size: 0.8rem;
+  }
+
+  /* Referans Markalar */
+  .brands-grid-showcase {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .brand-logo-card {
+    padding: 16px 10px;
+    min-height: 70px;
+  }
+
+  /* Hakkımızda & Üretim Gücü */
+  .advantages-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .pillars-master-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .master-pillar-card {
+    border-radius: 14px;
+  }
+
+  .pillar-img-header {
+    height: 200px;
+  }
+
+  .pillar-body {
+    padding: 24px 18px;
+  }
+
+  .stack-sub-card {
+    display: none;
+  }
+
+  /* Büyüteç Bölümü */
+  .macro-inspection-section .macro-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .loupe-frame {
+    border-radius: 14px;
+    max-height: 360px;
+  }
+
+  .macro-base-img {
+    max-height: 360px;
+  }
+
+  /* Lookbook & Filtreler */
+  .runway-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+    scrollbar-width: none;
+  }
+
+  .runway-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .runway-tab {
+    padding: 8px 16px;
+    font-size: 0.72rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .runway-rail-container {
+    margin: 0 -16px;
+    padding: 0 16px 20px;
+  }
+
+  .runway-rail {
+    gap: 18px;
+  }
+
+  .runway-card {
+    width: clamp(280px, 82vw, 340px);
+    border-radius: 12px;
+  }
+
+  .card-visual-chamber {
+    height: 280px;
+    padding: 16px;
+  }
+
+  .card-body {
+    padding: 20px 16px;
+  }
+
+  .card-name {
+    font-size: 1.3rem;
+  }
+
+  .card-lead {
+    font-size: 0.85rem;
+    margin-bottom: 18px;
+  }
+
+  /* Müşteri Yorumları & Sertifikalar */
+  .testimonials-deck {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .deck-quote-card {
+    padding: 24px 18px;
+  }
+
+  .certs-master-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* İletişim Formu */
+  .concierge-card {
+    padding: 28px 18px;
+    border-radius: 16px;
+  }
+
+  .concierge-title {
+    font-size: 1.55rem;
+    line-height: 1.3;
+  }
+
+  .concierge-desc {
+    font-size: 0.92rem;
+  }
+
+  .input-duo {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .input-field input,
+  .input-field select,
+  .input-field textarea {
+    font-size: 16px !important; /* iOS safari otomatik zoom engelleme */
+    padding: 13px 14px;
+  }
+
+  .btn-whatsapp-vip {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.76rem;
+    padding: 15px;
+    letter-spacing: 1px;
+  }
+
+  .btn-submit-vip,
+  .btn-concierge-submit {
+    width: 100%;
+    padding: 16px;
+    font-size: 0.82rem;
+    letter-spacing: 1px;
+  }
+
+  /* Footer */
+  .couture-footer {
+    padding: 50px 16px 30px;
+  }
+
+  .footer-marquee-line {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 36px;
+  }
+
+  .f-brand-huge {
+    font-size: 1.4rem;
+  }
+
+  .footer-cols {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 36px;
+  }
+
+  .footer-legal {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .legal-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  /* Ürün Detay Modalı */
+  .couture-modal {
+    padding: 10px;
+  }
+
+  .modal-stage {
+    max-height: 92vh;
+    max-height: 92dvh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 14px;
+  }
+
+  .modal-two-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-photo-chamber {
+    padding: 24px 16px;
+    height: 240px;
+  }
+
+  .modal-photo-chamber img {
+    max-height: 200px;
+  }
+
+  .modal-info-chamber {
+    padding: 24px 18px;
+  }
+
+  .modal-item-name {
+    font-size: 1.55rem;
+    line-height: 1.2;
+  }
+
+  .modal-button-strip {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .btn-modal-add,
+  .btn-modal-wa {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 14px;
+  }
+
+  /* Numune Çantası Çekmecesi */
+  .haute-drawer {
+    width: 100%;
+    max-width: 100vw;
+  }
+}
+
+/* 480px Çok Küçük Ekranlar (iPhone SE vb.) */
+@media (max-width: 480px) {
+  .hero-brand-monolith {
+    font-size: clamp(2.1rem, 10vw, 2.7rem);
+    letter-spacing: 3px;
+  }
+
+  .brands-grid-showcase {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mobile-contact-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-quick-bar {
+    width: calc(100vw - 20px);
+    bottom: 12px;
+    padding: 5px 8px;
+  }
+
+  .mq-btn {
+    padding: 8px 4px;
+    font-size: 0.7rem;
+  }
 }
 
 /* ==========================================================================

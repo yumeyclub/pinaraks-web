@@ -32,6 +32,10 @@ const TRANSLATIONS = {
     nav_iletisim: "İLETİŞİM",
     btn_sample_bag: "NUMUNE ÇANTASI",
     btn_quote_showroom: "TEKLİF & SHOWROOM",
+    mobile_menu_title: "MENÜ",
+    mobile_lang_title: "DİL SEÇİMİ",
+    mobile_quick_call: "Hemen Ara",
+    mobile_quick_wa: "WhatsApp Hattı",
 
     // Hero
     hero_badge: "HAUTE ATELIER DE LUXE • İSTANBUL",
@@ -322,6 +326,10 @@ const TRANSLATIONS = {
     nav_iletisim: "CONTACT",
     btn_sample_bag: "SAMPLE BAG",
     btn_quote_showroom: "QUOTE & SHOWROOM",
+    mobile_menu_title: "MENU",
+    mobile_lang_title: "SELECT LANGUAGE",
+    mobile_quick_call: "Direct Call",
+    mobile_quick_wa: "WhatsApp Showroom",
 
     // Hero
     hero_badge: "HAUTE ATELIER DE LUXE • ISTANBUL",
@@ -612,6 +620,10 @@ const TRANSLATIONS = {
     nav_iletisim: "اتصل بنا",
     btn_sample_bag: "حقيبة العينات",
     btn_quote_showroom: "طلب عرض أسعار وصالة العرض",
+    mobile_menu_title: "القائمة",
+    mobile_lang_title: "اختر اللغة",
+    mobile_quick_call: "اتصال مباشر",
+    mobile_quick_wa: "واتساب صالة العرض",
 
     // Hero
     hero_badge: "أتيلييه الأزياء الفاخرة • إسطنبول",
