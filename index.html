@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="tr" id="htmlRoot">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title id="metaTitle">PINARAKS | Ürüne Değer Katan Dokunuşlar • Haute Couture Donanım & Aksesuar</title>
+  <meta name="description" id="metaDesc" content="Pınaraks - Hazır giyim ve haute-couture modasının kalbinde; Ar-Ge gücü, nikel-free test onaylı metal donanımları, lazer taş baskısı, BSN aplikleri ve zanaatkar kadın emeğiyle dünya moda devlerine yön veren entegre imalat evi.">
+  
+  <!-- 100% Türkçe & Arapça Karakter Uyumlu Google Fonts (latin-ext, arabic) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Cinzel:wght@600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap&subset=latin,latin-ext,arabic" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="luxury-dark">
+
+  <!-- Sinematik Gren Dokusu -->
+  <div class="film-grain" aria-hidden="true"></div>
+
+  <!-- Manyetik Lüks İmleç -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true">
+    <span class="cursor-text" id="cursorText"></span>
+  </div>
+
+  <!-- Açılış İntrosu / Preloader -->
+  <div class="couture-preloader" id="couturePreloader">
+    <div class="preloader-inner">
+      <div class="preloader-brand">
+        <span class="pre-subtitle" data-i18n="pre_subtitle">ÜRÜNE DEĞER KATAN DOKUNUŞLAR</span>
+        <h1 class="pre-title" data-i18n="pre_title">PINARAKS</h1>
+        <span class="pre-meta" data-i18n="pre_meta">İSTANBUL • GÜNGÖREN • DÜNYA MODA HAFTALARI</span>
+      </div>
+      <div class="preloader-progress-wrap">
+        <div class="preloader-bar" id="preloaderBar"></div>
+      </div>
+      <div class="preloader-counter" id="preloaderCounter">00%</div>
+    </div>
+  </div>
+
+  <!-- Üst Bilgi Şeridi -->
+  <aside class="editorial-ribbon" aria-label="Pınaraks Bilgilendirme">
+    <div class="ribbon-inner">
+      <div class="ribbon-left">
+        <span class="ribbon-tag" data-i18n="ribbon_tag">KÜRESEL İHRACAT & B2B</span>
+        <span class="ribbon-text" data-i18n="ribbon_text">ZARA, BEYMEN CLUB, GUESS, BERSHKA, İPEKYOL RESMİ DONANIM ÇÖZÜM ORTAĞI</span>
+      </div>
+      <div class="ribbon-actions">
+        <!-- Dil Hızlı Seçici (Ribbon) -->
+        <div class="ribbon-lang-switch" aria-label="Language Selector">
+          <button class="ribbon-lang-btn active" data-lang="tr" type="button" title="Türkçe">TR</button>
+          <span class="ribbon-lang-pipe">/</span>
+          <button class="ribbon-lang-btn" data-lang="en" type="button" title="English">EN</button>
+          <span class="ribbon-lang-pipe">/</span>
+          <button class="ribbon-lang-btn" data-lang="ar" type="button" title="العربية">AR</button>
+        </div>
+        <span class="ribbon-sep">•</span>
+        <!-- Defile Müziği / Ses -->
+        <button class="sound-toggle" id="soundToggle" title="Podyum Defile Ambiyansı" aria-label="Sesi Aç/Kapat">
+          <span class="sound-icon">
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+          </span>
+          <span class="sound-label" id="soundLabel" data-i18n="sound_label_off">DEFİLE SESİ: KAPALI</span>
+        </button>
+        <span class="ribbon-sep">•</span>
+        <a href="tel:+905436970755" class="ribbon-tel">+90 (543) 697 07 55</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Lüks Navigasyon Başlığı -->
+  <header class="couture-header" id="coutureHeader">
+    <div class="header-inner">
+      <a href="#hero" class="brand-signature" id="brandSig">
+        <img src="assets/ref/pinaraks_logo.png" alt="PINARAKS" class="brand-logo-img">
+      </a>
+
+      <nav class="couture-nav" id="mainNav">
+        <a href="#defile" class="couture-link hover-reveal" data-i18n="nav_defile">DEFİLE</a>
+        <a href="#hakkimizda" class="couture-link hover-reveal" data-i18n="nav_hakkimizda">HAKKIMIZDA</a>
+        <a href="#uretim-gucu" class="couture-link hover-reveal" data-i18n="nav_uretim">ÜRETİM & AR-GE</a>
+        <a href="#koleksiyon" class="couture-link hover-reveal" data-i18n="nav_koleksiyon">KOLEKSİYON</a>
+        <a href="#makro-lens" class="couture-link hover-reveal" data-i18n="nav_makro">0.1MM BÜYÜTEÇ</a>
+        <a href="#sedex" class="couture-link hover-reveal" data-i18n="nav_sedex">SEDEX & ETİK</a>
+        <a href="#referanslar" class="couture-link hover-reveal" data-i18n="nav_referanslar">REFERANSLAR</a>
+        <a href="#iletisim" class="couture-link hover-reveal" data-i18n="nav_iletisim">İLETİŞİM</a>
+      </nav>
+
+      <div class="header-right">
+        <!-- Lüks Dil Dropdown Seçici -->
+        <div class="lang-selector-dropdown" id="langSelectorDropdown">
+          <button class="lang-current-btn" id="langCurrentBtn" aria-label="Dil Seçimi / Select Language" aria-expanded="false" type="button">
+            <span class="lang-flag" id="currentLangFlag">🇹🇷</span>
+            <span class="lang-code" id="currentLangCode">TR</span>
+            <svg class="lang-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <ul class="lang-options-menu" id="langOptionsMenu" role="listbox">
+            <li class="lang-option active" data-lang="tr" role="option">
+              <span class="lang-flag">🇹🇷</span>
+              <span class="lang-name">Türkçe</span>
+              <span class="lang-tag">TR</span>
+            </li>
+            <li class="lang-option" data-lang="en" role="option">
+              <span class="lang-flag">🇬🇧</span>
+              <span class="lang-name">English</span>
+              <span class="lang-tag">EN</span>
+            </li>
+            <li class="lang-option" data-lang="ar" role="option">
+              <span class="lang-flag">🇸🇦</span>
+              <span class="lang-name">العربية</span>
+              <span class="lang-tag">AR</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Numune Çantası Butonu -->
+        <button class="sample-bag-trigger hover-reveal" id="sampleBagTrigger" aria-label="Numune Çantası">
+          <span class="bag-icon-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4H6zM3 6h18M16 10a4 4 0 01-8 0"/>
+            </svg>
+            <span class="bag-badge" id="bagBadge">0</span>
+          </span>
+          <span class="bag-text" data-i18n="btn_sample_bag">NUMUNE ÇANTASI</span>
+        </button>
+
+        <!-- Showroom Randevu / Teklif -->
+        <a href="#iletisim" class="btn-haute hover-reveal">
+          <span data-i18n="btn_quote_showroom">TEKLİF & SHOWROOM</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Ana Hero Açılış -->
+  <section class="hero-runway" id="hero">
+    <div class="hero-media-wrapper">
+      <img src="assets/runway_hero.jpg" alt="Pınaraks Podyum Defile Donanımı" class="hero-bg-media" id="heroMedia">
+      <div class="hero-gradient-overlay"></div>
+    </div>
+
+    <div class="hero-content-frame">
+      <div class="hero-tag-block">
+        <span class="editorial-badge" data-i18n="hero_badge">HAUTE ATELIER DE LUXE • İSTANBUL</span>
+        <span class="editorial-coordinates" data-i18n="hero_coords">GÜNGÖREN / İSTANBUL • 35 YILLIK ÜRETİM TECRÜBESİ</span>
+      </div>
+
+      <div class="hero-statement">
+        <h1 class="hero-mega-headline">
+          <span class="hero-brand-top-motto" data-i18n="hero_motto">ÜRÜNE DEĞER KATAN DOKUNUŞLAR</span>
+          <span class="hero-brand-monolith" data-i18n="hero_brand">PINARAKS</span>
+          <span class="hero-brand-bottom-sub" data-i18n="hero_sub">KÜRESEL MODA DEVLERİ VE HAUTE COUTURE İÇİN DONANIM MİMARİSİ</span>
+        </h1>
+      </div>
+
+      <div class="hero-bottom-bar">
+        <p class="hero-lead-editorial" data-i18n="hero_lead">
+          Pınaraks olarak 35 yıllık kurumsal Ar-Ge ve imalat tecrübemizle; Zara, Beymen Club ve dünya moda haftalarında yürüyen küresel markaların nikel-free metal donanım, lazer kalıplı taş baskı ve zanaatkar kadın emeği vizyonunu inşa ediyoruz.
+        </p>
+
+        <div class="hero-cta-cluster">
+          <a href="#defile" class="btn-couture-primary hover-reveal" data-cursor="DEFİLE">
+            <span data-i18n="hero_cta_defile">CANLI DEFİLEYİ İZLE</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </a>
+          <a href="#koleksiyon" class="btn-couture-ghost hover-reveal" data-cursor="KATALOG">
+            <span data-i18n="hero_cta_catalog">ÜRÜN KATALOĞU</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aşağı Kaydır Göstergesi -->
+    <a href="#defile" class="scroll-pillar" aria-label="Aşağı Kaydır">
+      <span class="scroll-text" data-i18n="scroll_text">DEFİLE VE DETAYLAR</span>
+      <span class="scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- Canlı Defile Podyumu & Sinematik Video-Vari Geçiş Alanı -->
+  <section class="section-couture defile-stage-section" id="defile">
+    <div class="section-title-wrap">
+      <div class="title-meta">
+        <span class="section-number" data-i18n="sec_01_num">01</span>
+        <span class="section-eyebrow" data-i18n="sec_01_eyebrow">SİNEMATİK DEFİLE DENEYİMİ</span>
+      </div>
+      <h2 class="section-headline">
+        <span class="light-italic" data-i18n="sec_01_h_light">Podyum & Canlı</span>
+        <span class="bold-caps" data-i18n="sec_01_h_bold">DEFİLE VİTRİNİ</span>
+      </h2>
+      <p class="section-desc" data-i18n="sec_01_desc">
+        Pınaraks donanımlarının ve el işçiliğinin podyumdaki canlı ışıltısını keşfedin. Otomatik geçişli kamera hareketleri, podyum spotları ve sahne kontrolleriyle koleksiyon parçalarımızı defile ortamında inceleyin.
+      </p>
+    </div>
+
+    <!-- Video-Vari Podyum Sahnesi -->
+    <div class="runway-cinema-stage" id="cinemaStage">
+      <div class="stage-curtain-glow"></div>
+      <div class="stage-spotlight" id="stageSpotlight"></div>
+
+      <!-- Sahne Görselleri (Slaytlar) -->
+      <div class="cinema-slide-container" id="cinemaSlideContainer">
+        <!-- Slayt 1 -->
+        <div class="cinema-slide active" data-index="0">
+          <img src="assets/runway_hero.jpg" alt="Podyum Görünüm 1">
+        </div>
+        <!-- Slayt 2 -->
+        <div class="cinema-slide" data-index="1">
+          <img src="assets/runway_catwalk.jpg" alt="Podyum Görünüm 2">
+        </div>
+        <!-- Slayt 3 -->
+        <div class="cinema-slide" data-index="2">
+          <img src="assets/macro_metal.jpg" alt="Podyum Görünüm 3">
+        </div>
+        <!-- Slayt 4 -->
+        <div class="cinema-slide" data-index="3">
+          <img src="assets/atelier_craft.jpg" alt="Podyum Görünüm 4">
+        </div>
+      </div>
+
+      <!-- Sahne Bilgi Paneli -->
+      <div class="cinema-stage-overlay">
+        <div class="live-ticker-badge">
+          <span class="red-record-dot"></span>
+          <span data-i18n="live_ticker">CANLI DEFİLE PODYUMU // CANLI SAHNE</span>
+        </div>
+        
+        <div class="cinema-caption-box">
+          <span class="cinema-meta-tag" id="cinemaMetaTag">PARIS RUNWAY • NİKEL-FREE ESKİTME ALTIN BANYOSU</span>
+          <h3 class="cinema-look-title" id="cinemaLookTitle">GÖRÜNÜM 01: HAUTE COUTURE GÖĞÜS DONANIMI</h3>
+        </div>
+
+        <!-- Sahne Kontrol Araçları -->
+        <div class="cinema-controls-bar">
+          <button class="stage-ctrl-btn" id="btnCinemaPrev" title="Önceki">&larr;</button>
+          
+          <button class="stage-play-pause-btn" id="btnCinemaPlayPause" title="Oynat / Duraklat">
+            <span id="playPauseIcon">⏸</span>
+            <span id="playPauseText" data-i18n="cinema_pause">DURAKLAT</span>
+          </button>
+
+          <button class="stage-ctrl-btn" id="btnCinemaNext" title="Sonraki">&rarr;</button>
+
+          <!-- İlerleme Çubuğu -->
+          <div class="cinema-progress-track">
+            <div class="cinema-progress-fill" id="cinemaProgressFill"></div>
+          </div>
+
+          <div class="cinema-step-count" id="cinemaStepCount">
+            <span class="active-step">01</span> / 04
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Referans Dünya ve Türkiye Moda Markaları Bandı (Orijinal Logolarla) -->
+  <section class="fashion-brands-section" id="referanslar">
+    <div class="container-luxury">
+      <div class="strip-header-label">
+        <span data-i18n="brands_title">GÜVEN DUYAN DÜNYA VE TÜRKİYE MODA DEVLERİ</span>
+      </div>
+      <div class="brands-grid-showcase">
+        <div class="brand-logo-card"><img src="assets/ref/zara.png" alt="Zara"></div>
+        <div class="brand-logo-card"><img src="assets/ref/beymen.png" alt="Beymen Club"></div>
+        <div class="brand-logo-card"><img src="assets/ref/guess.png" alt="Guess"></div>
+        <div class="brand-logo-card"><img src="assets/ref/bershka.jpg" alt="Bershka"></div>
+        <div class="brand-logo-card"><img src="assets/ref/ipekyol.png" alt="İpekyol"></div>
+        <div class="brand-logo-card"><img src="assets/ref/stradivarius.png" alt="Stradivarius"></div>
+        <div class="brand-logo-card"><img src="assets/ref/liujo.jpg" alt="Liu Jo"></div>
+        <div class="brand-logo-card"><img src="assets/ref/lcw.png" alt="LC Waikiki"></div>
+        <div class="brand-logo-card"><img src="assets/ref/motivi.png" alt="Motivi"></div>
+        <div class="brand-logo-card"><img src="assets/ref/sarahkern.png" alt="Sarah Kern"></div>
+        <div class="brand-logo-card"><img src="assets/ref/soliver.png" alt="s.Oliver"></div>
+        <div class="brand-logo-card"><img src="assets/ref/oltre.png" alt="Oltre"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hakkımızda & Misyon / Vizyon (Referans Sitenin Tüm Metinleri) -->
+  <section class="section-couture about-story-section" id="hakkimizda">
+    <div class="about-story-grid">
+      <div class="about-text-column">
+        <div class="title-meta">
+          <span class="section-number" data-i18n="sec_02_num">02</span>
+          <span class="section-eyebrow" data-i18n="sec_02_eyebrow">HAKKIMIZDA & KURUMSAL FELSEFEMİZ</span>
+        </div>
+        <h2 class="section-headline">
+          <span class="light-italic" data-i18n="sec_02_h_light">35 Yıllık Bilgi ve Tecrübe,</span>
+          <span class="bold-caps" data-i18n="sec_02_h_bold">İHRACAT STANDARDI</span>
+        </h2>
+
+        <div class="story-paragraphs">
+          <p class="highlight-lead" data-i18n="about_lead">
+            Pınaraks olarak uzun yıllar kazanılmış olan bilgi ve tecrübesini, ihracat kalitesinde aksesuarı ürün üzerine imalat odaklı tasarlayan, ürüne değer katan dokunuşları yaparak dünya genelinde hazır giyim modasını takip eden bir markayız.
+          </p>
+          <p data-i18n="about_p2">
+            Yapmış olduğumuz model tasarımlar ile oluşan siparişleri gerekli olan bilgi, deneyim, uzman kadrolarımız ve makine teknoloji yatırımları ile sonuçlandırıp; bunları yaparken çevreye duyarlı, ekolojik üretim ve sosyal sorumluluklardan taviz vermeyen bir firmayız. Üretim ve tasarım yaptığımız firmalara, tedarikçilerimize ve çalışanlarımıza değer katmak en temel önceliğimizdir.
+          </p>
+
+          <div class="vision-mission-card">
+            <h4 data-i18n="mission_title">MİSYON & VİZYONUMUZ</h4>
+            <p data-i18n="mission_desc">
+              Tüm dünyada modanın kalbinin attığı her noktada tasarım ile oluşan aksesuarı ön plana çıkararak moda olmasını sağlamak; çözüm ortağı olarak büyük projeler ile sorunsuz kaliteli üretimi sosyal sorumluluk dahilinde sektöründe dünya genelinde lider ve aranan bir firma olmak.
+            </p>
+          </div>
+
+          <div class="advantages-row">
+            <div class="adv-box">
+              <span class="adv-num">100.000m+</span>
+              <span class="adv-label" data-i18n="adv_bsn_label">Aylık BSN & Aplik Üretim Gücü</span>
+            </div>
+            <div class="adv-box">
+              <span class="adv-num">%100 Test</span>
+              <span class="adv-label" data-i18n="adv_test_label">Nikel-Free & Kurşunsuz Garanti</span>
+            </div>
+            <div class="adv-box">
+              <span class="adv-num">48 Saat</span>
+              <span class="adv-label" data-i18n="adv_sample_label">Hızlı Numune & Ar-Ge Desteği</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sağ Kolon: Referans Fabrika ve Donanım Görselleri -->
+      <div class="about-visual-column">
+        <div class="visual-stack-card">
+          <img src="assets/ref/cat_metal.jpg" alt="Pınaraks Metal ve Taşlı Aksesuar Atölyesi" class="stack-main-img">
+          <div class="stack-sub-card">
+            <img src="assets/ref/cat_hotfix.jpg" alt="Pınaraks Hotfix Baskı">
+            <div class="sub-card-info">
+              <strong data-i18n="about_sub_title">Güngören Gedikli Plaza</strong>
+              <span data-i18n="about_sub_desc">Tasarım, Ar-Ge, Kalıphane ve Üretim Tesisimiz</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Üretim Gücü & 6 Ana Departman (Referans Sitedeki Tüm Açıklamalar) -->
+  <section class="section-couture capabilities-detailed-section" id="uretim-gucu">
+    <div class="section-title-wrap text-center">
+      <div class="title-meta justify-center">
+        <span class="section-number" data-i18n="sec_03_num">03</span>
+        <span class="section-eyebrow" data-i18n="sec_03_eyebrow">PINARAKS ÜRETİM GÜCÜ & AR-GE MÜHENDİSLİĞİ</span>
+      </div>
+      <h2 class="section-headline">
+        <span class="light-italic" data-i18n="sec_03_h_light">Entegre İmalat Parkuru,</span>
+        <span class="bold-caps" data-i18n="sec_03_h_bold">6 TEMEL UZMANLIK ALANI</span>
+      </h2>
+      <p class="section-desc center-max" data-i18n="sec_03_desc">
+        Grafik tasarımdan lazer kalıba, nikel-free fre kaplama banyolarından Türkiye genelindeki zanaatkar kadın istihdamına uzanan eksiksiz entegre tesisimiz.
+      </p>
+    </div>
+
+    <div class="pillars-master-grid">
+      <!-- 1. Tasarım & Ar-Ge -->
+      <div class="master-pillar-card">
+        <div class="pillar-img-header">
+          <img src="assets/runway_hero.jpg" alt="Tasarım ve Ar-Ge">
+          <span class="pillar-badge-num">01</span>
+        </div>
+        <div class="pillar-body">
+          <h3 class="pillar-title" data-i18n="pillar_1_title">Tasarım & Ar-Ge</h3>
+          <p class="pillar-text" data-i18n="pillar_1_desc">
+            Sektörümüzde müşteri talepleri ve yeni moda akımları doğrultusunda sosyal-ekolojik çevre duyarlılığını ön planda tutarak deneyimli ve güçlü tasarım ekibimiz ile en iyi olmayı ve modaya yön vermeyi amaç edindik.
+          </p>
+          <div class="pillar-spec-box">
+            <strong data-i18n="pillar_1_box_title">BİZLERİ AVANTAJLI KILAN ETKENLER:</strong>
+            <ul>
+              <li data-i18n="pillar_1_li1">Ar-Ge gücümüz ve geniş ürün yelpazemiz</li>
+              <li data-i18n="pillar_1_li2">Üretim odaklı modelleme ve 48 saatte numune</li>
+              <li data-i18n="pillar_1_li3">İç ve dış zengin tedarik ağımız</li>
+              <li data-i18n="pillar_1_li4">Müşterinin hedef fiyat ve kalite standartlarına özel tasarım</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Hotfix & Taş Baskı -->
+      <div class="master-pillar-card">
+        <div class="pillar-img-header">
+          <img src="assets/ref/cat_hotfix.jpg" alt="Hotfix ve Taş Baskı">
+          <span class="pillar-badge-num">02</span>
+        </div>
+        <div class="pillar-body">
+          <h3 class="pillar-title" data-i18n="pillar_2_title">Hotfix & Taş Baskı</h3>
+          <p class="pillar-text" data-i18n="pillar_2_desc">
+            Firmamız bünyesindeki grafik tasarım, lazer kalıp, otomatik dizim ve pres-montaj ekip ve ekipmanları ile malzeme çeşitliliği ve geniş ürün yelpazesi sunuyoruz.
+          </p>
+          <div class="pillar-spec-box">
+            <strong data-i18n="pillar_2_box_title">ÜRETİM & TEKNOLOJİ ÖZELLİKLERİ:</strong>
+            <ul>
+              <li data-i18n="pillar_2_li1">Lazer kalıphane ile sıfır toleranslı dizim</li>
+              <li data-i18n="pillar_2_li2">Pnömatik pres-montaj parkuru</li>
+              <li data-i18n="pillar_2_li3">Endüstriyel yıkama test standartlarına tam uyum</li>
+              <li data-i18n="pillar_2_li4">Yurt dışı kendi ofisimiz sayesinde kesintisiz taş ithal gücü</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. BSN & Aplik Uygulama -->
+      <div class="master-pillar-card">
+        <div class="pillar-img-header">
+          <img src="assets/ref/cat_bsn.jpg" alt="BSN ve Aplik Uygulama">
+          <span class="pillar-badge-num">03</span>
+        </div>
+        <div class="pillar-body">
+          <h3 class="pillar-title" data-i18n="pillar_3_title">BSN & Aplik Uygulama</h3>
+          <p class="pillar-text" data-i18n="pillar_3_desc">
+            Sektörde genellikle ithal hazır ürün olarak işlem gören bu aksesuarları kendi bünyemizde yapılan koleksiyon ve üretimler ile her türlü seçenek halinde müşterilerimize sunmaktayız.
+          </p>
+          <div class="pillar-spec-box">
+            <strong data-i18n="pillar_3_box_title">KENDİ BÜNYEMİZDE ÜRETİMİN ARTILARI:</strong>
+            <ul>
+              <li data-i18n="pillar_3_li1">Yarı mamul veya bitmiş ürün üzerine doğrudan uygulama</li>
+              <li data-i18n="pillar_3_li2">1 metreden 100.000 metreye kadar esnek sipariş adedi</li>
+              <li data-i18n="pillar_3_li3">BSN polimer hammaddesini doğrudan yurtdışından getirme avantajı</li>
+              <li data-i18n="pillar_3_li4">Özel desen, renk ve farklı kalitelerde geniş koleksiyon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Metal & Taşlı Aksesuar -->
+      <div class="master-pillar-card">
+        <div class="pillar-img-header">
+          <img src="assets/ref/cat_metal.jpg" alt="Metal ve Taşlı Aksesuar">
+          <span class="pillar-badge-num">04</span>
+        </div>
+        <div class="pillar-body">
+          <h3 class="pillar-title" data-i18n="pillar_4_title">Metal & Taşlı Aksesuar</h3>
+          <p class="pillar-text" data-i18n="pillar_4_desc">
+            Metal aksesuarların çeşitliliğine ve standartlarına uygun test garantili fre banyolarımızda istenilen renklerde kaplama yapılmaktadır. Döküm ve kaynak yöntemleriyle broş, agraf ve aksesuarlar üretmekteyiz.
+          </p>
+          <div class="pillar-spec-box">
+            <strong data-i18n="pillar_4_box_title">DONANIM ÇEŞİTLİLİĞİMİZ:</strong>
+            <ul>
+              <li data-i18n="pillar_4_li1">Kaynaklı ve döküm metal aksesuarlar</li>
+              <li data-i18n="pillar_4_li2">Metal taşlı düğmeler (farklı boy, kaplama ve taş rengi)</li>
+              <li data-i18n="pillar_4_li3">Yüksek mukavemetli şerit ve zincir alternatifleri</li>
+              <li data-i18n="pillar_4_li4">Işıl ışıl parlayan D-tırnak kasalı kristal dikme taşlar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. El İşi & Kadın İstihdamı -->
+      <div class="master-pillar-card">
+        <div class="pillar-img-header">
+          <img src="assets/ref/cat_elisi.jpg" alt="El İşi ve Kadın İstihdamı">
+          <span class="pillar-badge-num">05</span>
+        </div>
+        <div class="pillar-body">
+          <h3 class="pillar-title" data-i18n="pillar_5_title">El İşi & Kadın İstihdamı</h3>
+          <p class="pillar-text" data-i18n="pillar_5_desc">
+            Yıllardır edindiğimiz bilgi ve tecrübeyle yüksek adetli üretimlerde çok sayıda kadın zanaatkar ve kalite güvence ekibimizle Türkiye'nin dört bir yanında imalat yapmaktayız.
+          </p>
+          <div class="pillar-spec-box">
+            <strong data-i18n="pillar_5_box_title">SOSYAL SORUMLULUK TAAHHÜDÜMÜZ:</strong>
+            <ul>
+              <li data-i18n="pillar_5_li1">Birinci önceliğimiz kadınların iş kanunları dahilinde hak edişlerini sağlamaktır</li>
+              <li data-i18n="pillar_5_li2">SEDEX onaylı etik tedarik ve sosyal denetim uyumluluğu</li>
+              <li data-i18n="pillar_5_li3">Geleneksel zanaatı endüstriyel kalite ile buluşturma</li>
+              <li data-i18n="pillar_5_li4">Parça başı hassas kalite kontrol</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. İnci & Taş Çakım -->
+      <div class="master-pillar-card">
+        <div class="pillar-img-header">
+          <img src="assets/ref/prod_inci_01.jpg" alt="İnci ve Taş Çakım">
+          <span class="pillar-badge-num">06</span>
+        </div>
+        <div class="pillar-body">
+          <h3 class="pillar-title" data-i18n="pillar_6_title">İnci & Taş Çakım</h3>
+          <p class="pillar-text" data-i18n="pillar_6_desc">
+            İnci ve kasalı taş çakım makine parkurumuz ile çeşitli boy, kalite ve malzemeler ile üretim yapmaktayız. Üretimde kalite odaklı ve test garantili paslanmaz malzemeler kullanılmaktadır.
+          </p>
+          <div class="pillar-spec-box">
+            <strong data-i18n="pillar_6_box_title">ÇAKIM TEKNOLOJİSİ:</strong>
+            <ul>
+              <li data-i18n="pillar_6_li1">Kılçıklı çivi, uzun çivi ve vidalı çivi teknikleri</li>
+              <li data-i18n="pillar_6_li2">Ağır denim ve triko kumaşlarda kopmaz mukavemet</li>
+              <li data-i18n="pillar_6_li3">Soyulmayan ve sararmayan parlak inci kaplaması</li>
+              <li data-i18n="pillar_6_li4">Yıkama ve kurutma testlerinden tam onay</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İnteraktif Büyüteç (0.1mm Hassasiyet Deneyimi) -->
+  <section class="section-couture macro-inspection-section" id="makro-lens">
+    <div class="macro-layout">
+      <div class="macro-text-side">
+        <div class="title-meta">
+          <span class="section-number" data-i18n="sec_04_num">04</span>
+          <span class="section-eyebrow" data-i18n="sec_04_eyebrow">0.1MM HASSASİYET DENEYİMİ</span>
+        </div>
+        <h2 class="section-headline">
+          <span class="light-italic" data-i18n="sec_04_h_light">Mikro Doku,</span>
+          <span class="bold-caps" data-i18n="sec_04_h_bold">0.1MM BÜYÜTEÇ</span>
+        </h2>
+        <p class="macro-copy" data-i18n="macro_desc">
+          Gerçek lüks çıplak gözle değil, mikroskopik dokunuşta gizlidir. Nikel ve kurşunsuz test onaylı fre banyolarımız, mikro-lazerle oyulmuş armalarımız ve D-tırnak pırlanta kesim kristal yuvalarımızı büyütülmüş lens ile canlı olarak inceleyin.
+        </p>
+
+        <div class="macro-specs-list">
+          <div class="spec-bullet">
+            <span class="bullet-gold">✦</span>
+            <div>
+              <strong data-i18n="macro_spec_1_title">Nikel-Free & Kurşunsuz Fre Banyoları</strong>
+              <p data-i18n="macro_spec_1_p">Tuzlu su, ter ve sürtünme testlerinde 48 saat sıfır oksidasyon garantisi.</p>
+            </div>
+          </div>
+          <div class="spec-bullet">
+            <span class="bullet-gold">✦</span>
+            <div>
+              <strong data-i18n="macro_spec_2_title">D-Tırnak Kasalı Kristal Montajı</strong>
+              <p data-i18n="macro_spec_2_p">Tekstil üzerinde dönme ve düşme yapmayan 4 noktalı mikro kavrama sistemi.</p>
+            </div>
+          </div>
+          <div class="spec-bullet">
+            <span class="bullet-gold">✦</span>
+            <div>
+              <strong data-i18n="macro_spec_3_title">Mikron Hassasiyetinde Döküm & Kaynak</strong>
+              <p data-i18n="macro_spec_3_p">İtalyan standardında pürüzsüz çapak alma ve ayna polisajı.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="macro-hint-badge">
+          <span data-i18n="macro_hint">🔍 FARENİZİ GÖRSELİN ÜZERİNE GETİRİN & BÜYÜTEÇ İLE DOKULARI KEŞFEDİN</span>
+        </div>
+      </div>
+
+      <!-- İnteraktif Büyüteç Alanı -->
+      <div class="macro-interactive-stage" id="loupeStage">
+        <div class="loupe-frame hover-reveal" data-cursor="BÜYÜT">
+          <img src="assets/macro_metal.jpg" alt="Makro Donanım Detayı" class="macro-base-img" id="loupeBaseImg">
+          <div class="loupe-lens" id="loupeLens"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Koleksiyon & Lookbook Kataloğu (Referanstaki Tüm Orijinal Ürünler) -->
+  <section class="section-couture lookbook-master-section" id="koleksiyon">
+    <div class="section-title-wrap">
+      <div class="title-meta">
+        <span class="section-number" data-i18n="sec_05_num">05</span>
+        <span class="section-eyebrow" data-i18n="sec_05_eyebrow">DİJİTAL SHOWROOM & NUMUNE MERKEZİ</span>
+      </div>
+      <h2 class="section-headline">
+        <span class="light-italic" data-i18n="sec_05_h_light">Seçkin Donanım</span>
+        <span class="bold-caps" data-i18n="sec_05_h_bold">ÜRÜN KATALOĞU</span>
+      </h2>
+      <p class="section-desc" data-i18n="sec_05_desc">
+        Pınaraks arşivinden taranmış gerçek ürün portföyü. Beğendiğiniz modellerin altındaki '+ NUMUNE EKLE' butonuna tıklayarak sepetinize dahil edebilir, fiziksel numune talep edebilirsiniz.
+      </p>
+    </div>
+
+    <!-- Filtre Sekmeleri -->
+    <div class="runway-filters" id="runwayFilters">
+      <button class="runway-tab active" data-filter="all" data-i18n="tab_all">TÜM ÜRÜNLER</button>
+      <button class="runway-tab" data-filter="metal" data-i18n="tab_metal">METAL & TAŞLI DONANIM</button>
+      <button class="runway-tab" data-filter="hotfix" data-i18n="tab_hotfix">HOTFIX & TAŞ BASKI</button>
+      <button class="runway-tab" data-filter="bsn" data-i18n="tab_bsn">BSN & APLİK UYGULAMA</button>
+      <button class="runway-tab" data-filter="elisi" data-i18n="tab_elisi">ZANAATKAR EL İŞİ</button>
+      <button class="runway-tab" data-filter="inci" data-i18n="tab_inci">İNCİ & TAŞ ÇAKIM</button>
+    </div>
+
+    <!-- Yatay Kaydırılabilir / Grid Ürün Vitrini -->
+    <div class="runway-rail-container" id="runwayRailContainer">
+      <div class="runway-rail" id="runwayRail">
+        <!-- app.js ve translations.js tarafından dinamik olarak render edilir -->
+      </div>
+    </div>
+
+    <div class="runway-controls">
+      <button class="rail-nav-btn prev" id="railPrev" aria-label="Önceki">&larr;</button>
+      <div class="rail-indicator" id="railIndicator">
+        <span class="rail-active-num">01</span> / <span class="rail-total-num">12</span>
+      </div>
+      <button class="rail-nav-btn next" id="railNext" aria-label="Sonraki">&rarr;</button>
+    </div>
+  </section>
+
+  <!-- SEDEX, Sosyal Sorumluluk & Sertifikalar (Gerçek Referans Belgeleri) -->
+  <section class="section-couture heritage-section" id="sedex">
+    <div class="heritage-split">
+      <div class="heritage-image-frame">
+        <img src="assets/atelier_craft.jpg" alt="Kadın Zanaatkar El Emeği" class="heritage-img">
+        <div class="heritage-stamp">
+          <img src="assets/ref/sedex.png" alt="SEDEX Member" class="sedex-mini-badge">
+          <span class="stamp-text" data-i18n="sedex_stamp">SEDEX MEMBER #TR-PINARAKS</span>
+        </div>
+      </div>
+
+      <div class="heritage-story">
+        <div class="title-meta">
+          <span class="section-number" data-i18n="sec_06_num">06</span>
+          <span class="section-eyebrow" data-i18n="sec_06_eyebrow">SOSYAL SORUMLULUK & ETİK İSTİHDAM</span>
+        </div>
+        <h2 class="section-headline">
+          <span class="light-italic" data-i18n="sec_06_h_light">Kadın Emeği ve</span>
+          <span class="bold-caps" data-i18n="sec_06_h_bold">SOSYAL GÜVENCE</span>
+        </h2>
+        <p class="heritage-paragraph" data-i18n="heritage_desc">
+          El işi branşımızda imalat yaparken birinci önceliğimiz sosyal sorumluluk kapsamında el işi yapan bayanların emeklerinin iş kanunları dahilinde hak edişlerini sağlamaktır. Yıllardır edindiğimiz deneyim ile yüksek adetli siparişlerde Türkiye'nin dört bir yanındaki usta kadınlarımızla birlikte çalışmaktan onur duyuyoruz.
+        </p>
+
+        <!-- Orijinal Sertifika Rozetleri Grid -->
+        <div class="certs-master-grid">
+          <div class="cert-card-box">
+            <img src="assets/ref/sedex.png" alt="SEDEX Member">
+            <div>
+              <strong data-i18n="cert_sedex_title">SEDEX Member</strong>
+              <span data-i18n="cert_sedex_desc">Etik Tedarik Zinciri ve Bağımsız Sosyal Denetim</span>
+            </div>
+          </div>
+          <div class="cert-card-box">
+            <img src="assets/ref/iso_kalite.png" alt="ISO 9001">
+            <div>
+              <strong data-i18n="cert_iso9001_title">ISO 9001</strong>
+              <span data-i18n="cert_iso9001_desc">Kalite Yönetim Sistemi Standardı</span>
+            </div>
+          </div>
+          <div class="cert-card-box">
+            <img src="assets/ref/iso_cevre.png" alt="ISO 14001">
+            <div>
+              <strong data-i18n="cert_iso14001_title">ISO 14001</strong>
+              <span data-i18n="cert_iso14001_desc">Çevre Yönetim Sistemi & Ekolojik Üretim</span>
+            </div>
+          </div>
+          <div class="cert-card-box">
+            <img src="assets/ref/iso_is_sagligi.png" alt="ISO 45001">
+            <div>
+              <strong data-i18n="cert_iso45001_title">ISO 45001</strong>
+              <span data-i18n="cert_iso45001_desc">İş Sağlığı ve Güvenliği Yönetimi</span>
+            </div>
+          </div>
+          <div class="cert-card-box">
+            <img src="assets/ref/iso_musteri.png" alt="ISO 10002">
+            <div>
+              <strong data-i18n="cert_iso10002_title">ISO 10002</strong>
+              <span data-i18n="cert_iso10002_desc">Müşteri Memnuniyeti Yönetim Sistemi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Müşteri Değerlendirmeleri (Referans Sitedeki Gerçek İfadeler) -->
+  <section class="section-couture testimonials-slider-section">
+    <div class="section-title-wrap text-center">
+      <div class="title-meta justify-center">
+        <span class="section-number" data-i18n="sec_07_num">07</span>
+        <span class="section-eyebrow" data-i18n="sec_07_eyebrow">MÜŞTERİLERİMİZDEN BAZILARI</span>
+      </div>
+      <h2 class="section-headline">
+        <span class="light-italic" data-i18n="sec_07_h_light">Çözüm Ortaklarımız</span>
+        <span class="bold-caps" data-i18n="sec_07_h_bold">NELER DEDİLER?</span>
+      </h2>
+    </div>
+
+    <div class="testimonials-deck">
+      <div class="deck-quote-card">
+        <span class="deck-quote-icon">“</span>
+        <p class="deck-quote-p" data-i18n="quote_1_p">
+          "Araştırma geliştirme anlamında bize büyük destek olan, güncel malzeme alternatifleri ile her zaman hızlı ve geliştirici servis aldığımız Pınar Bijuteri ile çalışmak bizim için her zaman keyifli ve verimli olmuştur."
+        </p>
+        <div class="deck-quote-author">
+          <strong data-i18n="quote_1_author">Koleksiyon & Satınalma Direktörlüğü</strong>
+          <span data-i18n="quote_1_brand">Global İhracat Moda Markası</span>
+        </div>
+      </div>
+
+      <div class="deck-quote-card">
+        <span class="deck-quote-icon">“</span>
+        <p class="deck-quote-p" data-i18n="quote_2_p">
+          "Yaptığımız birçok koleksiyon ve üretimde farklı ülke ve farklı zevklere ürün hazırlarken, ürün geliştirme kabiliyetleri, sistemli ve programlı çalışmaları ve tabi ki zengin çeşitleriyle iyi ki yanımızdalar."
+        </p>
+        <div class="deck-quote-author">
+          <strong data-i18n="quote_2_author">Tasarım Ekibi</strong>
+          <span data-i18n="quote_2_brand">Uluslararası Hazır Giyim Markası</span>
+        </div>
+      </div>
+
+      <div class="deck-quote-card">
+        <span class="deck-quote-icon">“</span>
+        <p class="deck-quote-p" data-i18n="quote_3_p">
+          "Araştırma ve Geliştirmede, Bilgi aktarımında, kalitede en büyük desteğinizi verdiğinizden ötürü Nu ailesi olarak her zaman Pınar Bijuteri / Pınaraks ile çalışmaktan mutluluk duyuyoruz."
+        </p>
+        <div class="deck-quote-author">
+          <strong data-i18n="quote_3_author">Nu İstanbul Tasarım Ailesi</strong>
+          <span data-i18n="quote_3_brand">Nu Giyim Sanayi</span>
+        </div>
+      </div>
+
+      <div class="deck-quote-card">
+        <span class="deck-quote-icon">“</span>
+        <p class="deck-quote-p" data-i18n="quote_4_p">
+          "Sektörde işini hızlı ve titizlik ile yürüten, özellikle Seda hanımın ilgisi ve özverili servisi ile Pınar Aksesuarla çalışmak her zaman keyifli olmuştur."
+        </p>
+        <div class="deck-quote-author">
+          <strong data-i18n="quote_4_author">Koleksiyon Yöneticisi</strong>
+          <span data-i18n="quote_4_brand">Hazır Giyim İhracat Evi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İletişim, Randevu & B2B Teklif Formu (Referans Bilgileriyle) -->
+  <section class="section-couture concierge-section" id="iletisim">
+    <div class="concierge-container">
+      <div class="concierge-card">
+        <div class="concierge-header">
+          <span class="concierge-tag" data-i18n="concierge_tag">BİR SONRAKİ PROJENİZ HAKKINDA KONUŞALIM</span>
+          <h2 class="concierge-title" data-i18n="concierge_title">Güngören Merkez Showroom & B2B Teklif Hattı</h2>
+          <p class="concierge-desc" data-i18n="concierge_desc">
+            Numune talepleriniz, Ar-Ge ve kalıp çizimleriniz, özel fiyat teklifi veya Güngören Gedikli Plaza showroom ziyareti için form üzerinden veya doğrudan WhatsApp ile irtibata geçebilirsiniz.
+          </p>
+        </div>
+
+        <div class="concierge-grid">
+          <!-- Sol Bilgi Kolonu -->
+          <div class="concierge-direct">
+            <div class="direct-row">
+              <span class="direct-icon">📍</span>
+              <div>
+                <strong data-i18n="contact_addr_title">Adres:</strong>
+                <p data-i18n="contact_addr_text">Sanayi mahallesi güvenç sokak gedikli plaza no 11 kat:1 34160 Güngören / İstanbul</p>
+              </div>
+            </div>
+
+            <div class="direct-row">
+              <span class="direct-icon">📞</span>
+              <div>
+                <strong data-i18n="contact_phone_title">İletişim Hattımız:</strong>
+                <p>
+                  <a href="tel:+905436970755">+90 (543) 697 07 55</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="direct-row">
+              <span class="direct-icon">💬</span>
+              <div>
+                <strong data-i18n="contact_gsm_title">GSM & WhatsApp Showroom Hattı:</strong>
+                <p><a href="tel:+905436970755" class="highlight-tel">+90 (543) 697 07 55</a></p>
+              </div>
+            </div>
+
+            <div class="direct-row">
+              <span class="direct-icon">✉️</span>
+              <div>
+                <strong data-i18n="contact_email_title">E-Posta:</strong>
+                <p><a href="mailto:info@pinaraks.com">info@pinaraks.com</a></p>
+              </div>
+            </div>
+
+            <!-- WhatsApp Doğrudan Buton -->
+            <a href="https://wa.me/905436970755?text=Merhaba,%20P%C4%B1naraks%20web%20sitenizden%20ula%C5%9F%C4%B1yorum.%20Numune%20ve%20koleksiyonlar%C4%B1n%C4%B1z%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum." target="_blank" class="btn-whatsapp-vip hover-reveal" id="directWaLink">
+              <span data-i18n="btn_wa_vip">WHATSAPP SHOWROOM HATTINA BAĞLAN</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.586-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.18-.54-1.896-.782-3.117-2.73-3.212-2.857-.095-.128-.772-1.029-.772-1.961 0-.933.489-1.391.662-1.583.174-.192.379-.24.506-.24.127 0 .254.002.365.008.118.006.276-.045.431.328.16.386.549 1.339.598 1.437.049.098.082.213.016.344-.066.13-.099.212-.196.326-.098.115-.206.257-.294.345-.098.098-.2.205-.086.401.114.196.508.838 1.09 1.356.749.667 1.381.873 1.577.971.196.098.311.082.425-.049.115-.131.492-.573.623-.77.131-.197.262-.164.442-.098.18.066 1.146.54 1.343.639.197.098.328.147.377.23.049.082.049.475-.095.88zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.98-1.306C8.423 21.536 10.153 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+            </a>
+          </div>
+
+          <!-- Sağ Form Kolonu -->
+          <form class="concierge-form" id="conciergeForm">
+            <div class="input-duo">
+              <div class="input-field">
+                <label for="cName" data-i18n="form_label_name">Adınız Soyadınız *</label>
+                <input type="text" id="cName" required placeholder="Örn: Seda Kaya" data-i18n-ph="form_ph_name">
+              </div>
+              <div class="input-field">
+                <label for="cBrand" data-i18n="form_label_brand">Firma / Marka Adınız *</label>
+                <input type="text" id="cBrand" required placeholder="Örn: İpekyol Tekstil" data-i18n-ph="form_ph_brand">
+              </div>
+            </div>
+
+            <div class="input-duo">
+              <div class="input-field">
+                <label for="cPhone" data-i18n="form_label_phone">Telefon Numaranız *</label>
+                <input type="tel" id="cPhone" required placeholder="Örn: +90 543 697 07 55" data-i18n-ph="form_ph_phone">
+              </div>
+              <div class="input-field">
+                <label for="cEmail" data-i18n="form_label_email">Kurumsal E-Posta *</label>
+                <input type="email" id="cEmail" required placeholder="Örn: seda@ipekyol.com.tr" data-i18n-ph="form_ph_email">
+              </div>
+            </div>
+
+            <div class="input-field">
+              <label for="cDiscipline" data-i18n="form_label_discipline">İlgilendiğiniz Uzmanlık Alanı</label>
+              <select id="cDiscipline">
+                <option value="Metal & Döküm Donanım" data-i18n="form_opt_disc_1">Nikel-Free Metal & Döküm Donanım</option>
+                <option value="Hotfix Taş Baskı" data-i18n="form_opt_disc_2">Hotfix Lazer Taş & Zımba Baskı</option>
+                <option value="BSN & Aplik" data-i18n="form_opt_disc_3">BSN Termal Aplik Uygulama</option>
+                <option value="El İşi & Nakış" data-i18n="form_opt_disc_4">Zanaatkar Kadın El İşi & Nakış</option>
+                <option value="İnci & Taş Çakım" data-i18n="form_opt_disc_5">Otomatik İnci & Taş Çakım</option>
+                <option value="Koleksiyon & Ar-Ge Desteği" data-i18n="form_opt_disc_6">Kapsamlı Koleksiyon & Ar-Ge Desteği</option>
+              </select>
+            </div>
+
+            <div class="input-field">
+              <label for="cMessage" data-i18n="form_label_message">Proje Detayları & Numune Talebi</label>
+              <textarea id="cMessage" rows="4" placeholder="Termin hedefiniz, tahmini adet veya incelemek istediğiniz referans modelleri belirtiniz..." data-i18n-ph="form_ph_message"></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit-vip hover-reveal" id="btnConciergeSubmit">
+              <span data-i18n="btn_form_submit">TALEBİ & NUMUNE İSTEĞİNİ GÖNDER</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lüks Footer -->
+  <footer class="couture-footer">
+    <div class="footer-inner">
+      <div class="footer-marquee-line">
+        <span class="f-brand-huge">PINARAKS</span>
+        <span class="f-brand-huge" data-i18n="f_brand_motto">ÜRÜNE DEĞER KATAN DOKUNUŞLAR</span>
+        <span class="f-brand-huge">İSTANBUL</span>
+      </div>
+
+      <div class="footer-cols">
+        <div class="f-col">
+          <span class="f-title" data-i18n="f_hq_title">GENEL MERKEZ & FABRİKA</span>
+          <p>
+            Sanayi Mahallesi, Güvenç Sokak<br>
+            Gedikli Plaza No:11 Kat:1<br>
+            34160 Güngören / İstanbul, TÜRKİYE
+          </p>
+        </div>
+
+        <div class="f-col">
+          <span class="f-title" data-i18n="f_contact_title">TELEFON & İRTİBAT</span>
+          <p>
+            Tel / WhatsApp: <a href="tel:+905436970755" class="footer-tel-link">+90 (543) 697 07 55</a><br>
+            GSM Showroom: <a href="tel:+905436970755" class="footer-tel-link">+90 (543) 697 07 55</a>
+          </p>
+        </div>
+
+        <div class="f-col">
+          <span class="f-title" data-i18n="f_email_title">E-POSTA</span>
+          <p>
+            <span data-i18n="f_email_corp">Kurumsal:</span> <a href="mailto:info@pinaraks.com">info@pinaraks.com</a><br>
+            <span data-i18n="f_email_design">Tasarım:</span> <a href="mailto:tasarim@pinaraks.com">tasarim@pinaraks.com</a>
+          </p>
+        </div>
+
+        <div class="f-col">
+          <span class="f-title" data-i18n="f_certs_title">SERTİFİKASYONLAR</span>
+          <p>
+            SEDEX Member #TR-PINARAKS<br>
+            ISO 9001 • ISO 10002 • ISO 14001 • ISO 45001<br>
+            Nikel-Free & Kurşunsuz Test Garantili
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <span data-i18n="f_legal_copy">© 2026 PINARAKS (Pınar Aksesuar & Bijuteri). Tüm Hakları Saklıdır.</span>
+        <div class="legal-links">
+          <span data-i18n="f_legal_privacy">Gizlilik Politikası</span>
+          <span>•</span>
+          <span data-i18n="f_legal_kvkk">KVKK Aydınlatma Metni</span>
+          <span>•</span>
+          <span data-i18n="f_legal_sedex">SEDEX Etik Taahhüdü</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Numune Çantası Yan Çekmecesi -->
+  <div class="drawer-scrim" id="drawerScrim"></div>
+  <aside class="haute-drawer" id="hauteDrawer" aria-label="Numune Çantası">
+    <div class="drawer-top-bar">
+      <div class="drawer-label">
+        <span class="dot-gold"></span>
+        <h3 data-i18n="drawer_title">B2B NUMUNE ÇANTANIZ</h3>
+      </div>
+      <button class="drawer-exit-btn" id="drawerExitBtn" aria-label="Kapat">&times;</button>
+    </div>
+
+    <div class="drawer-content" id="drawerContent">
+      <div class="drawer-empty-state" id="drawerEmptyState">
+        <div class="empty-monogram">P</div>
+        <h4 data-i18n="drawer_empty_title">Çantanızda henüz numune bulunmuyor</h4>
+        <p data-i18n="drawer_empty_desc">Koleksiyon kataloğumuzdaki modellerin altındaki '+ NUMUNE EKLE' butonuna tıklayarak incelemek istediğiniz parçaları listenize dahil edin.</p>
+      </div>
+      <div class="drawer-bag-items" id="drawerBagItems"></div>
+    </div>
+
+    <div class="drawer-checkout-area" id="drawerCheckoutArea">
+      <div class="drawer-count-row">
+        <span data-i18n="drawer_count_label">Seçilen Numune Adedi:</span>
+        <strong id="drawerItemsCount">0 Model</strong>
+      </div>
+      <button class="btn-checkout-wa hover-reveal" id="btnDispatchWa">
+        <span data-i18n="drawer_btn_wa">NUMUNE LİSTESİNİ WHATSAPP İLE GÖNDER</span>
+      </button>
+      <button class="btn-checkout-mail hover-reveal" id="btnDispatchMail">
+        <span data-i18n="drawer_btn_mail">E-POSTA İLE NUMUNE DÖKÜMÜ İSTE</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Yüksek Çözünürlüklü Ürün Detay Modalı -->
+  <div class="couture-modal" id="coutureModal">
+    <div class="modal-backdrop-blur"></div>
+    <div class="modal-stage">
+      <button class="modal-exit" id="modalExitBtn">&times;</button>
+      <div class="modal-two-columns">
+        <div class="modal-photo-chamber">
+          <img src="" alt="Ürün Detayı" id="modalTargetImg">
+        </div>
+        <div class="modal-info-chamber">
+          <span class="modal-discipline" id="modalDiscipline">UZMANLIK ALANI</span>
+          <h3 class="modal-item-name" id="modalItemName">Model Adı</h3>
+          <span class="modal-sku" id="modalSku">ÜRÜN KODU</span>
+          <p class="modal-essay" id="modalEssay">Açıklama</p>
+          
+          <div class="modal-tech-specs">
+            <div class="tech-row">
+              <span class="tech-label" data-i18n="modal_tech_field_label">Kullanım Alanı:</span>
+              <span class="tech-val" id="modalField">Hazır Giyim / Denim / Haute-Couture</span>
+            </div>
+            <div class="tech-row">
+              <span class="tech-label" data-i18n="modal_tech_plating_label">Galvanik Kaplama:</span>
+              <span class="tech-val" data-i18n="modal_tech_plating_val">Nikel-Free / Kurşunsuz Test Garantili Fre Banyosu</span>
+            </div>
+            <div class="tech-row">
+              <span class="tech-label" data-i18n="modal_tech_cap_label">Üretim Kapasitesi:</span>
+              <span class="tech-val" data-i18n="modal_tech_cap_val">Numunede 48 Saat / Seri Üretimde 100.000+ mt Esneklik</span>
+            </div>
+          </div>
+
+          <div class="modal-button-strip">
+            <button class="btn-modal-add" id="modalAddBtn" data-i18n="modal_btn_add">NUMUNE ÇANTAMA EKLE</button>
+            <a href="https://wa.me/905436970755" target="_blank" class="btn-modal-wa" id="modalWaBtn" data-i18n="modal_btn_wa">Bu Modeli WhatsApp'tan Sor</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="translations.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
