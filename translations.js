@@ -25,7 +25,7 @@ const TRANSLATIONS = {
     nav_defile: "DEFİLE",
     nav_hakkimizda: "HAKKIMIZDA",
     nav_uretim: "ÜRETİM & AR-GE",
-    nav_koleksiyon: "KOLEKSİYON",
+    nav_koleksiyon: "BRANŞLARIMIZ & İŞLERİMİZ",
     nav_makro: "0.1MM BÜYÜTEÇ",
     nav_sedex: "SEDEX & ETİK",
     nav_referanslar: "REFERANSLAR",
@@ -45,7 +45,7 @@ const TRANSLATIONS = {
     hero_sub: "KÜRESEL MODA DEVLERİ VE HAUTE COUTURE İÇİN DONANIM MİMARİSİ",
     hero_lead: "Pınaraks olarak 35 yıllık kurumsal Ar-Ge ve imalat tecrübemizle; Zara, Beymen Club ve dünya moda haftalarında yürüyen küresel markaların nikel-free metal donanım, lazer kalıplı taş baskı ve zanaatkar kadın emeği vizyonunu inşa ediyoruz.",
     hero_cta_defile: "CANLI DEFİLEYİ İZLE",
-    hero_cta_catalog: "ÜRÜN KATALOĞU",
+    hero_cta_catalog: "YAPTIĞIMIZ İŞLER & BRANŞLAR",
     scroll_text: "DEFİLE VE DETAYLAR",
 
     // Section 1: Defile Stage
@@ -165,13 +165,13 @@ const TRANSLATIONS = {
     macro_spec_3_p: "İtalyan standardında pürüzsüz çapak alma ve ayna polisajı.",
     macro_hint: "🔍 FARENİZİ GÖRSELİN ÜZERİNE GETİRİN & BÜYÜTEÇ İLE DOKULARI KEŞFEDİN",
 
-    // Section 5: Collection
+    // Section 5: Disciplines & Works
     sec_05_num: "05",
-    sec_05_eyebrow: "DİJİTAL SHOWROOM & NUMUNE MERKEZİ",
-    sec_05_h_light: "Seçkin Donanım",
-    sec_05_h_bold: "ÜRÜN KATALOĞU",
-    sec_05_desc: "Pınaraks arşivinden taranmış gerçek ürün portföyü. Beğendiğiniz modellerin altındaki '+ NUMUNE EKLE' butonuna tıklayarak sepetinize dahil edebilir, fiziksel numune talep edebilirsiniz.",
-    tab_all: "TÜM ÜRÜNLER",
+    sec_05_eyebrow: "BÜNYEMİZDEKİ UZMANLIK BRANŞLARI & ATÖLYE İCRAATLERİMİZ",
+    sec_05_h_light: "Bünyemizdeki Branşlar &",
+    sec_05_h_bold: "YAPTIĞIMIZ İŞLER",
+    sec_05_desc: "Burada sergilenen parçalar sıradan bir ürün kataloğu değil; Pınaraks bünyesinde barındırdığımız entegre üretim branşlarının ve dünya markalarına sunduğumuz zanaat kabiliyetlerinin somut referanslarıdır. Metal dökümden BSN apliklere, lazer taş baskıdan kadın zanaatkarlarımızın el işlemesine kadar her branşı kendi atölyelerimizde icra ediyor, markanıza özel numuneler üretiyoruz.",
+    tab_all: "TÜM BRANŞLAR & İŞLER",
     tab_metal: "METAL & TAŞLI DONANIM",
     tab_hotfix: "HOTFIX & TAŞ BASKI",
     tab_bsn: "BSN & APLİK UYGULAMA",
@@ -181,7 +181,7 @@ const TRANSLATIONS = {
     cursor_inspect: "İNCELE",
     cursor_zoom: "BÜYÜT",
     cursor_defile: "DEFİLE",
-    cursor_catalog: "KATALOG",
+    cursor_catalog: "İŞLERİMİZ",
 
     // Section 6: Sedex & Heritage
     sec_06_num: "06",
@@ -269,7 +269,7 @@ const TRANSLATIONS = {
     // Sample Bag Drawer
     drawer_title: "B2B NUMUNE ÇANTANIZ",
     drawer_empty_title: "Çantanızda henüz numune bulunmuyor",
-    drawer_empty_desc: "Koleksiyon kataloğumuzdaki modellerin altındaki '+ NUMUNE EKLE' butonuna tıklayarak incelemek istediğiniz parçaları listenize dahil edin.",
+    drawer_empty_desc: "Bünyemizdeki branşlar ve yaptığımız işler altındaki '+ NUMUNE EKLE' butonuna tıklayarak incelemek istediğiniz referans modelleri listenize dahil edin.",
     drawer_count_label: "Seçilen Numune Adedi:",
     drawer_count_unit: "Model Parça",
     drawer_btn_wa: "NUMUNE LİSTESİNİ WHATSAPP İLE GÖNDER",
@@ -290,12 +290,12 @@ const TRANSLATIONS = {
     alert_form_thanks: "Talebiniz Pınaraks atölye ve Ar-Ge ekibimize iletilmiştir. 24 saat içinde dönüş sağlanacaktır.",
     prompt_wa_speedup: "Talebinizi hızlandırmak için doğrudan Showroom WhatsApp hattımıza aktarmak ister misiniz?",
     alert_bag_empty: "Lütfen önce numune çantanıza en az bir model ekleyin.",
-    wa_sample_header: "Merhaba Pınaraks Showroom, Web sitenizdeki katalog üzerinden aşağıdaki modeller için fiziksel numune talep ediyorum:\n\n",
+    wa_sample_header: "Merhaba Pınaraks Showroom, Web sitenizdeki bünyenizde bulunan branşlar ve yaptığınız işler üzerinden aşağıdaki referans modeller için fiziksel numune talep ediyorum:\n\n",
     wa_sample_footer: "\nFirma ve teslimat adresimizi paylaşabilmemiz için dönüş rica ederim.",
     wa_single_ask: "Merhaba Pınaraks Showroom, {sku} kodlu \"{name}\" modeli hakkında detaylı numune ve termin bilgisi almak istiyorum.",
     wa_form_msg: "Merhaba Pınaraks Showroom, Web sitenizden teklif/numune talebi gönderdim:\nİsim: {name}\nFirma: {brand}\nBranş: {disc}\nNot: {note}",
     mail_sample_subject: "Pınaraks Web Sitesi Numune Talebi",
-    mail_sample_body_header: "Merhaba Pınaraks Satış Ekibi,%0D%0A%0D%0AYeni sezon koleksiyonumuz için aşağıdaki ürün kodlarına ait fiziksel numune talep ediyorum:%0D%0A%0D%0A",
+    mail_sample_body_header: "Merhaba Pınaraks Satış Ekibi,%0D%0A%0D%0ABünyenizdeki branşlar ve yaptığınız işler arasından aşağıdaki referans modeller için fiziksel numune talep ediyorum:%0D%0A%0D%0A",
     mail_sample_body_footer: "%0D%0AFirma Adı:%0D%0ATelefon / Yetkili:%0D%0ATeslimat Adresi:%0D%0A"
   },
 
@@ -319,7 +319,7 @@ const TRANSLATIONS = {
     nav_defile: "RUNWAY",
     nav_hakkimizda: "ABOUT US",
     nav_uretim: "PRODUCTION & R&D",
-    nav_koleksiyon: "COLLECTION",
+    nav_koleksiyon: "DISCIPLINES & WORKS",
     nav_makro: "0.1MM MACRO LENS",
     nav_sedex: "SEDEX & ETHICS",
     nav_referanslar: "CLIENTS",
@@ -339,7 +339,7 @@ const TRANSLATIONS = {
     hero_sub: "HARDWARE ARCHITECTURE FOR GLOBAL FASHION GIANTS & HAUTE COUTURE",
     hero_lead: "Backed by 35 years of corporate R&D and manufacturing mastery, Pınaraks engineers certified nickel-free metal hardware, laser-set rhinestone transfers, and artisanal handcraft for leading brands gracing world runways.",
     hero_cta_defile: "WATCH LIVE RUNWAY",
-    hero_cta_catalog: "PRODUCT CATALOG",
+    hero_cta_catalog: "OUR DISCIPLINES & WORKS",
     scroll_text: "RUNWAY & DETAILS",
 
     // Section 1: Defile Stage
@@ -459,13 +459,13 @@ const TRANSLATIONS = {
     macro_spec_3_p: "Italian standard deburring followed by multi-stage mirror buffing.",
     macro_hint: "🔍 HOVER YOUR MOUSE OVER THE IMAGE & EXPLORE MICROSCOPIC DETAILS",
 
-    // Section 5: Collection
+    // Section 5: Disciplines & Works
     sec_05_num: "05",
-    sec_05_eyebrow: "DIGITAL SHOWROOM & SAMPLE DESK",
-    sec_05_h_light: "Signature Hardware",
-    sec_05_h_bold: "PRODUCT CATALOG",
-    sec_05_desc: "Archived physical pieces scanned from the Pınaraks vault. Click '+ ADD SAMPLE' on any design to assemble your curated sample bag and request physical trial units.",
-    tab_all: "ALL PRODUCTS",
+    sec_05_eyebrow: "IN-HOUSE PRODUCTION DISCIPLINES & ATELIER WORKS",
+    sec_05_h_light: "In-House Disciplines &",
+    sec_05_h_bold: "OUR CRAFTS & WORKS",
+    sec_05_desc: "These pieces are not an ordinary static product catalog; they represent Pınaraks' integrated in-house manufacturing disciplines, artisan craftsmanship, and verified production works executed for global fashion giants. Explore our specialized divisions and request physical reference samples.",
+    tab_all: "ALL DISCIPLINES & WORKS",
     tab_metal: "METAL & CRYSTAL HARDWARE",
     tab_hotfix: "HOTFIX & STONE TRANSFER",
     tab_bsn: "BSN & APPLIQUE",
@@ -475,7 +475,7 @@ const TRANSLATIONS = {
     cursor_inspect: "INSPECT",
     cursor_zoom: "ZOOM",
     cursor_defile: "RUNWAY",
-    cursor_catalog: "CATALOG",
+    cursor_catalog: "OUR WORKS",
 
     // Section 6: Sedex & Heritage
     sec_06_num: "06",
@@ -563,7 +563,7 @@ const TRANSLATIONS = {
     // Sample Bag Drawer
     drawer_title: "YOUR B2B SAMPLE BAG",
     drawer_empty_title: "No samples selected yet",
-    drawer_empty_desc: "Explore our collection catalog and click '+ ADD SAMPLE' on any piece to request physical trial models for your design board.",
+    drawer_empty_desc: "Explore our in-house disciplines and reference works, then click '+ ADD SAMPLE' on any piece to request physical trial models for your design board.",
     drawer_count_label: "Selected Samples:",
     drawer_count_unit: "Models",
     drawer_btn_wa: "DISPATCH SAMPLE LIST VIA WHATSAPP",
@@ -584,12 +584,12 @@ const TRANSLATIONS = {
     alert_form_thanks: "Thank you. Your request has been transmitted to our R&D and showroom team. We will revert within 24 hours.",
     prompt_wa_speedup: "Would you like to fast-track your request directly to our Showroom WhatsApp line?",
     alert_bag_empty: "Please add at least one sample model to your bag.",
-    wa_sample_header: "Hello Pınaraks Showroom, I would like to request physical samples for the following models from your website catalog:\n\n",
+    wa_sample_header: "Hello Pınaraks Showroom, I would like to request physical reference samples for the following models from your in-house disciplines and works:\n\n",
     wa_sample_footer: "\nPlease advise on lead time and dispatch arrangements.",
     wa_single_ask: "Hello Pınaraks Showroom, I would like to receive detailed sample specs and lead time for model {sku} ({name}).",
     wa_form_msg: "Hello Pınaraks Showroom, I have submitted an inquiry via your website:\nName: {name}\nCompany: {brand}\nDiscipline: {disc}\nNote: {note}",
     mail_sample_subject: "Pınaraks Physical Sample Request",
-    mail_sample_body_header: "Hello Pınaraks Sales Team,%0D%0A%0D%0AI would like to request physical samples for our upcoming seasonal collection for the following SKU items:%0D%0A%0D%0A",
+    mail_sample_body_header: "Hello Pınaraks Sales Team,%0D%0A%0D%0AWe would like to request physical reference samples for the following works executed within your in-house disciplines:%0D%0A%0D%0A",
     mail_sample_body_footer: "%0D%0ACompany Name:%0D%0AContact / Phone:%0D%0ADelivery Address:%0D%0A"
   },
 
@@ -613,7 +613,7 @@ const TRANSLATIONS = {
     nav_defile: "عرض الأزياء",
     nav_hakkimizda: "من نحن",
     nav_uretim: "الإنتاج والبحث والتطوير",
-    nav_koleksiyon: "المجموعة",
+    nav_koleksiyon: "فروعنا وأعمالنا",
     nav_makro: "عدسة 0.1 مم",
     nav_sedex: "سيدكس والأخلاقيات",
     nav_referanslar: "عملاؤنا",
@@ -633,7 +633,7 @@ const TRANSLATIONS = {
     hero_sub: "هندسة الإكسسوارات المعدنية لكبرى دور الأزياء العالمية وعروض الهوت كوتور",
     hero_lead: "مع 35 عاماً من الخبرة المؤسسية والبحث والتطوير الصناعي، نصنع في بيناراكس إكسسوارات معدنية معتمدة خالية من النيكل، وطباعة كريستال حرارية بقوالب الليزر، وحرفية نسائية راقية لأكبر دور الأزياء العالمية في باريس وميلانو.",
     hero_cta_defile: "شاهد عرض الأزياء المباشر",
-    hero_cta_catalog: "كتالوج المنتجات",
+    hero_cta_catalog: "فروعنا التخصصية وأعمالنا",
     scroll_text: "العرض والتفاصيل",
 
     // Section 1: Defile Stage
@@ -753,23 +753,23 @@ const TRANSLATIONS = {
     macro_spec_3_p: "إزالة زوائد وتلميع مرآة أملس وفق المعايير الإيطالية الفاخرة.",
     macro_hint: "🔍 حرك مؤشر الماوس فوق الصورة لاستكشاف التفاصيل الدقيقة بالعدسة المكبرة",
 
-    // Section 5: Collection
+    // Section 5: Disciplines & Works
     sec_05_num: "05",
-    sec_05_eyebrow: "صالة العرض الرقمية ومركز العينات",
-    sec_05_h_light: "إكسسوارات مختارة",
-    sec_05_h_bold: "كتالوج المنتجات",
-    sec_05_desc: "مجموعة نماذج حقيقية مأخوذة من أرشيف بيناراكس. اضغط على زر '+ إضافة عينة' أسفل أي موديل لإضافته إلى حقيبة عيناتك وطلب نماذج فيزيائية ملموسة لمشروعك.",
-    tab_all: "جميع المنتجات",
-    tab_metal: "إكسسوارات معدنية وكريستال",
-    tab_hotfix: "طباعة حرارية وكريستال",
+    sec_05_eyebrow: "فروع الإنتاج المتكاملة والقدرات الحرفية داخل ورش عملنا",
+    sec_05_h_light: "فروعنا الإنتاجية و",
+    sec_05_h_bold: "أعمالنا المنفذة",
+    sec_05_desc: "القطع المعروضة هنا ليست مجرد كتالوج لمنتجات تجارية جاهزة؛ بل هي تجسيد حي للفروع الإنتاجية المتكاملة التي نمتلكها داخل ورش عمل بيناراكس والإمكانات الحرفية الدقيقة التي نقدمها لكبرى دور الأزياء العالمية. من سباكة المعادن إلى تطبيقات BSN، ومن طباعة الكريستال الحراري إلى التطريز اليدوي النسائي، تُصنع جميعها تحت سقف واحد.",
+    tab_all: "جميع الفروع والأعمال",
+    tab_metal: "المعادن والكريستال",
+    tab_hotfix: "الطباعة الحرارية والأحجار",
     tab_bsn: "تطبيقات BSN والزخارف",
-    tab_elisi: "حرف يدوية أصيلة",
-    tab_inci: "ترصيع اللؤلؤ والأحجار",
+    tab_elisi: "الحرف اليدوية النسائية",
+    tab_inci: "ترصيع اللؤلؤ والمسامير",
     btn_add_sample: "+ إضافة عينة",
     cursor_inspect: "معاينة",
     cursor_zoom: "تكبير",
     cursor_defile: "عرض أزياء",
-    cursor_catalog: "كتالوج",
+    cursor_catalog: "أعمالنا",
 
     // Section 6: Sedex & Heritage
     sec_06_num: "06",
@@ -857,7 +857,7 @@ const TRANSLATIONS = {
     // Sample Bag Drawer
     drawer_title: "حقيبة عينات B2B الخاصة بك",
     drawer_empty_title: "لم تتم إضافة أي عينات حتى الآن",
-    drawer_empty_desc: "تصفح كتالوج المجموعة واضغط على زر '+ إضافة عينة' تحت أي قطعة لضمها إلى قائمتك وطلب عينات فيزيائية حقيقية.",
+    drawer_empty_desc: "تصفح فروعنا الإنتاجية وأعمالنا المنفذة واضغط على زر '+ إضافة عينة' لضم النماذج المرجعية إلى حقيبتك وطلب عينات فيزيائية حقيقية.",
     drawer_count_label: "عدد العينات المحددة:",
     drawer_count_unit: "موديل / قطعة",
     drawer_btn_wa: "إرسال قائمة العينات عبر واتساب",
@@ -878,17 +878,17 @@ const TRANSLATIONS = {
     alert_form_thanks: "شكراً لك. تم إرسال طلبك إلى ورشة بيناراكس وفريق البحث والتطوير وصالة العرض. سيتم التواصل معك خلال 24 ساعة.",
     prompt_wa_speedup: "هل ترغب في تسريع طلبك بالتحويل الفوري إلى واتساب صالة العرض؟",
     alert_bag_empty: "يرجى إضافة موديل واحد على الأقل إلى حقيبة العينات أولاً.",
-    wa_sample_header: "مرحباً صالة عرض بيناراكس Pınaraks، أود طلب عينات فيزيائية حقيقية للموديلات التالية من كتالوج موقعكم:\n\n",
+    wa_sample_header: "مرحباً صالة عرض بيناراكس Pınaraks، أود طلب عينات فيزيائية مرجعية للموديلات التالية من واقع فروعكم الإنتاجية وأعمالكم المنفذة:\n\n",
     wa_sample_footer: "\nيرجى إفادتنا بمدة التجهيز وترتيبات الشحن والتسليم.",
     wa_single_ask: "مرحباً صالة عرض بيناراكس Pınaraks، أود الاستفسار عن تفاصيل العينة ومواعيد التسليم للموديل رمز {sku} ({name}).",
     wa_form_msg: "مرحباً صالة عرض بيناراكس، لقد أرسلت طلب عرض أسعار وعينات عبر الموقع:\nالاسم: {name}\nالشركة: {brand}\nالمجال: {disc}\nملاحظات: {note}",
     mail_sample_subject: "طلب عينات منتجات فيزيائية - موقع بيناراكس",
-    mail_sample_body_header: "مرحباً فريق مبيعات بيناراكس Pınaraks،%0D%0A%0D%0Aنود طلب عينات مادية لمجموعتنا القادمة للموديلات التالية:%0D%0A%0D%0A",
+    mail_sample_body_header: "مرحباً فريق مبيعات بيناراكس Pınaraks،%0D%0A%0D%0Aنود طلب عينات فيزيائية مرجعية للموديلات التالية من واقع أعمالكم وفروع الإنتاج لديكم:%0D%0A%0D%0A",
     mail_sample_body_footer: "%0D%0Aاسم الشركة:%0D%0Aالمسؤول / الهاتف:%0D%0Aعنوان التسليم:%0D%0A"
   }
 };
 
-// Çok Dilli Ürün Kataloğu (TR / EN / AR)
+// Bünyemizdeki Üretim Branşları ve Yapılan İşler (TR / EN / AR)
 const MULTILINGUAL_PRODUCTS = [
   {
     id: "MET-01",
