@@ -752,11 +752,11 @@ body.luxury-dark {
 }
 
 .section-headline .light-italic {
-  font-family: var(--font-serif);
+  font-family: 'Playfair Display', var(--font-serif);
   font-style: italic;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--gold-champagne);
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   margin-right: 8px;
 }
 

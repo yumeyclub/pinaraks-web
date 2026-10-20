@@ -1,4 +1,4 @@
-﻿/**
+/**
  * PINARAKS HAUTE ATELIER & HARDWARE
  * Çok Dilli İçerik Sözlüğü (TR / EN / AR)
  * Turkish • English • Arabic (مع دعم كامل للكتابة من اليمين إلى اليسار RTL)
@@ -53,9 +53,9 @@ const TRANSLATIONS = {
     // Section 1: Haute Collection (Koleksiyon)
     sec_01_num: "01",
     sec_01_eyebrow: "HAUTE ATELIER DE LUXE • ÖZEL STOK & DONANIM SEÇKİSİ",
-    sec_01_h_light: "Pınaraks Haute Atelier & Dünya Modasının Kalbinde,",
+    sec_01_h_light: "Pınaraks & Dünya Modasının Kalbinde,",
     sec_01_h_bold: "LÜKS TAŞLI AKSESUAR KOLEKSİYONU",
-    sec_01_desc: "Zara, Beymen Club ve küresel hazır giyim devlerinin doğrudan donanım tedarikçisi olarak; nikel-free fre kaplama banyolarında renklendirilmiş döküm taşlı metal düğmelerden D-tırnak kristal broşlara, lüks zincir kombinasyonlarından özel apolet ve toka tasarımlarına uzanan 50'yi aşkın seçkin modelimizi inceleyin. İhracat standartlarında nikel ve kurşunsuz test güvencesiyle 48 saatte fiziksel numune desteği sunuyoruz.",
+    sec_01_desc: "Pınaraks imalat ve tasarım atölyesi güvencesiyle; nikel-free fre kaplama banyolarında renklendirilmiş döküm taşlı metal düğmelerden D-tırnak kristal broşlara, lüks zincir kombinasyonlarından özel apolet ve toka tasarımlarına uzanan 69 seçkin modelimizi inceleyin. İhracat standartlarında nikel ve kurşunsuz test güvencesiyle 48 saatte fiziksel numune desteği sunuyoruz.",
     col_cat_all: "TÜM MODELLER (69)",
     col_cat_tasli: "TAŞLI & KRİSTAL AKSESUARLAR",
     col_cat_metal: "LÜKS METAL DÜĞME & TOKA",
