@@ -27,7 +27,7 @@ Kullanıcılar gerek masaüstünde gerek mobil cihazlarda üst şeritten veya l�
 
 ## ✨ Öne Çıkan Özellikler
 
-1. **Sinematik Defile & Podyum Sahnesi:** Canlı slayt geçişleri, podyum spot ışığı, oynat/duraklat kontrolleri ve ambiyans sesi.
+1. **Özel Stok & Taşlı Aksesuar Koleksiyonu:** Zara, Beymen Club ve küresel moda haftaları referanslı 54 seçkin model, kategori filtreleri, anlık arama, 48 saatte numune desteği ve yüksek çözünürlüklü detay modalleri.
 2. **0.1mm Büyüteç (Macro Loupe):** Nikel-free kaplama, mikro-lazer armalar ve D-tırnak kristal yuvalarını mikron hassasiyetinde canlı inceleme.
 3. **B2B Numune Çantası (Sample Bag):** Katalogdan seçilen modelleri sepete ekleme, tek tuşla formatlı WhatsApp listesi veya E-posta talebi oluşturma.
 4. **Entegre 6 Departman:** Tasarım & Ar-Ge, Hotfix & Taş Baskı, BSN & Aplik, Metal & Taşlı Donanım, Zanaatkar Kadın Emeği (SEDEX), Otomatik İnci Çakım.

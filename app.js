@@ -35,6 +35,14 @@ let soundOsc = null;
 let isAudioPlaying = false;
 let currentFilter = 'all';
 
+// Haute Collection State
+const COLLECTION_ITEMS = (typeof PINARAKS_COLLECTION_DATA !== 'undefined') ? PINARAKS_COLLECTION_DATA : [];
+let colCategory = 'all';
+let colSearch = '';
+let colVisible = 12;
+const COL_STEP = 12;
+let toastTimer = null;
+
 // Defile Showreel State
 let cinemaCurrentIndex = 0;
 let cinemaInterval = null;
@@ -71,6 +79,19 @@ const cinemaStepCount = document.getElementById('cinemaStepCount');
 const loupeStage = document.getElementById('loupeStage');
 const loupeBaseImg = document.getElementById('loupeBaseImg');
 const loupeLens = document.getElementById('loupeLens');
+
+// Haute Collection Elemanları
+const collectionGrid = document.getElementById('collectionGrid');
+const collectionCategoryTabs = document.querySelectorAll('#collectionCategoryTabs .cat-pill');
+const collectionSearchInput = document.getElementById('collectionSearchInput');
+const searchClearBtn = document.getElementById('searchClearBtn');
+const collectionCountText = document.getElementById('collectionCountText');
+const btnCollectionLoadMore = document.getElementById('btnCollectionLoadMore');
+const collectionLoadWrap = document.getElementById('collectionLoadWrap');
+const loadMoreSubText = document.getElementById('loadMoreSubText');
+const coutureToast = document.getElementById('coutureToast');
+const toastTitle = document.getElementById('toastTitle');
+const toastDesc = document.getElementById('toastDesc');
 
 // Lookbook & Çekmece Elemanları
 const runwayRail = document.getElementById('runwayRail');
@@ -133,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLanguage();
   initPreloader();
   initMagneticCursor();
+  initHauteCollection();
   initRunwayCinema();
   initMacroLoupe();
   initLookbookRail('all');
@@ -171,9 +193,9 @@ function applyLanguage(lang) {
     }
   });
 
-  // data-i18n-ph placeholder etiketlerini güncelle
-  document.querySelectorAll('[data-i18n-ph]').forEach(el => {
-    const key = el.getAttribute('data-i18n-ph');
+  // data-i18n-ph ve data-i18n-placeholder etiketlerini güncelle
+  document.querySelectorAll('[data-i18n-ph], [data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-ph') || el.getAttribute('data-i18n-placeholder');
     const translation = t(key);
     if (translation && translation !== key) {
       el.placeholder = translation;
@@ -223,7 +245,10 @@ function applyLanguage(lang) {
     soundLabel.textContent = isAudioPlaying ? t('sound_label_on') : t('sound_label_off');
   }
 
-  // Katalog vitrinini güncel dille yeniden çiz
+  // Koleksiyon vitrinini güncel dille yeniden çiz
+  if (typeof renderHauteCollection === 'function') renderHauteCollection();
+
+  // Branşlar vitrinini güncel dille yeniden çiz
   initLookbookRail(currentFilter);
 
   // Çanta içeriğini güncelle
@@ -390,7 +415,7 @@ function bindCursorHoverEvents() {
   document.querySelectorAll('.hover-reveal, a, button, .brand-logo-card, .master-pillar-card').forEach(el => {
     el.addEventListener('mouseenter', () => {
       let customMsg = el.getAttribute('data-cursor');
-      if (customMsg === 'DEFİLE') customMsg = t('cursor_defile');
+      if (customMsg === 'DEFİLE' || customMsg === 'KOLEKSİYON') customMsg = t('cursor_koleksiyon') || t('cursor_defile');
       else if (customMsg === 'KATALOG') customMsg = t('cursor_catalog');
       else if (customMsg === 'BÜYÜT') customMsg = t('cursor_zoom');
       else if (customMsg === 'İNCELE') customMsg = t('cursor_inspect');
@@ -410,6 +435,7 @@ function bindCursorHoverEvents() {
 // 5. Canlı Defile Podyumu & Video-Vari Geçiş Motoru
 // ==========================================================================
 function initRunwayCinema() {
+  if (!cinemaSlides || cinemaSlides.length === 0) return;
   updateCinemaSlide(0);
   startCinemaTimer();
 
@@ -898,4 +924,218 @@ function toggleAmbientSound() {
     if (soundToggle) soundToggle.classList.add('playing');
     if (soundLabel) soundLabel.textContent = t('sound_label_on');
   }
+}
+
+
+// ==========================================================================
+// 13. PINARAKS HAUTE STOK & TAŞLI AKSESUAR KOLEKSİYONU MOTORU
+// ==========================================================================
+function initHauteCollection() {
+  if (!collectionGrid) return;
+
+  // Kategori Sekmeleri
+  if (collectionCategoryTabs) {
+    collectionCategoryTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        collectionCategoryTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        colCategory = tab.dataset.cat || 'all';
+        colVisible = 12;
+        renderHauteCollection();
+      });
+    });
+  }
+
+  // Canlı Arama
+  if (collectionSearchInput) {
+    collectionSearchInput.addEventListener('input', (e) => {
+      colSearch = e.target.value.trim().toLowerCase();
+      if (searchClearBtn) searchClearBtn.style.display = colSearch ? 'block' : 'none';
+      colVisible = 12;
+      renderHauteCollection();
+    });
+  }
+
+  // Arama Temizle
+  if (searchClearBtn) {
+    searchClearBtn.addEventListener('click', () => {
+      if (collectionSearchInput) collectionSearchInput.value = '';
+      colSearch = '';
+      searchClearBtn.style.display = 'none';
+      colVisible = 12;
+      renderHauteCollection();
+      if (collectionSearchInput) collectionSearchInput.focus();
+    });
+  }
+
+  // Daha Fazla Yükle Butonu
+  if (btnCollectionLoadMore) {
+    btnCollectionLoadMore.addEventListener('click', () => {
+      colVisible += COL_STEP;
+      renderHauteCollection(true);
+    });
+  }
+
+  renderHauteCollection();
+}
+
+function getFilteredCollection() {
+  return COLLECTION_ITEMS.filter(item => {
+    // Kategori kontrolü
+    if (colCategory !== 'all' && item.cat !== colCategory) {
+      return false;
+    }
+    // Arama kontrolü
+    if (colSearch) {
+      const q = colSearch;
+      const sku = (item.sku || '').toLowerCase();
+      const trName = (item.name?.tr || '').toLowerCase();
+      const enName = (item.name?.en || '').toLowerCase();
+      const arName = (item.name?.ar || '').toLowerCase();
+      const trDesc = (item.desc?.tr || '').toLowerCase();
+      const enDesc = (item.desc?.en || '').toLowerCase();
+      const spec = (item.spec || '').toLowerCase();
+      const app = (item.app || '').toLowerCase();
+      const badgeTr = (item.badge?.tr || '').toLowerCase();
+      const badgeEn = (item.badge?.en || '').toLowerCase();
+
+      const matched = sku.includes(q) ||
+        trName.includes(q) ||
+        enName.includes(q) ||
+        arName.includes(q) ||
+        trDesc.includes(q) ||
+        enDesc.includes(q) ||
+        spec.includes(q) ||
+        app.includes(q) ||
+        badgeTr.includes(q) ||
+        badgeEn.includes(q);
+
+      if (!matched) return false;
+    }
+    return true;
+  });
+}
+
+function renderHauteCollection(isAppending = false) {
+  if (!collectionGrid) return;
+
+  const filtered = getFilteredCollection();
+  const total = filtered.length;
+  const visibleItems = filtered.slice(0, colVisible);
+
+  // Sayaç ve istatistik
+  if (collectionCountText) {
+    if (colSearch || colCategory !== 'all') {
+      collectionCountText.textContent = `${total} MODEL BULUNDU`;
+    } else {
+      collectionCountText.textContent = `${total} ${t('col_models_count')}`;
+    }
+  }
+
+  // Daha Fazla Yükle butonu kontrolü
+  if (collectionLoadWrap && btnCollectionLoadMore) {
+    if (visibleItems.length < total) {
+      collectionLoadWrap.style.display = 'flex';
+      const remaining = total - visibleItems.length;
+      if (loadMoreSubText) {
+        loadMoreSubText.textContent = `(Kalan ${remaining} Model)`;
+      }
+    } else {
+      collectionLoadWrap.style.display = 'none';
+    }
+  }
+
+  if (!isAppending) {
+    collectionGrid.innerHTML = '';
+  }
+
+  if (visibleItems.length === 0) {
+    collectionGrid.innerHTML = `
+      <div class="collection-empty-state">
+        <div class="empty-icon">🔍</div>
+        <h3>Eşleşen Model Bulunamadı</h3>
+        <p>Arama filtrenizi değiştirerek diğer lüks taşlı aksesuarlarımızı inceleyebilirsiniz.</p>
+        <button class="btn-haute-reset" onclick="resetCollectionFilters()">Tüm Modelleri Göster (54)</button>
+      </div>
+    `;
+    return;
+  }
+
+  const itemsToRender = isAppending ? filtered.slice(colVisible - COL_STEP, colVisible) : visibleItems;
+
+  itemsToRender.forEach((item, idx) => {
+    const localizedName = getLocalizedField(item.name);
+    const localizedBadge = item.badge ? getLocalizedField(item.badge) : 'PINARAKS COUTURE';
+    const localizedDesc = getLocalizedField(item.desc);
+    const spec = item.spec || '';
+
+    const card = document.createElement('article');
+    card.className = 'collection-card hover-reveal';
+    card.setAttribute('data-id', item.id);
+    card.style.animationDelay = `${(idx % 12) * 0.04}s`;
+
+    card.innerHTML = `
+      <div class="card-visual-chamber">
+        <img src="${item.img}" alt="${localizedName}" loading="lazy" class="collection-card-img" onclick="openCoutureModal('${item.id}')">
+        <div class="card-glow-overlay"></div>
+        <div class="card-floating-badges">
+          <span class="badge-brand-ref">${localizedBadge}</span>
+          <span class="badge-sku-code">${item.sku}</span>
+        </div>
+        <div class="card-quick-actions-bar">
+          <button type="button" class="btn-quick-zoom" onclick="openCoutureModal('${item.id}')" title="${t('btn_inspect')}">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            <span>${t('btn_inspect')}</span>
+          </button>
+          <a href="https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(t('wa_single_ask').replace('{sku}', item.sku).replace('{name}', localizedName))}" target="_blank" class="btn-quick-wa" title="${t('btn_wa_ask')}">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.586-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.18-.54-1.896-.782-3.117-2.73-3.212-2.857-.095-.128-.772-1.029-.772-1.961 0-.933.489-1.391.662-1.583.174-.192.379-.24.506-.24.127 0 .254.002.365.008.118.006.276-.045.431.328.16.386.549 1.339.598 1.437.049.098.082.213.016.344-.066.13-.099.212-.196.326-.098.115-.206.257-.294.345-.098.098-.2.205-.086.401.114.196.508.838 1.09 1.356.749.667 1.381.873 1.577.971.196.098.311.082.425-.049.115-.131.492-.573.623-.77.131-.197.262-.164.442-.098.18.066 1.146.54 1.343.639.197.098.328.147.377.23.049.082.049.475-.095.88zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.98-1.306C8.423 21.536 10.153 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="collection-card-body">
+        <h3 class="collection-card-title">${localizedName}</h3>
+        <p class="collection-card-desc">${localizedDesc}</p>
+        <div class="collection-card-spec">${spec}</div>
+        <div class="collection-card-footer">
+          <button type="button" class="btn-card-add-sample" onclick="addSampleToBag('${item.id}')">
+            <span class="plus-icon">+</span>
+            <span>${t('btn_add_sample')}</span>
+          </button>
+          <button type="button" class="btn-card-view-modal" onclick="openCoutureModal('${item.id}')" title="${t('btn_inspect')}">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </button>
+        </div>
+      </div>
+    `;
+
+    collectionGrid.appendChild(card);
+  });
+
+  bindCursorHoverEvents();
+}
+
+window.resetCollectionFilters = function() {
+  colCategory = 'all';
+  colSearch = '';
+  colVisible = 12;
+  if (collectionSearchInput) collectionSearchInput.value = '';
+  if (searchClearBtn) searchClearBtn.style.display = 'none';
+  if (collectionCategoryTabs) {
+    collectionCategoryTabs.forEach(t => {
+      t.classList.toggle('active', (t.dataset.cat || 'all') === 'all');
+    });
+  }
+  renderHauteCollection();
+};
+
+function showCoutureToast(title, desc) {
+  if (!coutureToast) return;
+  if (toastTitle) toastTitle.textContent = title;
+  if (toastDesc) toastDesc.textContent = desc;
+
+  coutureToast.classList.add('visible');
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => {
+    coutureToast.classList.remove('visible');
+  }, 3200);
 }
