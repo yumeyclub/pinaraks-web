@@ -1,0 +1,290 @@
+﻿[
+    {
+        "id":  "KAT-01",
+        "code":  "LOOK 01 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Alessandra Rich Runway DonanÄ±mÄ±",
+        "img":  "assets/katalog/kat-01.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-02",
+        "code":  "LOOK 02 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Blumarine Kristal Kemer DonanÄ±mÄ±",
+        "img":  "assets/katalog/kat-02.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-03",
+        "code":  "LOOK 03 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Blumarine Metal \u0026 TaÅŸ DetayÄ±",
+        "img":  "assets/katalog/kat-03.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-04",
+        "code":  "LOOK 04 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Et Ochs Kristal Yaka ApliÄŸi",
+        "img":  "assets/katalog/kat-04.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-05",
+        "code":  "LOOK 05 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Collina Strada TaÅŸ BaskÄ± TasarÄ±mÄ±",
+        "img":  "assets/katalog/kat-05.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-06",
+        "code":  "LOOK 06 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Philipp Plein Kristal Metal Stud",
+        "img":  "assets/katalog/kat-06.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-07",
+        "code":  "LOOK 07 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Alexandre Vauthier Haute BroÅŸ",
+        "img":  "assets/katalog/kat-07.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-08",
+        "code":  "LOOK 08 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Philipp Plein TaÅŸlÄ± Yaka DonanÄ±mÄ±",
+        "img":  "assets/katalog/kat-08.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-09",
+        "code":  "LOOK 09 // RUNWAY",
+        "cat":  "runway",
+        "title":  "AZ Factory Metalik DÃ¼ÄŸme ApliÄŸi",
+        "img":  "assets/katalog/kat-09.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-10",
+        "code":  "LOOK 10 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Philipp Plein Podyum ZÄ±mba DonanÄ±mÄ±",
+        "img":  "assets/katalog/kat-10.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-11",
+        "code":  "LOOK 11 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Vivetta Kristal Yaka Ä°ÅŸlemesi",
+        "img":  "assets/katalog/kat-11.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-12",
+        "code":  "LOOK 12 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Libertine Kristal \u0026 BroÅŸ Ã‡iÃ§ekleri",
+        "img":  "assets/katalog/kat-12.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-13",
+        "code":  "LOOK 13 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Vivetta TaÅŸlÄ± Yaka \u0026 ManÅŸet",
+        "img":  "assets/katalog/kat-13.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-14",
+        "code":  "LOOK 14 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Philipp Plein Kristal GÃ¶ÄŸÃ¼s Aplikesi",
+        "img":  "assets/katalog/kat-14.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-15",
+        "code":  "LOOK 15 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Alice + Olivia TaÅŸlÄ± Blazer DonanÄ±mÄ±",
+        "img":  "assets/katalog/kat-15.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-16",
+        "code":  "LOOK 16 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Libertine LÃ¼ks Aplike TasarÄ±mÄ±",
+        "img":  "assets/katalog/kat-16.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-17",
+        "code":  "LOOK 17 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Philipp Plein TaÅŸlÄ± Denim Ceket",
+        "img":  "assets/katalog/kat-17.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-18",
+        "code":  "LOOK 18 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Junya Watanabe Heykelsi Metalik DonanÄ±m",
+        "img":  "assets/katalog/kat-18.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-19",
+        "code":  "LOOK 19 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Dolce \u0026 Gabbana Kristal Yaka ApliÄŸi",
+        "img":  "assets/katalog/kat-19.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-20",
+        "code":  "LOOK 20 // RUNWAY",
+        "cat":  "runway",
+        "title":  "Philipp Plein LÃ¼ks Metal Blazer Klipsi",
+        "img":  "assets/katalog/kat-20.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-21",
+        "code":  "PNR-22599",
+        "cat":  "beymen",
+        "title":  "Beymen Metal DÃ¼ÄŸme DonanÄ±mÄ±",
+        "img":  "assets/katalog/kat-21.jpg",
+        "isWhiteBg":  true
+    },
+    {
+        "id":  "KAT-22",
+        "code":  "PNR-22600",
+        "cat":  "beymen",
+        "title":  "Beymen Ã–zel TasarÄ±m DÃ¼ÄŸme",
+        "img":  "assets/katalog/kat-22.jpg",
+        "isWhiteBg":  true
+    },
+    {
+        "id":  "KAT-23",
+        "code":  "PNR-22601",
+        "cat":  "beymen",
+        "title":  "Beymen LÃ¼ks Fre Kaplama Model",
+        "img":  "assets/katalog/kat-23.jpg",
+        "isWhiteBg":  true
+    },
+    {
+        "id":  "KAT-24",
+        "code":  "PNR-22602",
+        "cat":  "beymen",
+        "title":  "Beymen Club DÃ¶vme Metal Model",
+        "img":  "assets/katalog/kat-24.jpg",
+        "isWhiteBg":  true
+    },
+    {
+        "id":  "KAT-25",
+        "code":  "PNR-22603",
+        "cat":  "beymen",
+        "title":  "Beymen Fre AltÄ±n DÃ¼ÄŸme Serisi",
+        "img":  "assets/katalog/kat-25.jpg",
+        "isWhiteBg":  true
+    },
+    {
+        "id":  "KAT-26",
+        "code":  "PNR-22604",
+        "cat":  "beymen",
+        "title":  "Beymen Antik Eskitme DÃ¼ÄŸme",
+        "img":  "assets/katalog/kat-26.jpg",
+        "isWhiteBg":  true
+    },
+    {
+        "id":  "KAT-27",
+        "code":  "PNR-22606",
+        "cat":  "beymen",
+        "title":  "Beymen Ã–zel Koleksiyon DÃ¼ÄŸmesi",
+        "img":  "assets/katalog/kat-27.jpg",
+        "isWhiteBg":  true
+    },
+    {
+        "id":  "KAT-28",
+        "code":  "PNR-22607",
+        "cat":  "beymen",
+        "title":  "Beymen Blazer Kol DÃ¼ÄŸmesi",
+        "img":  "assets/katalog/kat-28.jpg",
+        "isWhiteBg":  true
+    },
+    {
+        "id":  "KAT-29",
+        "code":  "PNR-22608",
+        "cat":  "beymen",
+        "title":  "Beymen DÃ¶kÃ¼m Metal DÃ¼ÄŸme",
+        "img":  "assets/katalog/kat-29.jpg",
+        "isWhiteBg":  true
+    },
+    {
+        "id":  "KAT-30",
+        "code":  "PNR-22609",
+        "cat":  "beymen",
+        "title":  "Beymen Mat AltÄ±n DonanÄ±m",
+        "img":  "assets/katalog/kat-30.jpg",
+        "isWhiteBg":  true
+    },
+    {
+        "id":  "KAT-31",
+        "code":  "PNR-22610",
+        "cat":  "beymen",
+        "title":  "Beymen KabartmalÄ± Metal Model",
+        "img":  "assets/katalog/kat-31.jpg",
+        "isWhiteBg":  true
+    },
+    {
+        "id":  "KAT-32",
+        "code":  "PNR-22068",
+        "cat":  "beymen",
+        "title":  "Beymen YÄ±ldÄ±z DonanÄ±mÄ± KB209",
+        "img":  "assets/katalog/kat-32.jpg",
+        "isWhiteBg":  true
+    },
+    {
+        "id":  "KAT-37",
+        "code":  "PNR-23565",
+        "cat":  "beymen",
+        "title":  "Network Gold Metal Model",
+        "img":  "assets/katalog/kat-37.jpg",
+        "isWhiteBg":  true
+    },
+    {
+        "id":  "KAT-38",
+        "code":  "PNR-23566",
+        "cat":  "beymen",
+        "title":  "Network Gold Zincir DonanÄ±mÄ±",
+        "img":  "assets/katalog/kat-38.jpg",
+        "isWhiteBg":  true
+    },
+    {
+        "id":  "KAT-39",
+        "code":  "PÄ°-22736",
+        "cat":  "garment",
+        "title":  "Chantuque Ceket SallantÄ±lÄ± TaÅŸ DonanÄ±mÄ±",
+        "img":  "assets/katalog/kat-39.jpg",
+        "isWhiteBg":  false
+    },
+    {
+        "id":  "KAT-40",
+        "code":  "PÄ°-22736-A",
+        "cat":  "garment",
+        "title":  "Chantuque Ceket Kristal SÄ±rt Zinciri",
+        "img":  "assets/katalog/kat-40.jpg",
+        "isWhiteBg":  false
+    }
+]

@@ -1055,7 +1055,7 @@ function renderHauteCollection(isAppending = false) {
         <div class="empty-icon">🔍</div>
         <h3>Eşleşen Model Bulunamadı</h3>
         <p>Arama filtrenizi değiştirerek diğer lüks taşlı aksesuarlarımızı inceleyebilirsiniz.</p>
-        <button class="btn-haute-reset" onclick="resetCollectionFilters()">Tüm Modelleri Göster (54)</button>
+        <button class="btn-haute-reset" onclick="resetCollectionFilters()">Tüm Modelleri Göster (56)</button>
       </div>
     `;
     return;
