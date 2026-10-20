@@ -53,16 +53,16 @@ const TRANSLATIONS = {
     // Section 1: Haute Collection (Koleksiyon)
     sec_01_num: "01",
     sec_01_eyebrow: "HAUTE ATELIER DE LUXE • ÖZEL STOK & DONANIM SEÇKİSİ",
-    sec_01_h_light: "Zara, Beymen & Dünya Modasının Kalbinde,",
+    sec_01_h_light: "Pınaraks Haute Atelier & Dünya Modasının Kalbinde,",
     sec_01_h_bold: "LÜKS TAŞLI AKSESUAR KOLEKSİYONU",
     sec_01_desc: "Zara, Beymen Club ve küresel hazır giyim devlerinin doğrudan donanım tedarikçisi olarak; nikel-free fre kaplama banyolarında renklendirilmiş döküm taşlı metal düğmelerden D-tırnak kristal broşlara, lüks zincir kombinasyonlarından özel apolet ve toka tasarımlarına uzanan 50'yi aşkın seçkin modelimizi inceleyin. İhracat standartlarında nikel ve kurşunsuz test güvencesiyle 48 saatte fiziksel numune desteği sunuyoruz.",
-    col_cat_all: "TÜM MODELLER (54)",
+    col_cat_all: "TÜM MODELLER (69)",
     col_cat_tasli: "TAŞLI & KRİSTAL AKSESUARLAR",
     col_cat_metal: "LÜKS METAL DÜĞME & TOKA",
-    col_cat_zb: "ZARA & BEYMEN SEÇKİSİ",
+    col_cat_zb: "PINARAKS ÖZEL SEÇKİSİ",
     col_cat_apolet: "APOLET & YAKA İŞLEMESİ",
     col_cat_zincir: "ZİNCİR & DONANIM KOMBİNLERİ",
-    search_placeholder: "Model adı, kod veya taş ara (ör: Beymen, Broş, Altın, Düğme)...",
+    search_placeholder: "Model adı, kod veya taş ara (ör: Broş, Ceket, Düğme, Taş)...",
     col_models_count: "SEÇKİN MODEL SERGİLENİYOR",
     btn_load_more: "DAHA FAZLA MODEL GÖRÜNTÜLE",
     btn_add_sample: "Numune Ekle",
@@ -363,13 +363,13 @@ const TRANSLATIONS = {
     // Section 1: Haute Collection
     sec_01_num: "01",
     sec_01_eyebrow: "HAUTE ATELIER DE LUXE • EXCLUSIVE HARDWARE & EMBELLISHMENTS",
-    sec_01_h_light: "At the Heart of Zara, Beymen & Global Runways,",
+    sec_01_h_light: "Pınaraks Haute Atelier & Dünya Modasının Kalbinde,",
     sec_01_h_bold: "HAUTE JEWELED ACCESSORY COLLECTION",
     sec_01_desc: "As official accessory supplier to Zara, Beymen Club, and world fashion weeks; discover over 50 exclusive models ranging from nickel-free electroplated crystal metal buttons to D-prong brooches, haute chains, and jeweled epaulettes. Fully backed by export-grade compliance and 48-hour physical sample dispatch.",
-    col_cat_all: "ALL MODELS (54)",
+    col_cat_all: "TÜM MODELLER (69)",
     col_cat_tasli: "CRYSTAL & JEWELED TRIMS",
     col_cat_metal: "HAUTE METAL BUTTONS & BUCKLES",
-    col_cat_zb: "ZARA & BEYMEN SELECTION",
+    col_cat_zb: "PINARAKS ÖZEL SEÇKİSİ",
     col_cat_apolet: "EPAULETTES & COLLAR CRAFT",
     col_cat_zincir: "CHAINS & HARDWARE ACCENTS",
     search_placeholder: "Search model, SKU or finish (e.g. Beymen, Brooch, Gold, Button)...",
@@ -673,13 +673,13 @@ const TRANSLATIONS = {
     // Section 1: Haute Collection
     sec_01_num: "01",
     sec_01_eyebrow: "مشاغل الكوتور الفاخرة • مجموعة العينات والقطع المرجعية الحصرية",
-    sec_01_h_light: "في قلب كبرى دور الأزياء كزارا وبايمن،",
+    sec_01_h_light: "Pınaraks Haute Atelier & Dünya Modasının Kalbinde,",
     sec_01_h_bold: "مجموعة الإكسسوارات المرصعة والمعدنية الفاخرة",
     sec_01_desc: "بصفتنا المورد المعتمد للإكسسوارات لأرقى العلامات مثل زارا وبايمن؛ اكتشفوا أكثر من 50 موديلاً حصرياً من الأزرار المعدنية المرصعة بالكريستال، البروشات الفاخرة، سلاسل الهوت كوتور، وأكتاf البليزر الملكية مع ضمان الخلو من النيكل وتسليم العينات الفيزيائية خلال 48 ساعة.",
-    col_cat_all: "كافة الموديلات (54)",
+    col_cat_all: "TÜM MODELLER (69)",
     col_cat_tasli: "إكسسوارات مرصعة بالكريستال",
     col_cat_metal: "أزرار وأبازيم معدنية فاخرة",
-    col_cat_zb: "تشكيلة زارا وبايمن",
+    col_cat_zb: "PINARAKS ÖZEL SEÇKİSİ",
     col_cat_apolet: "تطريز الياقات والأكتاف",
     col_cat_zincir: "سلاسل وإكسسوارات مجمعة",
     search_placeholder: "ابحث بالاسم أو الرمز أو نوع الطلاء (مثال: بايمن، بروش، ذهب)...",
@@ -1292,507 +1292,1590 @@ const MULTILINGUAL_PRODUCTS = [
 // ==========================================================================
 const PINARAKS_COLLECTION_DATA = [
   {
-    "id": "KLX-01", "sku": "PNR-22599", "cat": "zara_beymen",
-    "badge": { "tr": "BEYMEN CLUB SEÇKİSİ", "en": "BEYMEN CLUB EDITION", "ar": "مجموعة بيمن كلوب" },
+    "id": "KLX-01",
+    "sku": "PNR-22599",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS ÖZEL SEÇKİ",
+      "en": "PINARAKS ATELIER EDITION",
+      "ar": "مجموعة بيناراكس الخاصة"
+    },
     "img": "assets/katalog/kat-21.jpg",
-    "name": { "tr": "Beymen Lüks Metal Düğme Donanımı", "en": "Beymen Luxury Metal Button Hardware", "ar": "أزرار معدنية فاخرة بيمن" },
-    "desc": { "tr": "Beymen Club koleksiyonu için özel üretilen, 24K fre kaplama lüks pirinç döküm düğme.", "en": "Exclusive 24K plated brass button produced for Beymen Club collection.", "ar": "زر نحاسي مطلي بالذهب 24 قيراط حصري لمجموعة بيمن كلوب." },
-    "spec": "Pirinç Döküm • 24K Fre Kaplama • Nikel-Free • Beymen Club",
+    "name": {
+      "tr": "Pınaraks Lüks Metal Düğme Donanımı",
+      "en": "Pınaraks Luxury Metal Button Hardware",
+      "ar": "أزرار معدنية فاخرة بيناراكس"
+    },
+    "desc": {
+      "tr": "Pınaraks lüks koleksiyonu için özel üretilen, 24K fre kaplama lüks pirinç döküm düğme.",
+      "en": "Exclusive 24K plated brass button produced for Pınaraks collection.",
+      "ar": "زر نحاسي مطلي بالذهب 24 قيراط حصري لمجموعة بيناراكس."
+    },
+    "spec": "Pirinç Döküm • 24K Fre Kaplama • Nikel-Free • Pınaraks Atelier",
     "app": "Blazer Ceket, Palto, Takım Elbise"
   },
   {
-    "id": "KLX-02", "sku": "PNR-22600", "cat": "zara_beymen",
-    "badge": { "tr": "BEYMEN CLUB SEÇKİSİ", "en": "BEYMEN CLUB EDITION", "ar": "مجموعة بيمن كلوب" },
+    "id": "KLX-02",
+    "sku": "PNR-22600",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS ÖZEL SEÇKİ",
+      "en": "PINARAKS ATELIER EDITION",
+      "ar": "مجموعة بيناراكس الخاصة"
+    },
     "img": "assets/katalog/kat-22.jpg",
-    "name": { "tr": "Beymen Özel Tasarım Düğme", "en": "Beymen Custom Design Button", "ar": "زر تصميم خاص بيمن" },
-    "desc": { "tr": "Beymen Club için çizilmiş, özel logo gravürlü döküm metal düğme.", "en": "Custom logo engraved cast metal button designed for Beymen Club.", "ar": "زر معدني مسبوك بنقش شعار خاص لبيمن كلوب." },
+    "name": {
+      "tr": "Pınaraks Özel Tasarım Düğme",
+      "en": "Pınaraks Custom Design Button",
+      "ar": "زر تصميم خاص بيناراكس"
+    },
+    "desc": {
+      "tr": "Pınaraks için çizilmiş, özel logo gravürlü döküm metal düğme.",
+      "en": "Custom logo engraved cast metal button designed for Pınaraks.",
+      "ar": "زر معدني مسبوك بنقش شعار خاص لبيناراكس."
+    },
     "spec": "Zamak Döküm • Antik Kaplama • Özel Gravür • Test Onaylı",
     "app": "Ceket, Pardösü, Klasik Giyim"
   },
   {
-    "id": "KLX-03", "sku": "PNR-22601", "cat": "zara_beymen",
-    "badge": { "tr": "BEYMEN CLUB SEÇKİSİ", "en": "BEYMEN CLUB EDITION", "ar": "مجموعة بيمن كلوب" },
+    "id": "KLX-03",
+    "sku": "PNR-22601",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS ÖZEL SEÇKİ",
+      "en": "PINARAKS ATELIER EDITION",
+      "ar": "مجموعة بيناراكس الخاصة"
+    },
     "img": "assets/katalog/kat-23.jpg",
-    "name": { "tr": "Beymen Lüks Fre Kaplama Düğme", "en": "Beymen Luxury Plated Button Model", "ar": "نموذج زر مطلي فاخر بيمن" },
-    "desc": { "tr": "İnce dövme pirinç gövde üzerine satin fre altın kaplama, çift kanalı vida sistemi.", "en": "Fine hammered brass body with satin gold plating and dual-channel screw system.", "ar": "جسم نحاسي مطروق ناعم مع طلاء ذهبي ساتاني ونظام براغي مزدوج." },
+    "name": {
+      "tr": "Pınaraks Lüks Fre Kaplama Düğme",
+      "en": "Pınaraks Luxury Plated Button Model",
+      "ar": "نموذج زر مطلي فاخر بيناراكس"
+    },
+    "desc": {
+      "tr": "İnce dövme pirinç gövde üzerine satin fre altın kaplama, çift kanalı vida sistemi.",
+      "en": "Fine hammered brass body with satin gold plating and dual-channel screw system.",
+      "ar": "جسم نحاسي مطروق ناعم مع طلاء ذهبي ساتاني ونظام براغي مزدوج."
+    },
     "spec": "Dövme Pirinç • Satin Altın Fre • Çift Vida Sistemi",
     "app": "Kaban, Trençkot, Lüks Dış Giyim"
   },
   {
-    "id": "KLX-04", "sku": "PNR-22602", "cat": "zara_beymen",
-    "badge": { "tr": "BEYMEN CLUB SEÇKİSİ", "en": "BEYMEN CLUB EDITION", "ar": "مجموعة بيمن كلوب" },
+    "id": "KLX-04",
+    "sku": "PNR-22602",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS ÖZEL SEÇKİ",
+      "en": "PINARAKS ATELIER EDITION",
+      "ar": "مجموعة بيناراكس الخاصة"
+    },
     "img": "assets/katalog/kat-24.jpg",
-    "name": { "tr": "Beymen Club Dövme Metal Düğme", "en": "Beymen Club Hammered Metal Button", "ar": "زر معدني مطروق بيمن كلوب" },
-    "desc": { "tr": "El dövmesi tekstürlü yüzey, benzersiz karakteri ile lüks palto ve ceketler için ideal donanım.", "en": "Hand-hammered textured surface with unique character for luxury coats and jackets.", "ar": "سطح مطروق يدوياً بملمس مميز مثالي للمعاطف والسترات الفاخرة." },
+    "name": {
+      "tr": "Pınaraks Dövme Metal Düğme",
+      "en": "Pınaraks Hammered Metal Button",
+      "ar": "زر معدني مطروق بيناراكس"
+    },
+    "desc": {
+      "tr": "El dövmesi tekstürlü yüzey, benzersiz karakteri ile lüks palto ve ceketler için ideal donanım.",
+      "en": "Hand-hammered textured surface with unique character for luxury coats and jackets.",
+      "ar": "سطح مطروق يدوياً بملمس مميز مثالي للمعاطف والسترات الفاخرة."
+    },
     "spec": "El Dövmesi Pirinç • Gümüş Rodyum • Test Sertifikalı",
     "app": "Palto, Kaban, Yün Ceket"
   },
   {
-    "id": "KLX-05", "sku": "PNR-22603", "cat": "zara_beymen",
-    "badge": { "tr": "BEYMEN CLUB SEÇKİSİ", "en": "BEYMEN CLUB EDITION", "ar": "مجموعة بيمن كلوب" },
+    "id": "KLX-05",
+    "sku": "PNR-22603",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS ÖZEL SEÇKİ",
+      "en": "PINARAKS ATELIER EDITION",
+      "ar": "مجموعة بيناراكس الخاصة"
+    },
     "img": "assets/katalog/kat-25.jpg",
-    "name": { "tr": "Beymen Fre Altın Düğme Serisi", "en": "Beymen Gold Plated Button Collection", "ar": "مجموعة أزرار مطلية بالذهب بيمن" },
-    "desc": { "tr": "Ekstra parlaklık için 3 kat altın fre kaplama, optik test sertifikalı nikel-free donanım.", "en": "Triple-coat gold plating for extra brilliance with optical test certification.", "ar": "طلاء ذهبي ثلاثي الطبقات لبريق استثنائي مع شهادة اختبار بصري." },
+    "name": {
+      "tr": "Pınaraks Fre Altın Düğme Serisi",
+      "en": "Pınaraks Gold Plated Button Collection",
+      "ar": "مجموعة أزرار مطلية بالذهب بيناراكس"
+    },
+    "desc": {
+      "tr": "Ekstra parlaklık için 3 kat altın fre kaplama, optik test sertifikalı nikel-free donanım.",
+      "en": "Triple-coat gold plating for extra brilliance with optical test certification.",
+      "ar": "طلاء ذهبي ثلاثي الطبقات لبريق استثنائي مع شهادة اختبار بصري."
+    },
     "spec": "3 Kat Fre Altın • Optik Parlaklık • Nikel-Free Sertifikalı",
     "app": "Blazer, Smokin, Haute Couture Ceketi"
   },
   {
-    "id": "KLX-06", "sku": "PNR-22604", "cat": "zara_beymen",
-    "badge": { "tr": "BEYMEN CLUB SEÇKİSİ", "en": "BEYMEN CLUB EDITION", "ar": "مجموعة بيمن كلوب" },
+    "id": "KLX-06",
+    "sku": "PNR-22604",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS ÖZEL SEÇKİ",
+      "en": "PINARAKS ATELIER EDITION",
+      "ar": "مجموعة بيناراكس الخاصة"
+    },
     "img": "assets/katalog/kat-26.jpg",
-    "name": { "tr": "Beymen Antik Eskitme Düğme", "en": "Beymen Antique Distressed Button", "ar": "زر أثري متقادم بيمن" },
-    "desc": { "tr": "Antik patina işlemi görmüş, vintage karakterli döküm düğme, kadife ve deri giysiler için.", "en": "Antique patina cast button with vintage character for velvet and leather garments.", "ar": "زر مسبوك بطبقة باتينا أثرية بطابع عتيق لملابس المخمل والجلد." },
+    "name": {
+      "tr": "Pınaraks Antik Eskitme Düğme",
+      "en": "Pınaraks Antique Distressed Button",
+      "ar": "زر أثري متقادم بيناراكس"
+    },
+    "desc": {
+      "tr": "Antik patina işlemi görmüş, vintage karakterli döküm düğme, kadife ve deri giysiler için.",
+      "en": "Antique patina cast button with vintage character for velvet and leather garments.",
+      "ar": "زر مسبوك بطبقة باتينا أثرية بطابع عتيق لملابس المخمل والجلد."
+    },
     "spec": "Zamak Döküm • Antik Patina • Vintage Karakter",
     "app": "Deri Ceket, Kadife Blazer, Vintage Koleksiyon"
   },
   {
-    "id": "KLX-07", "sku": "PNR-22606", "cat": "zara_beymen",
-    "badge": { "tr": "BEYMEN CLUB SEÇKİSİ", "en": "BEYMEN CLUB EDITION", "ar": "مجموعة بيمن كلوب" },
+    "id": "KLX-07",
+    "sku": "PNR-22606",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS ÖZEL SEÇKİ",
+      "en": "PINARAKS ATELIER EDITION",
+      "ar": "مجموعة بيناراكس الخاصة"
+    },
     "img": "assets/katalog/kat-27.jpg",
-    "name": { "tr": "Beymen Özel Koleksiyon Düğmesi", "en": "Beymen Special Collection Button", "ar": "زر مجموعة خاصة بيمن" },
-    "desc": { "tr": "Sınırlı sayıda üretilen, elle boyalı mine detaylı özel koleksiyon düğmesi.", "en": "Limited edition button with hand-painted enamel detail for exclusive collections.", "ar": "زر طبعة محدودة بتفاصيل مينا مرسومة يدوياً للمجموعات الحصرية." },
+    "name": {
+      "tr": "Pınaraks Özel Koleksiyon Düğmesi",
+      "en": "Pınaraks Special Collection Button",
+      "ar": "زر مجموعة خاصة بيناراكس"
+    },
+    "desc": {
+      "tr": "Sınırlı sayıda üretilen, elle boyalı mine detaylı özel koleksiyon düğmesi.",
+      "en": "Limited edition button with hand-painted enamel detail for exclusive collections.",
+      "ar": "زر طبعة محدودة بتفاصيل مينا مرسومة يدوياً للمجموعات الحصرية."
+    },
     "spec": "Pirinç • El Boyaması Mine • Sınırlı Üretim",
     "app": "Haute Couture, Capsule Koleksiyon, Lüks RTW"
   },
   {
-    "id": "KLX-08", "sku": "PNR-22607", "cat": "zara_beymen",
-    "badge": { "tr": "BEYMEN CLUB SEÇKİSİ", "en": "BEYMEN CLUB EDITION", "ar": "مجموعة بيمن كلوب" },
+    "id": "KLX-08",
+    "sku": "PNR-22607",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS ÖZEL SEÇKİ",
+      "en": "PINARAKS ATELIER EDITION",
+      "ar": "مجموعة بيناراكس الخاصة"
+    },
     "img": "assets/katalog/kat-28.jpg",
-    "name": { "tr": "Beymen Blazer Kol Düğmesi", "en": "Beymen Blazer Cuff Button", "ar": "زر كم البليزر بيمن" },
-    "desc": { "tr": "İnce çaplı blazer kol düğmesi, logolu gravür ve altın kaplama ile premium sunum.", "en": "Fine diameter blazer cuff button with logo engraving and gold plating for premium presentation.", "ar": "زر كم بليزر بقطر ناعم مع نقش شعار وطلاء ذهبي للعرض المتميز." },
+    "name": {
+      "tr": "Pınaraks Blazer Kol Düğmesi",
+      "en": "Pınaraks Blazer Cuff Button",
+      "ar": "زر كم البليزر بيناراكس"
+    },
+    "desc": {
+      "tr": "İnce çaplı blazer kol düğmesi, logolu gravür ve altın kaplama ile premium sunum.",
+      "en": "Fine diameter blazer cuff button with logo engraving and gold plating for premium presentation.",
+      "ar": "زر كم بليزر بقطر ناعم مع نقش شعار وطلاء ذهبي للعرض المتميز."
+    },
     "spec": "Pirinç Döküm • Logo Gravür • 24K Fre Altın",
     "app": "Blazer Kolu, Smokin Manşet, Takım Elbise"
   },
   {
-    "id": "KLX-09", "sku": "PNR-22608", "cat": "metal",
-    "badge": { "tr": "DÖKÜM METAL SERİSİ", "en": "CAST METAL SERIES", "ar": "سلسلة معدن مسبوك" },
+    "id": "KLX-09",
+    "sku": "PNR-22608",
+    "cat": "metal",
+    "badge": {
+      "tr": "DÖKÜM METAL SERİSİ",
+      "en": "CAST METAL SERIES",
+      "ar": "سلسلة معدن مسبوك"
+    },
     "img": "assets/katalog/kat-29.jpg",
-    "name": { "tr": "Beymen Döküm Metal Premium Düğme", "en": "Beymen Cast Metal Premium Button", "ar": "زر معدني مسبوك متميز بيمن" },
-    "desc": { "tr": "Yüksek basınçlı döküm tekniği ile üretilen, detaylı yüzey kabartmalı premium düğme.", "en": "High-pressure cast button with detailed surface relief for premium outerwear.", "ar": "زر مسبوك بضغط عالٍ مع نقوش سطحية مفصلة للملابس الخارجية المتميزة." },
+    "name": {
+      "tr": "Pınaraks Döküm Metal Premium Düğme",
+      "en": "Pınaraks Cast Metal Premium Button",
+      "ar": "زر معدني مسبوك متميز بيناراكس"
+    },
+    "desc": {
+      "tr": "Yüksek basınçlı döküm tekniği ile üretilen, detaylı yüzey kabartmalı premium düğme.",
+      "en": "High-pressure cast button with detailed surface relief for premium outerwear.",
+      "ar": "زر مسبوك بضغط عالٍ مع نقوش سطحية مفصلة للملابس الخارجية المتميزة."
+    },
     "spec": "Yüksek Basınç Döküm • Kabartma Yüzey • Parlak Kaplama",
     "app": "Palto, Kaban, Mont"
   },
   {
-    "id": "KLX-10", "sku": "PNR-22609", "cat": "metal",
-    "badge": { "tr": "MAT ALTIN FİNİŞ", "en": "MATTE GOLD FINISH", "ar": "تشطيب ذهبي مطفي" },
+    "id": "KLX-10",
+    "sku": "PNR-22609",
+    "cat": "metal",
+    "badge": {
+      "tr": "MAT ALTIN FİNİŞ",
+      "en": "MATTE GOLD FINISH",
+      "ar": "تشطيب ذهبي مطفي"
+    },
     "img": "assets/katalog/kat-30.jpg",
-    "name": { "tr": "Beymen Mat Altın Donanım Serisi", "en": "Beymen Matte Gold Hardware Series", "ar": "سلسلة أجهزة ذهبية مطفية بيمن" },
-    "desc": { "tr": "Aşırı parlak değil, soft mat altın kaplama. Modern lüksün mütevazı ama güçlü sesi.", "en": "Soft matte gold plating rather than high gloss. The quiet yet powerful voice of modern luxury.", "ar": "طلاء ذهبي ناعم مطفي بدلاً من اللامع. الصوت الهادئ والقوي للفخامة الحديثة." },
+    "name": {
+      "tr": "Pınaraks Mat Altın Donanım Serisi",
+      "en": "Pınaraks Matte Gold Hardware Series",
+      "ar": "سلسلة أجهزة ذهبية مطفية بيناراكس"
+    },
+    "desc": {
+      "tr": "Aşırı parlak değil, soft mat altın kaplama. Modern lüksün mütevazı ama güçlü sesi.",
+      "en": "Soft matte gold plating rather than high gloss. The quiet yet powerful voice of modern luxury.",
+      "ar": "طلاء ذهبي ناعم مطفي بدلاً من اللامع. الصوت الهادئ والقوي للفخامة الحديثة."
+    },
     "spec": "Mat Altın Fre • Soft Touch • Oksidasyon Dayanıklı",
     "app": "Modern Lüks Ceket, Minimalist Koleksiyon"
   },
   {
-    "id": "KLX-11", "sku": "PNR-22610", "cat": "metal",
-    "badge": { "tr": "KABARTMALI METAL MODEL", "en": "RELIEF METAL MODEL", "ar": "نموذج معدني بارز" },
+    "id": "KLX-11",
+    "sku": "PNR-22610",
+    "cat": "metal",
+    "badge": {
+      "tr": "KABARTMALI METAL MODEL",
+      "en": "RELIEF METAL MODEL",
+      "ar": "نموذج معدني بارز"
+    },
     "img": "assets/katalog/kat-31.jpg",
-    "name": { "tr": "Beymen Kabartmalı Metal Düğme", "en": "Beymen Embossed Metal Button", "ar": "زر معدني نافر بيمن" },
-    "desc": { "tr": "El işçiliği ile oluşturulmuş 3D kabartma desen, ceket ve palto için dekoratif donanım.", "en": "Hand-crafted 3D embossed pattern for decorative jacket and coat hardware.", "ar": "نقش ثلاثي الأبعاد مصنوع يدوياً لأجهزة السترات والمعاطف الزخرفية." },
+    "name": {
+      "tr": "Pınaraks Kabartmalı Metal Düğme",
+      "en": "Pınaraks Embossed Metal Button",
+      "ar": "زر معدني نافر بيناراكس"
+    },
+    "desc": {
+      "tr": "El işçiliği ile oluşturulmuş 3D kabartma desen, ceket ve palto için dekoratif donanım.",
+      "en": "Hand-crafted 3D embossed pattern for decorative jacket and coat hardware.",
+      "ar": "نقش ثلاثي الأبعاد مصنوع يدوياً لأجهزة السترات والمعاطف الزخرفية."
+    },
     "spec": "Pirinç • 3D Kabartma • El Cilalanmış",
     "app": "Dekoratif Ceket Düğmesi, Yüksek Moda"
   },
   {
-    "id": "KLX-12", "sku": "PNR-22068", "cat": "zara_beymen",
-    "badge": { "tr": "BEYMEN KB209 YILDIZ", "en": "BEYMEN KB209 STAR", "ar": "نجمة KB209 بيمن" },
+    "id": "KLX-12",
+    "sku": "PNR-22068",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS ÖZEL SEÇKİ",
+      "en": "PINARAKS ATELIER EDITION",
+      "ar": "مجموعة بيناراكس الخاصة"
+    },
     "img": "assets/katalog/kat-32.jpg",
-    "name": { "tr": "Beymen Yıldız Donanımı KB209", "en": "Beymen Star Hardware KB209", "ar": "جهاز نجمة KB209 بيمن" },
-    "desc": { "tr": "KB209 proje kapsamında Beymen için özel tasarlanan yıldız motifli döküm metal donanım.", "en": "Star motif cast metal hardware specially designed for Beymen under KB209 project.", "ar": "جهاز معدني مسبوك بنقش نجمة مصمم خصيصاً لبيمن ضمن مشروع KB209." },
-    "spec": "Pirinç Döküm • Yıldız Motif • KB209 Beymen Serisi",
+    "name": {
+      "tr": "Pınaraks Yıldız Donanımı KB209",
+      "en": "Pınaraks Star Hardware KB209",
+      "ar": "جهاز نجمة KB209 بيناراكس"
+    },
+    "desc": {
+      "tr": "KB209 proje kapsamında Pınaraks için özel tasarlanan yıldız motifli döküm metal donanım.",
+      "en": "Star motif cast metal hardware specially designed for Pınaraks under KB209 project.",
+      "ar": "جهاز معدني مسبوك بنقش نجمة مصمم خصيصاً لبيناراكس ضمن مشروع KB209."
+    },
+    "spec": "Pirinç Döküm • Yıldız Motif • KB209 Pınaraks Serisi",
     "app": "Beymen Koleksiyon Giyimi, Blazer, Elbise"
   },
   {
-    "id": "KLX-13", "sku": "PNR-22585", "cat": "tasli",
-    "badge": { "tr": "TAŞLI AKSESUAR", "en": "JEWELED ACCESSORY", "ar": "إكسسوار مرصع" },
+    "id": "KLX-13",
+    "sku": "PNR-22585",
+    "cat": "tasli",
+    "badge": {
+      "tr": "TAŞLI AKSESUAR",
+      "en": "JEWELED ACCESSORY",
+      "ar": "إكسسوار مرصع"
+    },
     "img": "assets/katalog/kat-33.jpg",
-    "name": { "tr": "Fre Altın Taşlı Aksesuar Serisi", "en": "Gold Plated Jeweled Accessory Series", "ar": "سلسلة إكسسوارات مرصعة مطلية بالذهب" },
-    "desc": { "tr": "Pinaraks üretimi, fre altın kaplama üzerinde taşlı lüks aksesuar modeli.", "en": "Pinaraks produced jeweled luxury accessory on gold plated finish.", "ar": "إكسسوار فاخر مرصع من إنتاج Pinaraks بطلاء ذهبي." },
+    "name": {
+      "tr": "Fre Altın Taşlı Aksesuar Serisi",
+      "en": "Gold Plated Jeweled Accessory Series",
+      "ar": "سلسلة إكسسوارات مرصعة مطلية بالذهب"
+    },
+    "desc": {
+      "tr": "Pinaraks üretimi, fre altın kaplama üzerinde taşlı lüks aksesuar modeli.",
+      "en": "Pinaraks produced jeweled luxury accessory on gold plated finish.",
+      "ar": "إكسسوار فاخر مرصع من إنتاج Pinaraks بطلاء ذهبي."
+    },
     "spec": "Fre Altın • Taşlı • Lüks Seri",
     "app": "Kadın Giyimi, Abiye, Blazer"
   },
   {
-    "id": "KLX-14", "sku": "PNR-22586", "cat": "tasli",
-    "badge": { "tr": "KRİSTAL TAŞLI SERİ", "en": "CRYSTAL JEWEL SERIES", "ar": "سلسلة كريستال مرصع" },
+    "id": "KLX-14",
+    "sku": "PNR-22586",
+    "cat": "tasli",
+    "badge": {
+      "tr": "KRİSTAL TAŞLI SERİ",
+      "en": "CRYSTAL JEWEL SERIES",
+      "ar": "سلسلة كريستال مرصع"
+    },
     "img": "assets/katalog/kat-34.jpg",
-    "name": { "tr": "Kristal Taşlı Lüks Aksesuar Modeli", "en": "Crystal Jeweled Luxury Accessory", "ar": "إكسسوار فاخر مرصع بالكريستال" },
-    "desc": { "tr": "Parlak kristal taşlar ve altın kaplama kombinasyonu ile premium aksesuar çözümü.", "en": "Premium accessory solution combining sparkling crystals with gold plating.", "ar": "حل إكسسوار متميز يجمع بين الكريستال اللامع والطلاء الذهبي." },
+    "name": {
+      "tr": "Kristal Taşlı Lüks Aksesuar Modeli",
+      "en": "Crystal Jeweled Luxury Accessory",
+      "ar": "إكسسوار فاخر مرصع بالكريستال"
+    },
+    "desc": {
+      "tr": "Parlak kristal taşlar ve altın kaplama kombinasyonu ile premium aksesuar çözümü.",
+      "en": "Premium accessory solution combining sparkling crystals with gold plating.",
+      "ar": "حل إكسسوار متميز يجمع بين الكريستال اللامع والطلاء الذهبي."
+    },
     "spec": "Kristal Taş • Altın Kaplama • Premium",
     "app": "Haute Couture, Abiye, Gala Giyim"
   },
   {
-    "id": "KLX-15", "sku": "PNR-22587", "cat": "tasli",
-    "badge": { "tr": "TAŞLI ÇAKIM DONANIM", "en": "STONE SET HARDWARE", "ar": "أجهزة مرصعة بالأحجار" },
+    "id": "KLX-15",
+    "sku": "PNR-22587",
+    "cat": "tasli",
+    "badge": {
+      "tr": "TAŞLI ÇAKIM DONANIM",
+      "en": "STONE SET HARDWARE",
+      "ar": "أجهزة مرصعة بالأحجار"
+    },
     "img": "assets/katalog/kat-35.jpg",
-    "name": { "tr": "Taşlı Çakım Lüks Donanım", "en": "Stone-Set Luxury Hardware", "ar": "أجهزة فاخرة مرصعة بالأحجار" },
-    "desc": { "tr": "Tek tek yerleştirilen taşlar ile yüksek kaliteli çakım tekniği kullanılarak üretilmiş donanım.", "en": "Hardware produced with high-quality stone-setting technique, individually placed stones.", "ar": "أجهزة مصنوعة بتقنية ترصيع عالية الجودة مع أحجار مثبتة بشكل فردي." },
+    "name": {
+      "tr": "Taşlı Çakım Lüks Donanım",
+      "en": "Stone-Set Luxury Hardware",
+      "ar": "أجهزة فاخرة مرصعة بالأحجار"
+    },
+    "desc": {
+      "tr": "Tek tek yerleştirilen taşlar ile yüksek kaliteli çakım tekniği kullanılarak üretilmiş donanım.",
+      "en": "Hardware produced with high-quality stone-setting technique, individually placed stones.",
+      "ar": "أجهزة مصنوعة بتقنية ترصيع عالية الجودة مع أحجار مثبتة بشكل فردي."
+    },
     "spec": "El Çakımı Taş • Nikel-Free • Yüksek Tutma Gücü",
     "app": "Pantolon Kenar, Ceket Yaka, Kemer"
   },
   {
-    "id": "KLX-16", "sku": "PNR-22588", "cat": "tasli",
-    "badge": { "tr": "PAVÉ TAŞLI MODEL", "en": "PAVÉ STONE MODEL", "ar": "نموذج حجر بافيه" },
+    "id": "KLX-16",
+    "sku": "PNR-22588",
+    "cat": "tasli",
+    "badge": {
+      "tr": "PAVÉ TAŞLI MODEL",
+      "en": "PAVÉ STONE MODEL",
+      "ar": "نموذج حجر بافيه"
+    },
     "img": "assets/katalog/kat-36.jpg",
-    "name": { "tr": "Pavé Taşlı Aksesuar Donanımı", "en": "Pavé Stone Accessory Hardware", "ar": "أجهزة إكسسوار حجر بافيه" },
-    "desc": { "tr": "Pavé tekniğiyle yoğun taş yerleştirme, ışığı her açıdan yansıtır.", "en": "Dense pavé stone setting reflecting light from every angle.", "ar": "ترصيع حجري كثيف بأسلوب البافيه يعكس الضوء من كل الزوايا." },
+    "name": {
+      "tr": "Pavé Taşlı Aksesuar Donanımı",
+      "en": "Pavé Stone Accessory Hardware",
+      "ar": "أجهزة إكسسوار حجر بافيه"
+    },
+    "desc": {
+      "tr": "Pavé tekniğiyle yoğun taş yerleştirme, ışığı her açıdan yansıtır.",
+      "en": "Dense pavé stone setting reflecting light from every angle.",
+      "ar": "ترصيع حجري كثيف بأسلوب البافيه يعكس الضوء من كل الزوايا."
+    },
     "spec": "Pavé Teknik • Mikro Taş • Çift Kaplama",
     "app": "Yaka Rozeti, Ceket Süsü, Abiye Aksesuarı"
   },
   {
-    "id": "KLX-17", "sku": "PNR-22589", "cat": "tasli",
-    "badge": { "tr": "LÜKS TAŞLI SERİ", "en": "LUXURY JEWELED SERIES", "ar": "سلسلة مرصعة فاخرة" },
+    "id": "KLX-17",
+    "sku": "PNR-22589",
+    "cat": "tasli",
+    "badge": {
+      "tr": "LÜKS TAŞLI SERİ",
+      "en": "LUXURY JEWELED SERIES",
+      "ar": "سلسلة مرصعة فاخرة"
+    },
     "img": "assets/katalog/kat-37.jpg",
-    "name": { "tr": "Network Gold Lüks Metal Model", "en": "Network Gold Luxury Metal Model", "ar": "نموذج معدني فاخر ذهبي نتورك" },
-    "desc": { "tr": "Network markası için üretilen, gold kaplama lüks metal aksesuar modeli.", "en": "Luxury gold plated metal accessory model produced for Network brand.", "ar": "نموذج إكسسوار معدني فاخر مطلي بالذهب من إنتاج علامة نتورك." },
+    "name": {
+      "tr": "Network Gold Lüks Metal Model",
+      "en": "Network Gold Luxury Metal Model",
+      "ar": "نموذج معدني فاخر ذهبي نتورك"
+    },
+    "desc": {
+      "tr": "Network markası için üretilen, gold kaplama lüks metal aksesuar modeli.",
+      "en": "Luxury gold plated metal accessory model produced for Network brand.",
+      "ar": "نموذج إكسسوار معدني فاخر مطلي بالذهب من إنتاج علامة نتورك."
+    },
     "spec": "Gold Kaplama • Network Serisi • Lüks Metal",
     "app": "Network Koleksiyonu, Kadın Giyimi"
   },
   {
-    "id": "KLX-18", "sku": "PNR-22591", "cat": "metal",
-    "badge": { "tr": "METAL DONANIM", "en": "METAL HARDWARE", "ar": "أجهزة معدنية" },
+    "id": "KLX-18",
+    "sku": "PNR-22591",
+    "cat": "metal",
+    "badge": {
+      "tr": "METAL DONANIM",
+      "en": "METAL HARDWARE",
+      "ar": "أجهزة معدنية"
+    },
     "img": "assets/katalog/kat-38.jpg",
-    "name": { "tr": "Network Zincir Donanımı", "en": "Network Chain Hardware", "ar": "أجهزة سلسلة نتورك" },
-    "desc": { "tr": "Network koleksiyonu için üretilen altın kaplama zincir donanım kombinasyonu.", "en": "Gold plated chain hardware combination produced for Network collection.", "ar": "مجموعة أجهزة سلسلة مطلية بالذهب من إنتاج مجموعة نتورك." },
+    "name": {
+      "tr": "Network Zincir Donanımı",
+      "en": "Network Chain Hardware",
+      "ar": "أجهزة سلسلة نتورك"
+    },
+    "desc": {
+      "tr": "Network koleksiyonu için üretilen altın kaplama zincir donanım kombinasyonu.",
+      "en": "Gold plated chain hardware combination produced for Network collection.",
+      "ar": "مجموعة أجهزة سلسلة مطلية بالذهب من إنتاج مجموعة نتورك."
+    },
     "spec": "Altın Kaplama • Zincir • Network Serisi",
     "app": "Ceket, Blazer, Aksesuarlı Giyim"
   },
   {
-    "id": "KLX-19", "sku": "PI-22736", "cat": "apolet_yaka",
-    "badge": { "tr": "CHANTUQUE EL İŞİ", "en": "CHANTUQUE HANDCRAFT", "ar": "حرفية يدوية شانتيك" },
+    "id": "KLX-19",
+    "sku": "PI-22736",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "CHANTUQUE EL İŞİ",
+      "en": "CHANTUQUE HANDCRAFT",
+      "ar": "حرفية يدوية شانتيك"
+    },
     "img": "assets/katalog/kat-39.jpg",
-    "name": { "tr": "Chantuque Ceket Sallantılı Taş Donanımı", "en": "Chantuque Jacket Dangling Stone Hardware", "ar": "أجهزة حجرية متدلية لسترة شانتيك" },
-    "desc": { "tr": "Chantuque ceket için özel tasarlanan, sallantılı metal ve taşlı süsleme kombinasyonu.", "en": "Custom-designed dangling metal and stone embellishment combination for Chantuque jacket.", "ar": "مجموعة زخارف معدنية وحجرية متدلية مصممة خصيصاً لسترة شانتيك." },
+    "name": {
+      "tr": "Chantuque Ceket Sallantılı Taş Donanımı",
+      "en": "Chantuque Jacket Dangling Stone Hardware",
+      "ar": "أجهزة حجرية متدلية لسترة شانتيك"
+    },
+    "desc": {
+      "tr": "Chantuque ceket için özel tasarlanan, sallantılı metal ve taşlı süsleme kombinasyonu.",
+      "en": "Custom-designed dangling metal and stone embellishment combination for Chantuque jacket.",
+      "ar": "مجموعة زخارف معدنية وحجرية متدلية مصممة خصيصاً لسترة شانتيك."
+    },
     "spec": "Sallantılı Metal • Taş Dekor • Chantuque Serisi",
     "app": "Chantuque Ceket, Kadın Üst Giyim"
   },
   {
-    "id": "KLX-20", "sku": "PI-22736-A", "cat": "apolet_yaka",
-    "badge": { "tr": "KRİSTAL SIRT ZİNCİRİ", "en": "CRYSTAL BACK CHAIN", "ar": "سلسلة ظهر كريستال" },
+    "id": "KLX-20",
+    "sku": "PI-22736-A",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "KRİSTAL SIRT ZİNCİRİ",
+      "en": "CRYSTAL BACK CHAIN",
+      "ar": "سلسلة ظهر كريستال"
+    },
     "img": "assets/katalog/kat-40.jpg",
-    "name": { "tr": "Chantuque Kristal Sırt Zinciri", "en": "Chantuque Crystal Back Chain", "ar": "سلسلة ظهر كريستالية شانتيك" },
-    "desc": { "tr": "Ceketin sırt bölümüne işlenen, sarkan kristal zincir süsleme efekti.", "en": "Crystal chain embellishment effect applied to the back section of the jacket.", "ar": "تأثير زخارف سلسلة كريستالية متدلية مطبق على الجزء الخلفي من السترة." },
+    "name": {
+      "tr": "Chantuque Kristal Sırt Zinciri",
+      "en": "Chantuque Crystal Back Chain",
+      "ar": "سلسلة ظهر كريستالية شانتيك"
+    },
+    "desc": {
+      "tr": "Ceketin sırt bölümüne işlenen, sarkan kristal zincir süsleme efekti.",
+      "en": "Crystal chain embellishment effect applied to the back section of the jacket.",
+      "ar": "تأثير زخارف سلسلة كريستالية متدلية مطبق على الجزء الخلفي من السترة."
+    },
     "spec": "Kristal Zincir • Sırt Süsleme • El Dikimi",
     "app": "Chantuque Ceket, Couture Giyim"
   },
   {
-    "id": "KLX-21", "sku": "PNR-22592", "cat": "tasli",
-    "badge": { "tr": "TAŞLI AKSESUAR SERİSİ", "en": "JEWELED ACCESSORY SERIES", "ar": "سلسلة إكسسوارات مرصعة" },
+    "id": "KLX-21",
+    "sku": "PNR-22592",
+    "cat": "tasli",
+    "badge": {
+      "tr": "TAŞLI AKSESUAR SERİSİ",
+      "en": "JEWELED ACCESSORY SERIES",
+      "ar": "سلسلة إكسسوارات مرصعة"
+    },
     "img": "assets/katalog/kat-41.jpg",
-    "name": { "tr": "Pinaraks Taşlı Lüks Aksesuar", "en": "Pinaraks Jeweled Luxury Accessory", "ar": "إكسسوار فاخر مرصع Pinaraks" },
-    "desc": { "tr": "Yüksek kaliteli taş çakımı ile üretilen, ekstra lüks sunum düzeyinde aksesuar.", "en": "Accessory produced with high-quality stone setting at extra luxury presentation level.", "ar": "إكسسوار مصنوع بترصيع حجري عالي الجودة بمستوى عرض فاخر استثنائي." },
+    "name": {
+      "tr": "Pinaraks Taşlı Lüks Aksesuar",
+      "en": "Pinaraks Jeweled Luxury Accessory",
+      "ar": "إكسسوار فاخر مرصع Pinaraks"
+    },
+    "desc": {
+      "tr": "Yüksek kaliteli taş çakımı ile üretilen, ekstra lüks sunum düzeyinde aksesuar.",
+      "en": "Accessory produced with high-quality stone setting at extra luxury presentation level.",
+      "ar": "إكسسوار مصنوع بترصيع حجري عالي الجودة بمستوى عرض فاخر استثنائي."
+    },
     "spec": "Yüksek Kalite Taş • Lüks Sunum • Nikel-Free",
     "app": "Kadın Koleksiyonu, Yüksek Moda"
   },
   {
-    "id": "KLX-22", "sku": "PNR-22593", "cat": "tasli",
-    "badge": { "tr": "PINARAKS STOk SERİSİ", "en": "PINARAKS STOCK SERIES", "ar": "سلسلة مخزون Pinaraks" },
+    "id": "KLX-22",
+    "sku": "PNR-22593",
+    "cat": "tasli",
+    "badge": {
+      "tr": "PINARAKS STOk SERİSİ",
+      "en": "PINARAKS STOCK SERIES",
+      "ar": "سلسلة مخزون Pinaraks"
+    },
     "img": "assets/katalog/kat-42.jpg",
-    "name": { "tr": "Pinaraks Stok Taşlı Model Aksesuar", "en": "Pinaraks Stock Jeweled Accessory", "ar": "إكسسوار نماذج مخزون مرصعة Pinaraks" },
-    "desc": { "tr": "Stok serisi, hızlı teslimat için hazır tutulan, yüksek kalite taşlı aksesuar koleksiyonu.", "en": "Stock series, high-quality jeweled accessory collection kept ready for quick delivery.", "ar": "مجموعة إكسسوارات مرصعة عالية الجودة من سلسلة المخزون جاهزة للتسليم السريع." },
+    "name": {
+      "tr": "Pinaraks Stok Taşlı Model Aksesuar",
+      "en": "Pinaraks Stock Jeweled Accessory",
+      "ar": "إكسسوار نماذج مخزون مرصعة Pinaraks"
+    },
+    "desc": {
+      "tr": "Stok serisi, hızlı teslimat için hazır tutulan, yüksek kalite taşlı aksesuar koleksiyonu.",
+      "en": "Stock series, high-quality jeweled accessory collection kept ready for quick delivery.",
+      "ar": "مجموعة إكسسوارات مرصعة عالية الجودة من سلسلة المخزون جاهزة للتسليم السريع."
+    },
     "spec": "Stok Serisi • Hızlı Teslimat • Nikel-Free",
     "app": "Hazır Giyim, Hızlı Proje"
   },
   {
-    "id": "KLX-23", "sku": "PNR-22594", "cat": "zincir_donanim",
-    "badge": { "tr": "ZİNCİR DONANIM", "en": "CHAIN HARDWARE", "ar": "أجهزة سلسلة" },
+    "id": "KLX-23",
+    "sku": "PNR-22594",
+    "cat": "zincir_donanim",
+    "badge": {
+      "tr": "ZİNCİR DONANIM",
+      "en": "CHAIN HARDWARE",
+      "ar": "أجهزة سلسلة"
+    },
     "img": "assets/katalog/kat-43.jpg",
-    "name": { "tr": "Zincir Donanım Kombin Seti", "en": "Chain Hardware Combination Set", "ar": "مجموعة أجهزة سلسلة مجمعة" },
-    "desc": { "tr": "Cep ağzı, yaka ve manşet için birlikte kullanılan zincir donanım kombin seti.", "en": "Chain hardware combination set for pocket, collar and cuff use together.", "ar": "مجموعة أجهزة سلسلة مدمجة للاستخدام المشترك في الجيب والياقة والكم." },
+    "name": {
+      "tr": "Zincir Donanım Kombin Seti",
+      "en": "Chain Hardware Combination Set",
+      "ar": "مجموعة أجهزة سلسلة مجمعة"
+    },
+    "desc": {
+      "tr": "Cep ağzı, yaka ve manşet için birlikte kullanılan zincir donanım kombin seti.",
+      "en": "Chain hardware combination set for pocket, collar and cuff use together.",
+      "ar": "مجموعة أجهزة سلسلة مدمجة للاستخدام المشترك في الجيب والياقة والكم."
+    },
     "spec": "Kombin Zincir • Çok Kullanımlı • Altın/Gümüş Seçenekli",
     "app": "Ceket Kombin Donanımı, Pantolon Yan"
   },
   {
-    "id": "KLX-24", "sku": "PNR-22595", "cat": "zincir_donanim",
-    "badge": { "tr": "PINYARAKS ZINCIR SERİSİ", "en": "PINARAKS CHAIN SERIES", "ar": "سلسلة Pinaraks" },
+    "id": "KLX-24",
+    "sku": "PNR-22595",
+    "cat": "zincir_donanim",
+    "badge": {
+      "tr": "PINYARAKS ZINCIR SERİSİ",
+      "en": "PINARAKS CHAIN SERIES",
+      "ar": "سلسلة Pinaraks"
+    },
     "img": "assets/katalog/kat-44.jpg",
-    "name": { "tr": "Pinaraks Zincir Aksesuar Koleksiyonu", "en": "Pinaraks Chain Accessory Collection", "ar": "مجموعة إكسسوارات سلسلة Pinaraks" },
-    "desc": { "tr": "Zincir aksesuar koleksiyonu, farklı kalınlık ve boy seçenekleriyle.", "en": "Chain accessory collection with different thickness and length options.", "ar": "مجموعة إكسسوارات سلسلة بخيارات سماكة وطول مختلفة." },
+    "name": {
+      "tr": "Pinaraks Zincir Aksesuar Koleksiyonu",
+      "en": "Pinaraks Chain Accessory Collection",
+      "ar": "مجموعة إكسسوارات سلسلة Pinaraks"
+    },
+    "desc": {
+      "tr": "Zincir aksesuar koleksiyonu, farklı kalınlık ve boy seçenekleriyle.",
+      "en": "Chain accessory collection with different thickness and length options.",
+      "ar": "مجموعة إكسسوارات سلسلة بخيارات سماكة وطول مختلفة."
+    },
     "spec": "Farklı Kalınlık • Boy Seçenekli • Pirinç Zincir",
     "app": "Ceket Donanımı, Çanta Aksesuar"
   },
   {
-    "id": "KLX-25", "sku": "PNR-22596", "cat": "zincir_donanim",
-    "badge": { "tr": "ZİNCİR VE TOKA", "en": "CHAIN AND BUCKLE", "ar": "سلسلة وإبزيم" },
+    "id": "KLX-25",
+    "sku": "PNR-22596",
+    "cat": "zincir_donanim",
+    "badge": {
+      "tr": "ZİNCİR VE TOKA",
+      "en": "CHAIN AND BUCKLE",
+      "ar": "سلسلة وإبزيم"
+    },
     "img": "assets/katalog/kat-45.jpg",
-    "name": { "tr": "Zincir ve Toka Kombinasyonu", "en": "Chain and Buckle Combination", "ar": "مجموعة سلسلة وإبزيم" },
-    "desc": { "tr": "Zincir ve toka birlikte kullanılan, modüler tasarımlı aksesuar donanım seti.", "en": "Modular design accessory hardware set using chain and buckle together.", "ar": "مجموعة أجهزة إكسسوار بتصميم معياري يستخدم السلسلة والإبزيم معاً." },
+    "name": {
+      "tr": "Zincir ve Toka Kombinasyonu",
+      "en": "Chain and Buckle Combination",
+      "ar": "مجموعة سلسلة وإبزيم"
+    },
+    "desc": {
+      "tr": "Zincir ve toka birlikte kullanılan, modüler tasarımlı aksesuar donanım seti.",
+      "en": "Modular design accessory hardware set using chain and buckle together.",
+      "ar": "مجموعة أجهزة إكسسوار بتصميم معياري يستخدم السلسلة والإبزيم معاً."
+    },
     "spec": "Modüler Tasarım • Zincir + Toka • Altın Kaplama",
     "app": "Kemer Toka, Ceket Önü, Pantolon"
   },
   {
-    "id": "KLX-26", "sku": "PNR-22597", "cat": "metal",
-    "badge": { "tr": "PINARAKS METAL DONANIM", "en": "PINARAKS METAL HARDWARE", "ar": "أجهزة معدنية Pinaraks" },
+    "id": "KLX-26",
+    "sku": "PNR-22597",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS METAL DONANIM",
+      "en": "PINARAKS METAL HARDWARE",
+      "ar": "أجهزة معدنية Pinaraks"
+    },
     "img": "assets/katalog/kat-46.jpg",
-    "name": { "tr": "Pinaraks Metal Donanım Serisi", "en": "Pinaraks Metal Hardware Series", "ar": "سلسلة أجهزة معدنية Pinaraks" },
-    "desc": { "tr": "Geniş yelpazede metal donanım serisi, özel üretim ve stok seçenekli.", "en": "Wide range metal hardware series with custom production and stock options.", "ar": "سلسلة أجهزة معدنية واسعة النطاق بخيارات الإنتاج الخاص والمخزون." },
+    "name": {
+      "tr": "Pinaraks Metal Donanım Serisi",
+      "en": "Pinaraks Metal Hardware Series",
+      "ar": "سلسلة أجهزة معدنية Pinaraks"
+    },
+    "desc": {
+      "tr": "Geniş yelpazede metal donanım serisi, özel üretim ve stok seçenekli.",
+      "en": "Wide range metal hardware series with custom production and stock options.",
+      "ar": "سلسلة أجهزة معدنية واسعة النطاق بخيارات الإنتاج الخاص والمخزون."
+    },
     "spec": "Geniş Seri • Özel/Stok • Farklı Kaplamalar",
     "app": "Her Türlü Giyim Donanımı"
   },
   {
-    "id": "KLX-27", "sku": "PNR-22621", "cat": "tasli",
-    "badge": { "tr": "PARLAK KRİSTAL", "en": "SPARKLING CRYSTAL", "ar": "كريستال لامع" },
+    "id": "KLX-27",
+    "sku": "PNR-22621",
+    "cat": "tasli",
+    "badge": {
+      "tr": "PARLAK KRİSTAL",
+      "en": "SPARKLING CRYSTAL",
+      "ar": "كريستال لامع"
+    },
     "img": "assets/katalog/kat-47.jpg",
-    "name": { "tr": "Parlak Kristal Taşlı Aksesuar", "en": "Sparkling Crystal Jeweled Accessory", "ar": "إكسسوار مرصع بكريستال لامع" },
-    "desc": { "tr": "Yüksek kırılım indeksli Çek kristal taşlar ile üretilen podyum kalitesi aksesuar.", "en": "Runway quality accessory produced with high refractive index Czech crystal stones.", "ar": "إكسسوار بجودة المنصة مصنوع بأحجار كريستال تشيكية ذات معامل انكسار عالٍ." },
+    "name": {
+      "tr": "Parlak Kristal Taşlı Aksesuar",
+      "en": "Sparkling Crystal Jeweled Accessory",
+      "ar": "إكسسوار مرصع بكريستال لامع"
+    },
+    "desc": {
+      "tr": "Yüksek kırılım indeksli Çek kristal taşlar ile üretilen podyum kalitesi aksesuar.",
+      "en": "Runway quality accessory produced with high refractive index Czech crystal stones.",
+      "ar": "إكسسوار بجودة المنصة مصنوع بأحجار كريستال تشيكية ذات معامل انكسار عالٍ."
+    },
     "spec": "Çek Kristali • Yüksek Kırılım • Nikel-Free",
     "app": "Podyum Koleksiyonu, Haute Couture"
   },
   {
-    "id": "KLX-28", "sku": "PNR-22624", "cat": "tasli",
-    "badge": { "tr": "BAROK KRİSTAL", "en": "BAROQUE CRYSTAL", "ar": "كريستال باروكي" },
+    "id": "KLX-28",
+    "sku": "PNR-22624",
+    "cat": "tasli",
+    "badge": {
+      "tr": "BAROK KRİSTAL",
+      "en": "BAROQUE CRYSTAL",
+      "ar": "كريستال باروكي"
+    },
     "img": "assets/katalog/kat-48.jpg",
-    "name": { "tr": "Barok Kristal Çoklu Taşlı Aksesuar", "en": "Baroque Multi-Crystal Accessory", "ar": "إكسسوار متعدد الكريستال الباروكي" },
-    "desc": { "tr": "Barok ilham alınan, çok taşlı kompozisyon, abiye ve gece giyimi için özel tasarım.", "en": "Baroque-inspired multi-stone composition, specially designed for evening and gala wear.", "ar": "تركيبة متعددة الأحجار مستوحاة من الباروك، مصممة خصيصاً للملابس السهرة والحفلات." },
+    "name": {
+      "tr": "Barok Kristal Çoklu Taşlı Aksesuar",
+      "en": "Baroque Multi-Crystal Accessory",
+      "ar": "إكسسوار متعدد الكريستال الباروكي"
+    },
+    "desc": {
+      "tr": "Barok ilham alınan, çok taşlı kompozisyon, abiye ve gece giyimi için özel tasarım.",
+      "en": "Baroque-inspired multi-stone composition, specially designed for evening and gala wear.",
+      "ar": "تركيبة متعددة الأحجار مستوحاة من الباروك، مصممة خصيصاً للملابس السهرة والحفلات."
+    },
     "spec": "Barok İlham • Çoklu Taş • Altın/Gümüş Seçenek",
     "app": "Abiye, Gala Giyim, Couture Aksesuarı"
   },
   {
-    "id": "KLX-29", "sku": "PNR-22625", "cat": "tasli",
-    "badge": { "tr": "TAŞLI LÜKS MODEL", "en": "JEWELED LUXURY MODEL", "ar": "نموذج فاخر مرصع" },
+    "id": "KLX-29",
+    "sku": "PNR-22625",
+    "cat": "tasli",
+    "badge": {
+      "tr": "TAŞLI LÜKS MODEL",
+      "en": "JEWELED LUXURY MODEL",
+      "ar": "نموذج فاخر مرصع"
+    },
     "img": "assets/katalog/kat-49.jpg",
-    "name": { "tr": "Taşlı Lüks Model Aksesuar Seti", "en": "Jeweled Luxury Accessory Set", "ar": "مجموعة إكسسوارات فاخرة مرصعة" },
-    "desc": { "tr": "Birden fazla aksesuarın birlikte kullanımı için hazırlanmış, taşlı lüks seri seti.", "en": "Jeweled luxury series set prepared for use of multiple accessories together.", "ar": "مجموعة سلسلة فاخرة مرصعة معدة للاستخدام المتزامن لعدة إكسسوارات." },
+    "name": {
+      "tr": "Taşlı Lüks Model Aksesuar Seti",
+      "en": "Jeweled Luxury Accessory Set",
+      "ar": "مجموعة إكسسوارات فاخرة مرصعة"
+    },
+    "desc": {
+      "tr": "Birden fazla aksesuarın birlikte kullanımı için hazırlanmış, taşlı lüks seri seti.",
+      "en": "Jeweled luxury series set prepared for use of multiple accessories together.",
+      "ar": "مجموعة سلسلة فاخرة مرصعة معدة للاستخدام المتزامن لعدة إكسسوارات."
+    },
     "spec": "Lüks Set • Çoklu Aksesuar • Taşlı Seri",
     "app": "Koleksiyon Seti, Showcase Donanımı"
   },
   {
-    "id": "KLX-30", "sku": "PNR-22626", "cat": "tasli",
-    "badge": { "tr": "KRISTAL AKSESUAR", "en": "CRYSTAL ACCESSORY", "ar": "إكسسوار كريستال" },
+    "id": "KLX-30",
+    "sku": "PNR-22626",
+    "cat": "tasli",
+    "badge": {
+      "tr": "KRISTAL AKSESUAR",
+      "en": "CRYSTAL ACCESSORY",
+      "ar": "إكسسوار كريستال"
+    },
     "img": "assets/katalog/kat-50.jpg",
-    "name": { "tr": "Kristal Aksesuar Premium Model", "en": "Crystal Accessory Premium Model", "ar": "نموذج إكسسوار كريستال متميز" },
-    "desc": { "tr": "Premium kalite kristal taşlı aksesuar, haute couture ve ready-to-wear koleksiyonlar için.", "en": "Premium quality crystal accessory for haute couture and ready-to-wear collections.", "ar": "إكسسوار كريستال بجودة متميزة لمجموعات الهوت كوتور وجاهز للارتداء." },
+    "name": {
+      "tr": "Kristal Aksesuar Premium Model",
+      "en": "Crystal Accessory Premium Model",
+      "ar": "نموذج إكسسوار كريستال متميز"
+    },
+    "desc": {
+      "tr": "Premium kalite kristal taşlı aksesuar, haute couture ve ready-to-wear koleksiyonlar için.",
+      "en": "Premium quality crystal accessory for haute couture and ready-to-wear collections.",
+      "ar": "إكسسوار كريستال بجودة متميزة لمجموعات الهوت كوتور وجاهز للارتداء."
+    },
     "spec": "Premium Kristal • Haute Couture • RTW",
     "app": "Haute Couture, RTW Koleksiyonu"
   },
   {
-    "id": "KLX-31", "sku": "PNR-22627", "cat": "tasli",
-    "badge": { "tr": "ÖZEL KOLEKSİYON", "en": "SPECIAL COLLECTION", "ar": "مجموعة خاصة" },
+    "id": "KLX-31",
+    "sku": "PNR-22627",
+    "cat": "tasli",
+    "badge": {
+      "tr": "ÖZEL KOLEKSİYON",
+      "en": "SPECIAL COLLECTION",
+      "ar": "مجموعة خاصة"
+    },
     "img": "assets/katalog/kat-51.jpg",
-    "name": { "tr": "Özel Koleksiyon Taşlı Aksesuar", "en": "Special Collection Jeweled Accessory", "ar": "إكسسوار مرصع مجموعة خاصة" },
-    "desc": { "tr": "Özel koleksiyon kapsamında üretilen, nadir taş kombinasyonu kullanan lüks aksesuar.", "en": "Luxury accessory using rare stone combination, produced within special collection scope.", "ar": "إكسسوار فاخر يستخدم مجموعة أحجار نادرة مصنوع ضمن نطاق المجموعة الخاصة." },
+    "name": {
+      "tr": "Özel Koleksiyon Taşlı Aksesuar",
+      "en": "Special Collection Jeweled Accessory",
+      "ar": "إكسسوار مرصع مجموعة خاصة"
+    },
+    "desc": {
+      "tr": "Özel koleksiyon kapsamında üretilen, nadir taş kombinasyonu kullanan lüks aksesuar.",
+      "en": "Luxury accessory using rare stone combination, produced within special collection scope.",
+      "ar": "إكسسوار فاخر يستخدم مجموعة أحجار نادرة مصنوع ضمن نطاق المجموعة الخاصة."
+    },
     "spec": "Nadir Taş • Özel Koleksiyon • Sınırlı Üretim",
     "app": "Sınırlı Koleksiyon, Haute Couture"
   },
   {
-    "id": "KLX-32", "sku": "PNR-22641", "cat": "tasli",
-    "badge": { "tr": "TAŞLI PİRİNÇ DÖKÜM", "en": "JEWELED BRASS CAST", "ar": "سبيكة نحاسية مرصعة" },
+    "id": "KLX-32",
+    "sku": "PNR-22641",
+    "cat": "tasli",
+    "badge": {
+      "tr": "TAŞLI PİRİNÇ DÖKÜM",
+      "en": "JEWELED BRASS CAST",
+      "ar": "سبيكة نحاسية مرصعة"
+    },
     "img": "assets/katalog/kat-52.jpg",
-    "name": { "tr": "Pirinç Döküm Taşlı Aksesuar", "en": "Brass Cast Jeweled Accessory", "ar": "إكسسوار مرصع من سبيكة نحاسية" },
-    "desc": { "tr": "Pirinç döküm gövde üzerine elle çakılmış taşlar, mükemmel tutma ve ışık kırılımı.", "en": "Stones hand-set on brass cast body, perfect hold and light refraction.", "ar": "أحجار مثبتة يدوياً على جسم نحاسي مسبوك، تثبيت مثالي وانكسار رائع للضوء." },
+    "name": {
+      "tr": "Pirinç Döküm Taşlı Aksesuar",
+      "en": "Brass Cast Jeweled Accessory",
+      "ar": "إكسسوار مرصع من سبيكة نحاسية"
+    },
+    "desc": {
+      "tr": "Pirinç döküm gövde üzerine elle çakılmış taşlar, mükemmel tutma ve ışık kırılımı.",
+      "en": "Stones hand-set on brass cast body, perfect hold and light refraction.",
+      "ar": "أحجار مثبتة يدوياً على جسم نحاسي مسبوك، تثبيت مثالي وانكسار رائع للضوء."
+    },
     "spec": "Pirinç Döküm • El Çakımı Taş • Mükemmel Tutma",
     "app": "Yüksek Moda, Lüks RTW"
   },
   {
-    "id": "KLX-33", "sku": "PNR-22643", "cat": "apolet_yaka",
-    "badge": { "tr": "APOLETLİ MODEL", "en": "EPAULETTE MODEL", "ar": "نموذج كتفية" },
+    "id": "KLX-33",
+    "sku": "PNR-22643",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "APOLETLİ MODEL",
+      "en": "EPAULETTE MODEL",
+      "ar": "نموذج كتفية"
+    },
     "img": "assets/katalog/kat-53.jpg",
-    "name": { "tr": "Apoletli Taşlı Model Süsleme", "en": "Epaulette Style Stone Embellishment", "ar": "زخرفة حجرية بأسلوب الكتفية" },
-    "desc": { "tr": "Askeri ilham ile tasarlanan apolet tarzı, taşlı yaka ve omuz süsleme aksesuarı.", "en": "Military-inspired epaulette style collar and shoulder embellishment accessory with stones.", "ar": "إكسسوار زخرفة ياقة وكتف بأسلوب الكتفية المستوحى من الطابع العسكري مع الأحجار." },
+    "name": {
+      "tr": "Apoletli Taşlı Model Süsleme",
+      "en": "Epaulette Style Stone Embellishment",
+      "ar": "زخرفة حجرية بأسلوب الكتفية"
+    },
+    "desc": {
+      "tr": "Askeri ilham ile tasarlanan apolet tarzı, taşlı yaka ve omuz süsleme aksesuarı.",
+      "en": "Military-inspired epaulette style collar and shoulder embellishment accessory with stones.",
+      "ar": "إكسسوار زخرفة ياقة وكتف بأسلوب الكتفية المستوحى من الطابع العسكري مع الأحجار."
+    },
     "spec": "Apolet Tarzı • Taşlı Yaka • Askeri Motif",
     "app": "Blazer Omuz, Yaka İşleme, Dış Giyim"
   },
   {
-    "id": "KLX-34", "sku": "PNR-22665", "cat": "apolet_yaka",
-    "badge": { "tr": "YAKA İŞLEME", "en": "COLLAR EMBROIDERY", "ar": "تطريز الياقة" },
+    "id": "KLX-34",
+    "sku": "PNR-22665",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "YAKA İŞLEME",
+      "en": "COLLAR EMBROIDERY",
+      "ar": "تطريز الياقة"
+    },
     "img": "assets/katalog/kat-54.jpg",
-    "name": { "tr": "Özel Yaka İşleme Aksesuar Donanımı", "en": "Special Collar Embroidery Hardware", "ar": "أجهزة تطريز ياقة خاصة" },
-    "desc": { "tr": "Yaka bölgesine özel tasarlanan, hem metal hem de taş içeren kompozit aksesuar donanımı.", "en": "Composite accessory hardware specially designed for collar area, containing both metal and stones.", "ar": "أجهزة إكسسوار مركبة مصممة خصيصاً لمنطقة الياقة تحتوي على المعدن والأحجار." },
+    "name": {
+      "tr": "Özel Yaka İşleme Aksesuar Donanımı",
+      "en": "Special Collar Embroidery Hardware",
+      "ar": "أجهزة تطريز ياقة خاصة"
+    },
+    "desc": {
+      "tr": "Yaka bölgesine özel tasarlanan, hem metal hem de taş içeren kompozit aksesuar donanımı.",
+      "en": "Composite accessory hardware specially designed for collar area, containing both metal and stones.",
+      "ar": "أجهزة إكسسوار مركبة مصممة خصيصاً لمنطقة الياقة تحتوي على المعدن والأحجار."
+    },
     "spec": "Kompozit Metal+Taş • Yaka Özel • Nikel-Free",
     "app": "Gömlek Yaka, Ceket Yaka, Bluz"
   },
   {
-    "id": "KLX-35", "sku": "PNR-22671", "cat": "apolet_yaka",
-    "badge": { "tr": "LÜKS OMUZ AKSESUARI", "en": "LUXURY SHOULDER ACCESSORY", "ar": "إكسسوار كتف فاخر" },
+    "id": "KLX-35",
+    "sku": "PNR-22671",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "LÜKS OMUZ AKSESUARI",
+      "en": "LUXURY SHOULDER ACCESSORY",
+      "ar": "إكسسوار كتف فاخر"
+    },
     "img": "assets/katalog/kat-55.jpg",
-    "name": { "tr": "Lüks Omuz Aksesuarı ve Süsleme", "en": "Luxury Shoulder Accessory and Decoration", "ar": "إكسسوار وزخرفة كتف فاخرة" },
-    "desc": { "tr": "Yüksek kalite metal ve taş kombinasyonu ile üretilen, omuz bölgesi için özel aksesuar.", "en": "Special accessory for shoulder area produced with high quality metal and stone combination.", "ar": "إكسسوار خاص لمنطقة الكتف مصنوع بمجموعة عالية الجودة من المعدن والأحجار." },
+    "name": {
+      "tr": "Lüks Omuz Aksesuarı ve Süsleme",
+      "en": "Luxury Shoulder Accessory and Decoration",
+      "ar": "إكسسوار وزخرفة كتف فاخرة"
+    },
+    "desc": {
+      "tr": "Yüksek kalite metal ve taş kombinasyonu ile üretilen, omuz bölgesi için özel aksesuar.",
+      "en": "Special accessory for shoulder area produced with high quality metal and stone combination.",
+      "ar": "إكسسوار خاص لمنطقة الكتف مصنوع بمجموعة عالية الجودة من المعدن والأحجار."
+    },
     "spec": "Omuz Özel • Metal+Taş • Lüks RTW",
     "app": "Takım Elbise Omuz, Blazer, Palto"
   },
   {
-    "id": "KLX-36", "sku": "PNR-22683", "cat": "metal",
-    "badge": { "tr": "METAL FİNİŞ MODEL", "en": "METAL FINISH MODEL", "ar": "نموذج تشطيب معدني" },
+    "id": "KLX-36",
+    "sku": "PNR-22683",
+    "cat": "metal",
+    "badge": {
+      "tr": "METAL FİNİŞ MODEL",
+      "en": "METAL FINISH MODEL",
+      "ar": "نموذج تشطيب معدني"
+    },
     "img": "assets/katalog/kat-56.jpg",
-    "name": { "tr": "Metal Finiş Premium Donanım Seti", "en": "Metal Finish Premium Hardware Set", "ar": "مجموعة أجهزة تشطيب معدني متميزة" },
-    "desc": { "tr": "Farklı metal kaplamalar ile mükemmel finiş kalitesi, podyum hazır donanım seti.", "en": "Perfect finish quality with different metal plating, runway-ready hardware set.", "ar": "جودة تشطيب مثالية مع طلاءات معدنية مختلفة، مجموعة أجهزة جاهزة للمنصة." },
+    "name": {
+      "tr": "Metal Finiş Premium Donanım Seti",
+      "en": "Metal Finish Premium Hardware Set",
+      "ar": "مجموعة أجهزة تشطيب معدني متميزة"
+    },
+    "desc": {
+      "tr": "Farklı metal kaplamalar ile mükemmel finiş kalitesi, podyum hazır donanım seti.",
+      "en": "Perfect finish quality with different metal plating, runway-ready hardware set.",
+      "ar": "جودة تشطيب مثالية مع طلاءات معدنية مختلفة، مجموعة أجهزة جاهزة للمنصة."
+    },
     "spec": "Çoklu Kaplama Seçeneği • Premium Finiş • Podyum Hazır",
     "app": "Tüm Kadın Giyim Koleksiyonları"
   },
   {
-    "id": "KLX-37", "sku": "PNR-23551", "cat": "apolet_yaka",
-    "badge": { "tr": "NETWORK DENİZ YILDIZI", "en": "NETWORK STARFISH", "ar": "نجم البحر نتورك" },
-    "img": "assets/katalog/PNR-23551_NETWORK_DEN_Z_Y_LD_Z__BSN.jpg",
-    "name": { "tr": "Network Deniz Yıldızı BSN Model", "en": "Network Starfish BSN Model", "ar": "نموذج نجم البحر BSN نتورك" },
-    "desc": { "tr": "Network koleksiyonu için üretilen, deniz yıldızı motifli BSN aplike modeli.", "en": "Starfish motif BSN applique model produced for Network collection.", "ar": "نموذج أبليك BSN بنقش نجم البحر من إنتاج مجموعة نتورك." },
+    "id": "KLX-37",
+    "sku": "PNR-23551",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "NETWORK DENİZ YILDIZI",
+      "en": "NETWORK STARFISH",
+      "ar": "نجم البحر نتورك"
+    },
+    "img": "assets/katalog/pnr-23551-network.jpg",
+    "name": {
+      "tr": "Network Deniz Yıldızı BSN Model",
+      "en": "Network Starfish BSN Model",
+      "ar": "نموذج نجم البحر BSN نتورك"
+    },
+    "desc": {
+      "tr": "Network koleksiyonu için üretilen, deniz yıldızı motifli BSN aplike modeli.",
+      "en": "Starfish motif BSN applique model produced for Network collection.",
+      "ar": "نموذج أبليك BSN بنقش نجم البحر من إنتاج مجموعة نتورك."
+    },
     "spec": "Deniz Yıldızı Motif • BSN Aplike • Network Serisi",
     "app": "Network Koleksiyon Giyimi, Casual Wear"
   },
   {
-    "id": "KLX-38", "sku": "PNR-23571", "cat": "zincir_donanim",
-    "badge": { "tr": "NETWORK ZİNCİR TAKIM", "en": "NETWORK CHAIN SUIT", "ar": "طقم سلسلة نتورك" },
-    "img": "assets/katalog/PNR-23571_NETWORK_TOP_Z_NC_RL__MODEL_G_M___TAK_M.jpg",
-    "name": { "tr": "Network Top Zincirli Model Gümüş Takım", "en": "Network Top Chain Model Silver Suite", "ar": "طقم نتورك الفضي بسلسلة علوية" },
-    "desc": { "tr": "Üst kısım zincirli gümüş metal takım, Network koleksiyonu için özel üretim.", "en": "Top chain silver metal suite with special production for Network collection.", "ar": "طقم معدني فضي بسلسلة علوية من إنتاج خاص لمجموعة نتورك." },
+    "id": "KLX-38",
+    "sku": "PNR-23571",
+    "cat": "zincir_donanim",
+    "badge": {
+      "tr": "NETWORK ZİNCİR TAKIM",
+      "en": "NETWORK CHAIN SUIT",
+      "ar": "طقم سلسلة نتورك"
+    },
+    "img": "assets/katalog/pnr-23571-network-top-zincir.jpg",
+    "name": {
+      "tr": "Network Top Zincirli Model Gümüş Takım",
+      "en": "Network Top Chain Model Silver Suite",
+      "ar": "طقم نتورك الفضي بسلسلة علوية"
+    },
+    "desc": {
+      "tr": "Üst kısım zincirli gümüş metal takım, Network koleksiyonu için özel üretim.",
+      "en": "Top chain silver metal suite with special production for Network collection.",
+      "ar": "طقم معدني فضي بسلسلة علوية من إنتاج خاص لمجموعة نتورك."
+    },
     "spec": "Gümüş Kaplama • Zincir Takım • Network Serisi",
     "app": "Network Ceket, Takım Elbise"
   },
   {
-    "id": "KLX-39", "sku": "PNR-23585", "cat": "zincir_donanim",
-    "badge": { "tr": "SARMAL MODEL", "en": "SPIRAL MODEL", "ar": "نموذج حلزوني" },
-    "img": "assets/katalog/PNR-23585_NETWORK_SARMAL_MODEL.jpg",
-    "name": { "tr": "Network Sarmal Model Donanımı", "en": "Network Spiral Model Hardware", "ar": "أجهزة النموذج الحلزوني نتورك" },
-    "desc": { "tr": "Network için tasarlanan özgün sarmal motifli metal aksesuar donanımı.", "en": "Original spiral motif metal accessory hardware designed for Network.", "ar": "أجهزة إكسسوار معدنية ذات نقش حلزوني أصلي مصممة لنتورك." },
+    "id": "KLX-39",
+    "sku": "PNR-23585",
+    "cat": "zincir_donanim",
+    "badge": {
+      "tr": "SARMAL MODEL",
+      "en": "SPIRAL MODEL",
+      "ar": "نموذج حلزوني"
+    },
+    "img": "assets/katalog/pnr-23585-network-sarmal.jpg",
+    "name": {
+      "tr": "Network Sarmal Model Donanımı",
+      "en": "Network Spiral Model Hardware",
+      "ar": "أجهزة النموذج الحلزوني نتورك"
+    },
+    "desc": {
+      "tr": "Network için tasarlanan özgün sarmal motifli metal aksesuar donanımı.",
+      "en": "Original spiral motif metal accessory hardware designed for Network.",
+      "ar": "أجهزة إكسسوار معدنية ذات نقش حلزوني أصلي مصممة لنتورك."
+    },
     "spec": "Sarmal Motif • Özgün Tasarım • Network",
     "app": "Ceket, Pantolon, Yaka Süsleme"
   },
   {
-    "id": "KLX-40", "sku": "PNR-23586", "cat": "metal",
-    "badge": { "tr": "GİSAR 4 LÜ SET", "en": "GISAR 4-PIECE SET", "ar": "طقم GISAR رباعي" },
-    "img": "assets/katalog/PNR-23586_G_SAR_4_L__G.jpg",
-    "name": { "tr": "Gisar 4 Parçalı Metal Donanım Seti", "en": "Gisar 4-Piece Metal Hardware Set", "ar": "طقم أجهزة معدنية رباعي من Gisar" },
-    "desc": { "tr": "Gisar koleksiyonu için hazırlanan, 4 parçalı uyumlu metal donanım seti.", "en": "Harmonious 4-piece metal hardware set prepared for Gisar collection.", "ar": "طقم أجهزة معدنية متناسق رباعي القطع معد لمجموعة Gisar." },
+    "id": "KLX-40",
+    "sku": "PNR-23586",
+    "cat": "metal",
+    "badge": {
+      "tr": "GİSAR 4 LÜ SET",
+      "en": "GISAR 4-PIECE SET",
+      "ar": "طقم GISAR رباعي"
+    },
+    "img": "assets/katalog/pnr-23586-gisar-metal.jpg",
+    "name": {
+      "tr": "Gisar 4 Parçalı Metal Donanım Seti",
+      "en": "Gisar 4-Piece Metal Hardware Set",
+      "ar": "طقم أجهزة معدنية رباعي من Gisar"
+    },
+    "desc": {
+      "tr": "Gisar koleksiyonu için hazırlanan, 4 parçalı uyumlu metal donanım seti.",
+      "en": "Harmonious 4-piece metal hardware set prepared for Gisar collection.",
+      "ar": "طقم أجهزة معدنية متناسق رباعي القطع معد لمجموعة Gisar."
+    },
     "spec": "4 Parçalı Set • Uyumlu Tasarım • Gisar",
     "app": "Gisar Koleksiyonu, Takım Giyim"
   },
   {
-    "id": "KLX-41", "sku": "PI-22660", "cat": "apolet_yaka",
-    "badge": { "tr": "EROĞLU EL İŞİ", "en": "EROĞLU HANDCRAFT", "ar": "حرفية يدوية أيروغلو" },
-    "img": "assets/katalog/P_-22660_ERO_LU_EL___VE_DZAYNL__KOT_CEKET.jpg",
-    "name": { "tr": "Eroğlu El İşi ve Dizaynlı Kot Ceket", "en": "Eroğlu Handcraft Denim Jacket", "ar": "سترة جينز مصنوعة يدوياً من أيروغلو" },
-    "desc": { "tr": "Eroğlu marka için üretilen, el işi detaylı ve özel dizaynlı kot ceket donanımı.", "en": "Denim jacket hardware with handcraft details and special design produced for Eroğlu brand.", "ar": "أجهزة سترة جينز بتفاصيل يدوية وتصميم خاص من إنتاج علامة أيروغلو." },
+    "id": "KLX-41",
+    "sku": "PI-22660",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "EROĞLU EL İŞİ",
+      "en": "EROĞLU HANDCRAFT",
+      "ar": "حرفية يدوية أيروغلو"
+    },
+    "img": "assets/katalog/pi-22660-eroglu-ceket.jpg",
+    "name": {
+      "tr": "Eroğlu El İşi ve Dizaynlı Kot Ceket",
+      "en": "Eroğlu Handcraft Denim Jacket",
+      "ar": "سترة جينز مصنوعة يدوياً من أيروغلو"
+    },
+    "desc": {
+      "tr": "Eroğlu marka için üretilen, el işi detaylı ve özel dizaynlı kot ceket donanımı.",
+      "en": "Denim jacket hardware with handcraft details and special design produced for Eroğlu brand.",
+      "ar": "أجهزة سترة جينز بتفاصيل يدوية وتصميم خاص من إنتاج علامة أيروغلو."
+    },
     "spec": "El İşi Detay • Özel Dizayn • Eroğlu Serisi",
     "app": "Eroğlu Koleksiyonu, Kot Giyim"
   },
   {
-    "id": "KLX-42", "sku": "PI-22703", "cat": "apolet_yaka",
-    "badge": { "tr": "AYDENİM EL İŞLEME", "en": "AYDENİM EMBROIDERY", "ar": "تطريز أيدنيم" },
-    "img": "assets/katalog/P_-22703_AYDEN_M_EL___LEME_KOT_CEKET.jpg",
-    "name": { "tr": "Aydenim El İşleme Kot Ceket Donanımı", "en": "Aydenim Embroidered Denim Jacket Hardware", "ar": "أجهزة سترة جينز مطرزة من أيدنيم" },
-    "desc": { "tr": "Aydenim markası için el işlemeli, özel teknik ve malzeme kombinasyonuyla üretilen kot ceket donanımı.", "en": "Denim jacket hardware with embroidery, produced with special technique and material combination for Aydenim.", "ar": "أجهزة سترة جينز مطرزة بتقنية خاصة ومجموعة مواد للعلامة أيدنيم." },
+    "id": "KLX-42",
+    "sku": "PI-22703",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "AYDENİM EL İŞLEME",
+      "en": "AYDENİM EMBROIDERY",
+      "ar": "تطريز أيدنيم"
+    },
+    "img": "assets/katalog/pi-22703-aydenim-ceket.jpg",
+    "name": {
+      "tr": "Aydenim El İşleme Kot Ceket Donanımı",
+      "en": "Aydenim Embroidered Denim Jacket Hardware",
+      "ar": "أجهزة سترة جينز مطرزة من أيدنيم"
+    },
+    "desc": {
+      "tr": "Aydenim markası için el işlemeli, özel teknik ve malzeme kombinasyonuyla üretilen kot ceket donanımı.",
+      "en": "Denim jacket hardware with embroidery, produced with special technique and material combination for Aydenim.",
+      "ar": "أجهزة سترة جينز مطرزة بتقنية خاصة ومجموعة مواد للعلامة أيدنيم."
+    },
     "spec": "El İşleme • Özel Teknik • Aydenim Serisi",
     "app": "Aydenim Koleksiyonu, Premium Denim"
   },
   {
-    "id": "KLX-43", "sku": "PI-22704", "cat": "apolet_yaka",
-    "badge": { "tr": "CHANTUQUE PUL İŞLEME", "en": "CHANTUQUE SEQUIN", "ar": "ترتر شانتيك" },
-    "img": "assets/katalog/P_-22704_CHANTUQUE_PUL___LEME.jpg",
-    "name": { "tr": "Chantuque Pul İşleme Aksesuar Donanımı", "en": "Chantuque Sequin Embellishment Hardware", "ar": "أجهزة زخرفة ترتر شانتيك" },
-    "desc": { "tr": "Chantuque koleksiyonu için özel pul işleme tekniğiyle üretilen, parlak ve göz alıcı aksesuar.", "en": "Shiny and eye-catching accessory produced with special sequin embellishment technique for Chantuque.", "ar": "إكسسوار لامع وجذاب مصنوع بتقنية زخرفة ترتر خاصة لمجموعة شانتيك." },
+    "id": "KLX-43",
+    "sku": "PI-22704",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "CHANTUQUE PUL İŞLEME",
+      "en": "CHANTUQUE SEQUIN",
+      "ar": "ترتر شانتيك"
+    },
+    "img": "assets/katalog/pi-22704-chantuque-pul.jpg",
+    "name": {
+      "tr": "Chantuque Pul İşleme Aksesuar Donanımı",
+      "en": "Chantuque Sequin Embellishment Hardware",
+      "ar": "أجهزة زخرفة ترتر شانتيك"
+    },
+    "desc": {
+      "tr": "Chantuque koleksiyonu için özel pul işleme tekniğiyle üretilen, parlak ve göz alıcı aksesuar.",
+      "en": "Shiny and eye-catching accessory produced with special sequin embellishment technique for Chantuque.",
+      "ar": "إكسسوار لامع وجذاب مصنوع بتقنية زخرفة ترتر خاصة لمجموعة شانتيك."
+    },
     "spec": "Pul İşleme • Özel Teknik • Chantuque",
     "app": "Chantuque Giyim, Gece Koleksiyonu"
   },
   {
-    "id": "KLX-44", "sku": "PI-22771", "cat": "zara_beymen",
-    "badge": { "tr": "BEYMEN ÇİN DÜĞMESİ", "en": "BEYMEN CHINESE BUTTON", "ar": "زر صيني بيمن" },
-    "img": "assets/katalog/P_-22771_BEYMEN__N_D__MEL__CEKET.jpg",
-    "name": { "tr": "Beymen Çin Düğmeli Özel Ceket", "en": "Beymen Chinese Button Special Jacket", "ar": "سترة خاصة بأزرار صينية بيمن" },
-    "desc": { "tr": "Geleneksel Çin düğme tekniğinden ilham alınan, modern yorumuyla lüks ceket donanımı.", "en": "Luxury jacket hardware inspired by traditional Chinese button technique with modern interpretation.", "ar": "أجهزة سترة فاخرة مستوحاة من تقنية الزر الصيني التقليدي بتفسير حديث." },
-    "spec": "Çin Düğme Tekniği • Modern Yorum • Beymen",
+    "id": "KLX-44",
+    "sku": "PI-22771",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS ÖZEL SEÇKİ",
+      "en": "PINARAKS ATELIER EDITION",
+      "ar": "مجموعة بيناراكس الخاصة"
+    },
+    "img": "assets/katalog/pi-22771-cin-dugmeli-ceket.jpg",
+    "name": {
+      "tr": "Pınaraks Çin Düğmeli Özel Ceket",
+      "en": "Pınaraks Chinese Button Special Jacket",
+      "ar": "سترة خاصة بأزرار صينية بيناراكس"
+    },
+    "desc": {
+      "tr": "Geleneksel Çin düğme tekniğinden ilham alınan, modern yorumuyla lüks ceket donanımı.",
+      "en": "Luxury jacket hardware inspired by traditional Chinese button technique with modern interpretation.",
+      "ar": "أجهزة سترة فاخرة مستوحاة من تقنية الزر الصيني التقليدي بتفسير حديث."
+    },
+    "spec": "Çin Düğme Tekniği • Modern Yorum • Pınaraks",
     "app": "Beymen Ceket, Özel Koleksiyon"
   },
   {
-    "id": "KLX-45", "sku": "PI-22781", "cat": "tasli",
-    "badge": { "tr": "SYSTEM TAŞ VE İNCİ", "en": "SYSTEM STONE AND PEARL", "ar": "حجر ولؤلؤ سيستم" },
-    "img": "assets/katalog/P_-22781_SYSTEM_TA__VE__NC___AK_ML__G_MLEK__HAL_S_.jpg",
-    "name": { "tr": "System Taş ve İnci Çakımlı Gömlek Donanımı", "en": "System Stone and Pearl Set Shirt Hardware", "ar": "أجهزة قميص مرصعة بالحجر واللؤلؤ سيستم" },
-    "desc": { "tr": "System markası Halis koleksiyonu için taş ve inci çakımı tekniğiyle üretilen gömlek donanımı.", "en": "Shirt hardware produced with stone and pearl setting technique for System brand Halis collection.", "ar": "أجهزة قميص مصنوعة بتقنية ترصيع الحجر واللؤلؤ لمجموعة Halis من علامة System." },
+    "id": "KLX-45",
+    "sku": "PI-22781",
+    "cat": "tasli",
+    "badge": {
+      "tr": "SYSTEM TAŞ VE İNCİ",
+      "en": "SYSTEM STONE AND PEARL",
+      "ar": "حجر ولؤلؤ سيستم"
+    },
+    "img": "assets/katalog/pi-22781-system-gomlek.jpg",
+    "name": {
+      "tr": "System Taş ve İnci Çakımlı Gömlek Donanımı",
+      "en": "System Stone and Pearl Set Shirt Hardware",
+      "ar": "أجهزة قميص مرصعة بالحجر واللؤلؤ سيستم"
+    },
+    "desc": {
+      "tr": "System markası Halis koleksiyonu için taş ve inci çakımı tekniğiyle üretilen gömlek donanımı.",
+      "en": "Shirt hardware produced with stone and pearl setting technique for System brand Halis collection.",
+      "ar": "أجهزة قميص مصنوعة بتقنية ترصيع الحجر واللؤلؤ لمجموعة Halis من علامة System."
+    },
     "spec": "Taş + İnci Çakım • Halis Serisi • System",
     "app": "System Gömlek, Kadın Üst Giyim"
   },
   {
-    "id": "KLX-46", "sku": "PI-22782", "cat": "tasli",
-    "badge": { "tr": "SYSTEM TAŞ VE İNCİ", "en": "SYSTEM STONE AND PEARL", "ar": "حجر ولؤلؤ سيستم" },
-    "img": "assets/katalog/P_-22782_SYSTEM_TA__VE__NC___AK_ML__PANTOLON__HAL_S_.jpg",
-    "name": { "tr": "System Taş ve İnci Çakımlı Pantolon Donanımı", "en": "System Stone and Pearl Set Trouser Hardware", "ar": "أجهزة بنطال مرصعة بالحجر واللؤلؤ سيستم" },
-    "desc": { "tr": "System Halis koleksiyonu için pantolon kenar ve dekor bölgelerine taş-inci çakım donanımı.", "en": "Stone-pearl hardware for trouser edges and decor sections for System Halis collection.", "ar": "أجهزة ترصيع حجر ولؤلؤ لحواف البنطال ومناطق الزخرفة لمجموعة Halis سيستم." },
+    "id": "KLX-46",
+    "sku": "PI-22782",
+    "cat": "tasli",
+    "badge": {
+      "tr": "SYSTEM TAŞ VE İNCİ",
+      "en": "SYSTEM STONE AND PEARL",
+      "ar": "حجر ولؤلؤ سيستم"
+    },
+    "img": "assets/katalog/pi-22782-system-pantolon.jpg",
+    "name": {
+      "tr": "System Taş ve İnci Çakımlı Pantolon Donanımı",
+      "en": "System Stone and Pearl Set Trouser Hardware",
+      "ar": "أجهزة بنطال مرصعة بالحجر واللؤلؤ سيستم"
+    },
+    "desc": {
+      "tr": "System Halis koleksiyonu için pantolon kenar ve dekor bölgelerine taş-inci çakım donanımı.",
+      "en": "Stone-pearl hardware for trouser edges and decor sections for System Halis collection.",
+      "ar": "أجهزة ترصيع حجر ولؤلؤ لحواف البنطال ومناطق الزخرفة لمجموعة Halis سيستم."
+    },
     "spec": "Pantolon Özel • Taş+İnci • Halis Serisi",
     "app": "System Pantolon, Takım Giyim"
   },
   {
-    "id": "KLX-47", "sku": "PI-22792", "cat": "tasli",
-    "badge": { "tr": "SYSTEM BEYOĞLU ÇAKIM", "en": "SYSTEM BEYOGLU SETTING", "ar": "ترصيع بيوغلو سيستم" },
-    "img": "assets/katalog/P_-22792_SYSTEM_BEYO_LU__AK_M_TA__D_ZAYN__CEKET.jpg",
-    "name": { "tr": "System Beyoğlu Çakım Taş Dizayn Ceket", "en": "System Beyoglu Setting Stone Design Jacket", "ar": "سترة تصميم حجري بترصيع بيوغلو سيستم" },
-    "desc": { "tr": "Beyoğlu çakım tekniğiyle dizaynlı taş işleme, System koleksiyonu kadın ceketleri için.", "en": "Designed stone embellishment with Beyoglu setting technique for System collection women's jackets.", "ar": "زخرفة حجرية مصممة بتقنية ترصيع بيوغلو لسترات المرأة من مجموعة System." },
+    "id": "KLX-47",
+    "sku": "PI-22792",
+    "cat": "tasli",
+    "badge": {
+      "tr": "SYSTEM BEYOĞLU ÇAKIM",
+      "en": "SYSTEM BEYOGLU SETTING",
+      "ar": "ترصيع بيوغلو سيستم"
+    },
+    "img": "assets/katalog/pi-22792-system-ceket.jpg",
+    "name": {
+      "tr": "System Beyoğlu Çakım Taş Dizayn Ceket",
+      "en": "System Beyoglu Setting Stone Design Jacket",
+      "ar": "سترة تصميم حجري بترصيع بيوغلو سيستم"
+    },
+    "desc": {
+      "tr": "Beyoğlu çakım tekniğiyle dizaynlı taş işleme, System koleksiyonu kadın ceketleri için.",
+      "en": "Designed stone embellishment with Beyoglu setting technique for System collection women's jackets.",
+      "ar": "زخرفة حجرية مصممة بتقنية ترصيع بيوغلو لسترات المرأة من مجموعة System."
+    },
     "spec": "Beyoğlu Çakım Tekniği • Dizayn Taş • System",
     "app": "System Ceket, Kadın RTW"
   },
   {
-    "id": "KLX-48", "sku": "PI-22793", "cat": "tasli",
-    "badge": { "tr": "SYSTEM BEYOĞLU ÇAKIM", "en": "SYSTEM BEYOGLU SETTING", "ar": "ترصيع بيوغلو سيستم" },
-    "img": "assets/katalog/P_-22793_SYSTEM__BEYO_LU__AK_M_TA__D_ZAYN_PANTOLON.jpg",
-    "name": { "tr": "System Beyoğlu Çakım Taş Dizayn Pantolon", "en": "System Beyoglu Setting Stone Design Trouser", "ar": "بنطال تصميم حجري بترصيع بيوغلو سيستم" },
-    "desc": { "tr": "System koleksiyonu pantolon modeli için Beyoğlu çakım tekniğiyle taş dizayn donanımı.", "en": "Stone design hardware with Beyoglu setting technique for System collection trouser model.", "ar": "أجهزة تصميم حجري بتقنية بيوغلو لنموذج البنطال من مجموعة System." },
+    "id": "KLX-48",
+    "sku": "PI-22793",
+    "cat": "tasli",
+    "badge": {
+      "tr": "SYSTEM BEYOĞLU ÇAKIM",
+      "en": "SYSTEM BEYOGLU SETTING",
+      "ar": "ترصيع بيوغلو سيستم"
+    },
+    "img": "assets/katalog/pi-22793-system-pantolon.jpg",
+    "name": {
+      "tr": "System Beyoğlu Çakım Taş Dizayn Pantolon",
+      "en": "System Beyoglu Setting Stone Design Trouser",
+      "ar": "بنطال تصميم حجري بترصيع بيوغلو سيستم"
+    },
+    "desc": {
+      "tr": "System koleksiyonu pantolon modeli için Beyoğlu çakım tekniğiyle taş dizayn donanımı.",
+      "en": "Stone design hardware with Beyoglu setting technique for System collection trouser model.",
+      "ar": "أجهزة تصميم حجري بتقنية بيوغلو لنموذج البنطال من مجموعة System."
+    },
     "spec": "Pantolon Özel • Beyoğlu Çakım • System",
     "app": "System Pantolon, Kadın RTW"
   },
   {
-    "id": "KLX-49", "sku": "PI-22795", "cat": "apolet_yaka",
-    "badge": { "tr": "SYSTEM GOLD PUL BONCUK", "en": "SYSTEM GOLD SEQUIN BEAD", "ar": "خرز وترتر ذهبي سيستم" },
-    "img": "assets/katalog/P_-22795_SYSTEM_GOLD_PUL_BONCUK___LEMEL__CEKET.jpg",
-    "name": { "tr": "System Gold Pul Boncuk İşlemeli Ceket", "en": "System Gold Sequin Bead Embroidered Jacket", "ar": "سترة مطرزة بترتر وخرز ذهبي سيستم" },
-    "desc": { "tr": "System koleksiyonu için gold pul ve boncukla işlenmiş, görkemli ceket donanımı.", "en": "Magnificent jacket hardware embroidered with gold sequins and beads for System collection.", "ar": "أجهزة سترة رائعة مطرزة بترتر وخرز ذهبي لمجموعة System." },
+    "id": "KLX-49",
+    "sku": "PI-22795",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "SYSTEM GOLD PUL BONCUK",
+      "en": "SYSTEM GOLD SEQUIN BEAD",
+      "ar": "خرز وترتر ذهبي سيستم"
+    },
+    "img": "assets/katalog/pi-22795-system-gold-pul.jpg",
+    "name": {
+      "tr": "System Gold Pul Boncuk İşlemeli Ceket",
+      "en": "System Gold Sequin Bead Embroidered Jacket",
+      "ar": "سترة مطرزة بترتر وخرز ذهبي سيستم"
+    },
+    "desc": {
+      "tr": "System koleksiyonu için gold pul ve boncukla işlenmiş, görkemli ceket donanımı.",
+      "en": "Magnificent jacket hardware embroidered with gold sequins and beads for System collection.",
+      "ar": "أجهزة سترة رائعة مطرزة بترتر وخرز ذهبي لمجموعة System."
+    },
     "spec": "Gold Pul + Boncuk • El İşlemesi • System",
     "app": "System Ceket, Gece Koleksiyonu"
   },
   {
-    "id": "KLX-50", "sku": "PI-22802", "cat": "apolet_yaka",
-    "badge": { "tr": "SYSTEM ÇİÇEK MOTİF", "en": "SYSTEM FLORAL MOTIF", "ar": "نقش زهري سيستم" },
-    "img": "assets/katalog/P_-22802_SYSTEM___EK_MOT_F___LEMEL__KOT_CEKET.jpg",
-    "name": { "tr": "System Çiçek Motif İşlemeli Kot Ceket", "en": "System Floral Motif Embroidered Denim Jacket", "ar": "سترة جينز مطرزة بنقش زهري سيستم" },
-    "desc": { "tr": "System koleksiyonu için çiçek motifi ile işlenmiş kot ceket, premium el işçiliği.", "en": "Denim jacket embroidered with floral motif for System collection, premium handcraft.", "ar": "سترة جينز مطرزة بنقش زهري لمجموعة System، بحرفية يدوية متميزة." },
+    "id": "KLX-50",
+    "sku": "PI-22802",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "SYSTEM ÇİÇEK MOTİF",
+      "en": "SYSTEM FLORAL MOTIF",
+      "ar": "نقش زهري سيستم"
+    },
+    "img": "assets/katalog/pi-22802-system-cicek-ceket.jpg",
+    "name": {
+      "tr": "System Çiçek Motif İşlemeli Kot Ceket",
+      "en": "System Floral Motif Embroidered Denim Jacket",
+      "ar": "سترة جينز مطرزة بنقش زهري سيستم"
+    },
+    "desc": {
+      "tr": "System koleksiyonu için çiçek motifi ile işlenmiş kot ceket, premium el işçiliği.",
+      "en": "Denim jacket embroidered with floral motif for System collection, premium handcraft.",
+      "ar": "سترة جينز مطرزة بنقش زهري لمجموعة System، بحرفية يدوية متميزة."
+    },
     "spec": "Çiçek Motif • El İşçiliği • System Serisi",
     "app": "System Kot Ceket, Premium Denim"
   },
   {
-    "id": "KLX-51", "sku": "PI-22803", "cat": "zincir_donanim",
-    "badge": { "tr": "SYSTEM CEP ZİNCİR", "en": "SYSTEM POCKET CHAIN", "ar": "سلسلة جيب سيستم" },
-    "img": "assets/katalog/P_-22803_SYSTEM_CEP_Z_NC_R_SALLANT_L__CEKET.jpg",
-    "name": { "tr": "System Cep Zincir Sallantılı Ceket Donanımı", "en": "System Pocket Chain Dangling Jacket Hardware", "ar": "أجهزة سترة معلقة بسلسلة جيب سيستم" },
-    "desc": { "tr": "System koleksiyonu ceket ceplerine özel, sallantılı metal zincir dekor donanımı.", "en": "Dangling metal chain decoration hardware specially for System collection jacket pockets.", "ar": "أجهزة زخرفة سلسلة معدنية متدلية خاصة لجيوب سترة مجموعة System." },
+    "id": "KLX-51",
+    "sku": "PI-22803",
+    "cat": "zincir_donanim",
+    "badge": {
+      "tr": "SYSTEM CEP ZİNCİR",
+      "en": "SYSTEM POCKET CHAIN",
+      "ar": "سلسلة جيب سيستم"
+    },
+    "img": "assets/katalog/pi-22803-system-cep-zincir.jpg",
+    "name": {
+      "tr": "System Cep Zincir Sallantılı Ceket Donanımı",
+      "en": "System Pocket Chain Dangling Jacket Hardware",
+      "ar": "أجهزة سترة معلقة بسلسلة جيب سيستم"
+    },
+    "desc": {
+      "tr": "System koleksiyonu ceket ceplerine özel, sallantılı metal zincir dekor donanımı.",
+      "en": "Dangling metal chain decoration hardware specially for System collection jacket pockets.",
+      "ar": "أجهزة زخرفة سلسلة معدنية متدلية خاصة لجيوب سترة مجموعة System."
+    },
     "spec": "Sallantılı Zincir • Cep Dekor • System",
     "app": "System Ceket, Kadın Üst Giyim"
   },
   {
-    "id": "KLX-52", "sku": "PI-22815", "cat": "apolet_yaka",
-    "badge": { "tr": "BAYKANLAR PUL İŞLEME", "en": "BAYKANLAR SEQUIN", "ar": "ترتر بايكانلار" },
-    "img": "assets/katalog/P_-22815_BAYKANLAR_PUL___LEME_ETEK__N.jpg",
-    "name": { "tr": "Baykanlar Pul İşleme Etek Ön Donanımı", "en": "Baykanlar Sequin Skirt Front Hardware", "ar": "أجهزة واجهة التنورة بترتر بايكانلار" },
-    "desc": { "tr": "Baykanlar markası için pul işleme tekniğiyle üretilen, etek ön bölgesine özel dekor donanımı.", "en": "Decoration hardware for skirt front specially produced with sequin technique for Baykanlar brand.", "ar": "أجهزة زخرفة خاصة لواجهة التنورة مصنوعة بتقنية الترتر لعلامة Baykanlar." },
+    "id": "KLX-52",
+    "sku": "PI-22815",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "BAYKANLAR PUL İŞLEME",
+      "en": "BAYKANLAR SEQUIN",
+      "ar": "ترتر بايكانلار"
+    },
+    "img": "assets/katalog/pi-22815-baykanlar-etek.jpg",
+    "name": {
+      "tr": "Baykanlar Pul İşleme Etek Ön Donanımı",
+      "en": "Baykanlar Sequin Skirt Front Hardware",
+      "ar": "أجهزة واجهة التنورة بترتر بايكانلار"
+    },
+    "desc": {
+      "tr": "Baykanlar markası için pul işleme tekniğiyle üretilen, etek ön bölgesine özel dekor donanımı.",
+      "en": "Decoration hardware for skirt front specially produced with sequin technique for Baykanlar brand.",
+      "ar": "أجهزة زخرفة خاصة لواجهة التنورة مصنوعة بتقنية الترتر لعلامة Baykanlar."
+    },
     "spec": "Pul İşleme • Etek Özel • Baykanlar",
     "app": "Baykanlar Etek, Kadın Alt Giyim"
   },
   {
-    "id": "KLX-53", "sku": "PI-22816", "cat": "apolet_yaka",
-    "badge": { "tr": "BAYKANLAR PUL İŞLEME", "en": "BAYKANLAR SEQUIN", "ar": "ترتر بايكانلار" },
-    "img": "assets/katalog/P_-22816_BAYKANLAR_PUL___LEME_CEKET__N.jpg",
-    "name": { "tr": "Baykanlar Pul İşleme Ceket Ön Donanımı", "en": "Baykanlar Sequin Jacket Front Hardware", "ar": "أجهزة واجهة السترة بترتر بايكانلار" },
-    "desc": { "tr": "Baykanlar koleksiyonu için ceket ön bölgesine tasarlanan, pul işlemeli premium donanım.", "en": "Premium sequin hardware designed for jacket front section for Baykanlar collection.", "ar": "أجهزة ترتر متميزة مصممة للواجهة الأمامية للسترة لمجموعة Baykanlar." },
+    "id": "KLX-53",
+    "sku": "PI-22816",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "BAYKANLAR PUL İŞLEME",
+      "en": "BAYKANLAR SEQUIN",
+      "ar": "ترتر بايكانلار"
+    },
+    "img": "assets/katalog/pi-22816-baykanlar-ceket.jpg",
+    "name": {
+      "tr": "Baykanlar Pul İşleme Ceket Ön Donanımı",
+      "en": "Baykanlar Sequin Jacket Front Hardware",
+      "ar": "أجهزة واجهة السترة بترتر بايكانلار"
+    },
+    "desc": {
+      "tr": "Baykanlar koleksiyonu için ceket ön bölgesine tasarlanan, pul işlemeli premium donanım.",
+      "en": "Premium sequin hardware designed for jacket front section for Baykanlar collection.",
+      "ar": "أجهزة ترتر متميزة مصممة للواجهة الأمامية للسترة لمجموعة Baykanlar."
+    },
     "spec": "Pul İşleme • Ceket Ön • Premium Finiş",
     "app": "Baykanlar Ceket, Kadın Üst Giyim"
   },
   {
-    "id": "KLX-54", "sku": "PI-22819", "cat": "apolet_yaka",
-    "badge": { "tr": "CHANTUQUE PUL YAPRAK", "en": "CHANTUQUE SEQUIN LEAF", "ar": "ورقة ترتر شانتيك" },
-    "img": "assets/katalog/P_-22819.jpg",
-    "name": { "tr": "Chantuque Pul Yaprak Taş Baskılı Ceket", "en": "Chantuque Sequin Leaf Stone Print Jacket", "ar": "سترة شانتيك بورق ترتر وطباعة حجرية" },
-    "desc": { "tr": "Chantuque koleksiyonu için yaprak motifli pul işleme ve taş baskı kombinasyonuyla üretilen ceket.", "en": "Jacket produced with leaf motif sequin embellishment and stone print combination for Chantuque.", "ar": "سترة مصنوعة بمجموعة زخارف ترتر بنقش ورقة وطباعة حجرية لمجموعة شانتيك." },
+    "id": "KLX-54",
+    "sku": "PI-22819",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "CHANTUQUE PUL YAPRAK",
+      "en": "CHANTUQUE SEQUIN LEAF",
+      "ar": "ورقة ترتر شانتيك"
+    },
+    "img": "assets/katalog/pi-22819-chantuque-yaprak.jpg",
+    "name": {
+      "tr": "Chantuque Pul Yaprak Taş Baskılı Ceket",
+      "en": "Chantuque Sequin Leaf Stone Print Jacket",
+      "ar": "سترة شانتيك بورق ترتر وطباعة حجرية"
+    },
+    "desc": {
+      "tr": "Chantuque koleksiyonu için yaprak motifli pul işleme ve taş baskı kombinasyonuyla üretilen ceket.",
+      "en": "Jacket produced with leaf motif sequin embellishment and stone print combination for Chantuque.",
+      "ar": "سترة مصنوعة بمجموعة زخارف ترتر بنقش ورقة وطباعة حجرية لمجموعة شانتيك."
+    },
     "spec": "Yaprak Motif • Pul + Taş Baskı • Chantuque",
     "app": "Chantuque Ceket, Haute Couture RTW"
   },
   {
-    "id": "KLX-55", "sku": "PI-22824", "cat": "apolet_yaka",
-    "badge": { "tr": "CHANTUQUE EL İŞİ KOT", "en": "CHANTUQUE HANDCRAFT DENIM", "ar": "جينز يدوي شانتيك" },
-    "img": "assets/katalog/P_-22824_CHANTUQUE_EL___KOT_ELB_SE.jpg",
-    "name": { "tr": "Chantuque El İşi Kot Elbise Donanımı", "en": "Chantuque Handcraft Denim Dress Hardware", "ar": "أجهزة فستان جينز يدوي شانتيك" },
-    "desc": { "tr": "Chantuque için el işçiliğiyle üretilen, özel teknikler kullanılan kot elbise aksesuar donanımı.", "en": "Denim dress accessory hardware handcrafted for Chantuque using special techniques.", "ar": "أجهزة إكسسوار فستان جينز مصنوعة يدوياً لشانتيك بتقنيات خاصة." },
+    "id": "KLX-55",
+    "sku": "PI-22824",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "CHANTUQUE EL İŞİ KOT",
+      "en": "CHANTUQUE HANDCRAFT DENIM",
+      "ar": "جينز يدوي شانتيك"
+    },
+    "img": "assets/katalog/pi-22824-chantuque-elbise.jpg",
+    "name": {
+      "tr": "Chantuque El İşi Kot Elbise Donanımı",
+      "en": "Chantuque Handcraft Denim Dress Hardware",
+      "ar": "أجهزة فستان جينز يدوي شانتيك"
+    },
+    "desc": {
+      "tr": "Chantuque için el işçiliğiyle üretilen, özel teknikler kullanılan kot elbise aksesuar donanımı.",
+      "en": "Denim dress accessory hardware handcrafted for Chantuque using special techniques.",
+      "ar": "أجهزة إكسسوار فستان جينز مصنوعة يدوياً لشانتيك بتقنيات خاصة."
+    },
     "spec": "El İşçiliği • Özel Teknik • Chantuque Serisi",
     "app": "Chantuque Elbise, Premium Denim"
   },
   {
-    "id": "KLX-56", "sku": "PI-22825", "cat": "apolet_yaka",
-    "badge": { "tr": "BAYKANLAR TÜYLÜ PANT", "en": "BAYKANLAR FEATHER TROUSERS", "ar": "بنطال ريش بايكانلار" },
-    "img": "assets/katalog/P_-22825_BAYKANLAR_T_YL__PANT.jpg",
-    "name": { "tr": "Baykanlar Tüylü Pantolon Donanımı", "en": "Baykanlar Feather Trouser Hardware", "ar": "أجهزة بنطال الريش بايكانلار" },
-    "desc": { "tr": "Baykanlar koleksiyonu tüylü pantolon için özel üretilen dekor ve aksesuar donanımı.", "en": "Decoration and accessory hardware specially produced for Baykanlar collection feather trousers.", "ar": "أجهزة زخرفة وإكسسوار مصنوعة خصيصاً لبنطال الريش من مجموعة Baykanlar." },
+    "id": "KLX-56",
+    "sku": "PI-22825",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "BAYKANLAR TÜYLÜ PANT",
+      "en": "BAYKANLAR FEATHER TROUSERS",
+      "ar": "بنطال ريش بايكانلار"
+    },
+    "img": "assets/katalog/pi-22825-baykanlar-pant.jpg",
+    "name": {
+      "tr": "Baykanlar Tüylü Pantolon Donanımı",
+      "en": "Baykanlar Feather Trouser Hardware",
+      "ar": "أجهزة بنطال الريش بايكانلار"
+    },
+    "desc": {
+      "tr": "Baykanlar koleksiyonu tüylü pantolon için özel üretilen dekor ve aksesuar donanımı.",
+      "en": "Decoration and accessory hardware specially produced for Baykanlar collection feather trousers.",
+      "ar": "أجهزة زخرفة وإكسسوار مصنوعة خصيصاً لبنطال الريش من مجموعة Baykanlar."
+    },
     "spec": "Tüylü Pant Özel • Dekor Donanım • Baykanlar",
     "app": "Baykanlar Koleksiyonu, Haute Couture"
+  },
+  {
+    "id": "KLX-57",
+    "sku": "PIN-MT-101",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS DÖKÜM DONANIM",
+      "en": "PINARAKS CAST HARDWARE",
+      "ar": "إكسسوارات مصبوبة بيناراكس"
+    },
+    "img": "assets/ref/prod_metal_01.jpg",
+    "name": {
+      "tr": "D-Tırnak Kasalı Kristal Broş & Agraf",
+      "en": "D-Claw Cased Crystal Brooch & Agreffe",
+      "ar": "بروش ومشبك كريستال بقاعدة مخالب D"
+    },
+    "desc": {
+      "tr": "Nikel-free fre kaplama banyolarında renklendirilmiş, kaynak ve döküm teknikleriyle birleştirilmiş lüks broş ve agraf.",
+      "en": "Luxury brooch and agreffe colored in nickel-free plating baths, combined with precision welding and casting techniques.",
+      "ar": "بروش ومشبك فاخر ملون في أحواض طلاء خالية من النيكل، مجمع بتقنيات لحام وسباكة عالية الدقة."
+    },
+    "spec": "Döküm Pirinç • D-Tırnak Kristal • Nikel-Free Fre Kaplama",
+    "app": "Dış Giyim, Ceket, Triko, Abiye"
+  },
+  {
+    "id": "KLX-58",
+    "sku": "PIN-MT-098",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS MAKRO METAL",
+      "en": "PINARAKS MACRO METAL",
+      "ar": "إكسسوارات ماكرو بيناراكس"
+    },
+    "img": "assets/macro_metal.jpg",
+    "name": {
+      "tr": "Ruthenium & 24K Dövme Metal Düğme",
+      "en": "Ruthenium & 24K Forged Metal Button",
+      "ar": "زر معدني مطروق بذهب 24 قيراط وروثينيوم"
+    },
+    "desc": {
+      "tr": "İtalyan ayna polisajı ve mikro-lazer HC armalı, fre banyosunda nikel-free kaplanmış lüks metal düğme serisi.",
+      "en": "Italian mirror polish button series with micro-laser crest, electroplated nickel-free in specialized galvanic baths.",
+      "ar": "سلسلة أزرار معدنية فاخرة مع صقل مرآة إيطالي وشعار محفور بالميكرو-ليزر، مطلية بدون نيكل."
+    },
+    "spec": "Dövme Pirinç • 24K Altın & Ruthenium • Ayna Polisaj",
+    "app": "Blazer Ceket, Dış Giyim, Palto"
+  },
+  {
+    "id": "KLX-59",
+    "sku": "PIN-MT-102",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS DÖKÜM DÜĞME",
+      "en": "PINARAKS CAST BUTTON",
+      "ar": "أزرار مسبوكة بيناراكس"
+    },
+    "img": "assets/ref/prod_metal_02.jpg",
+    "name": {
+      "tr": "Kristal Taşlı Metal Düğme & Toka",
+      "en": "Crystal Studded Metal Button & Buckle",
+      "ar": "زر ومشبك معدني مرصع بأحجار الكريستال"
+    },
+    "desc": {
+      "tr": "Farklı boy, kaplama ve taş renklerinden oluşan dayanıklı metal taşlı düğme ve agraf serisi.",
+      "en": "Durable studded button and agreffe line in versatile sizes, galvanic finishes, and crystal colorways.",
+      "ar": "سلسلة أزرار ومثبتات معدنية مرصعة بألوان وأحجام وطلاءات متنوعة وعالية المتانة."
+    },
+    "spec": "Zamak / Pirinç • Kristal Taş Yuvalı • Yıkama Dayanıklı",
+    "app": "Ceket, Trençkot, Abiye"
+  },
+  {
+    "id": "KLX-60",
+    "sku": "PIN-MT-103",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS ZİNCİR ŞERİT",
+      "en": "PINARAKS CHAIN TRIM",
+      "ar": "سلاسل وأشرطة بيناراكس"
+    },
+    "img": "assets/ref/prod_metal_03.jpg",
+    "name": {
+      "tr": "Zincir & Taşlı Metal Şerit Kombinasyonu",
+      "en": "Chain & Crystal Metal Trim Ensemble",
+      "ar": "مجموعة سلاسل وأشرطة معدنية مرصعة بالكريستال"
+    },
+    "desc": {
+      "tr": "Özel örüm yüksek çekme mukavemetli metal zincirlerin kristal taş kanallarıyla birleşimi.",
+      "en": "High-tensile woven metal chains integrated with precision crystal tracks for runway impact.",
+      "ar": "سلاسل معدنية منسوجة عالية الشد مدمجة بمسارات كريستالية دقيقة لتأثير بصري فاخر."
+    },
+    "spec": "Yüksek Mukavemetli Pirinç Zincir • Taş Dizim Rayı",
+    "app": "Yaka, Omuz, Yan Şerit, Çanta"
+  },
+  {
+    "id": "KLX-61",
+    "sku": "PIN-HF-404",
+    "cat": "tasli",
+    "badge": {
+      "tr": "PINARAKS HOTFIX BASKI",
+      "en": "PINARAKS HOTFIX MOTIF",
+      "ar": "طباعة حرارية بيناراكس"
+    },
+    "img": "assets/hotfix_motif.jpg",
+    "name": {
+      "tr": "Piramit Zımba & Kristal Taş Deseni",
+      "en": "Pyramid Stud & Crystal Facet Pattern",
+      "ar": "نمط مسامير هرمية وأحجار كريستال"
+    },
+    "desc": {
+      "tr": "Lazer kesim kalıplarla dizilen ve yüksek ısı-basınç fırınlarında kumaşa sabitlenen nikel-free zımbalı taş motifi.",
+      "en": "Laser-cut jig assembled pattern with nickel-free pyramid studs and crystals fused under high-pressure thermal press.",
+      "ar": "نمط مجمع بقوالب ليزرية ومثبت بمسامير هرمية خالية من النيكل وأحجار كريستال تحت ضغط حراري عالٍ."
+    },
+    "spec": "Lazer Kalıp Dizim • 90 Derece Yıkama Testi • Çift Termal Katman",
+    "app": "Deri Ceket, Denim, Sweatshirt"
+  },
+  {
+    "id": "KLX-62",
+    "sku": "PIN-HF-201",
+    "cat": "tasli",
+    "badge": {
+      "tr": "PINARAKS LAZER TAŞ",
+      "en": "PINARAKS LASER RHINESTONE",
+      "ar": "أحجار ليزرية بيناراكس"
+    },
+    "img": "assets/ref/prod_hotfix_01.jpg",
+    "name": {
+      "tr": "Lazer Kalıp Geometrik Taş Deseni",
+      "en": "Laser-Jig Geometric Rhinestone Layout",
+      "ar": "نقشة هندسية لأحجار الراين بقوالb ليزرية"
+    },
+    "desc": {
+      "tr": "Farklı mikron kalınlıklarında taşların CNC kalıplarla kusursuz dizildiği endüstriyel sıcak transfer.",
+      "en": "Industrial thermal transfer executed via CNC-milled templates aligning graduated rhinestones flawlessly.",
+      "ar": "نقل حراري صناعي دقيق عبر قوالب CNC يوزع أحجار الراين بتدرج وتناسق متناهي الدقة."
+    },
+    "spec": "CNC Kalıp • Çok Boyutlu Kristal • Ağır Yıkama Test Onaylı",
+    "app": "Triko, Elbise, T-Shirt, Etek"
+  },
+  {
+    "id": "KLX-63",
+    "sku": "PIN-HF-202",
+    "cat": "tasli",
+    "badge": {
+      "tr": "PINARAKS 3D RÖLYEF",
+      "en": "PINARAKS 3D RELIEF",
+      "ar": "نقوش ثلاثية الأبعاد بيناراكس"
+    },
+    "img": "assets/ref/prod_hotfix_02.jpg",
+    "name": {
+      "tr": "Karma Kristal & Metal Stud Baskı",
+      "en": "Mixed Crystal & Metal Stud Hybrid Transfer",
+      "ar": "طباعة هجينة تجمع الكريستال والمسامير المعدنية"
+    },
+    "desc": {
+      "tr": "Kristal taşlar ile metal stud zımbaların bir arada transfer edildiği 3D rölyef aplikasyonu.",
+      "en": "Multi-dimensional relief transfer combining high-refractive crystals with electroplated metal studs.",
+      "ar": "تطبيق بنقوش بارزة ثلاثية الأبعاد يدمج بين أحجار الكريستال ومسامير الاستد المعدنية المطلية."
+    },
+    "spec": "Kristal + Metal Stud • Güçlü Termal Taban • Esnek Yapı",
+    "app": "Denim Ceket, Elbise, Triko"
+  },
+  {
+    "id": "KLX-64",
+    "sku": "PIN-BS-301",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS BSN APLİK",
+      "en": "PINARAKS BSN APPLIQUE",
+      "ar": "تطبيقات BSN بيناراكس"
+    },
+    "img": "assets/ref/prod_bsn_01.jpg",
+    "name": {
+      "tr": "Termal Lamine BSN Zemin Apliği",
+      "en": "Thermal Laminated BSN Base Applique",
+      "ar": "زخرفة قاعدة BSN مغلفة حرارياً"
+    },
+    "desc": {
+      "tr": "İthal kaliteli BSN hammaddesiyle hazırlanan, 1 mt - 100.000 mt esnek üretim kapasiteli termal tutunma.",
+      "en": "Engineered with premium virgin BSN raw material, scalable from 1 meter to 100,000 meters with flawless thermal grip.",
+      "ar": "مصنوعة من خامات BSN البوليمرية المستوردة عالية النقاء، بطاقة إنتاج مرنة من متر واحد حتى 100 ألف متر."
+    },
+    "spec": "Virgin BSN Polimer • 1mt - 100.000mt Kapasite • Dikişsiz",
+    "app": "Bitmiş Ürün veya Yarı Mamul"
+  },
+  {
+    "id": "KLX-65",
+    "sku": "PIN-BS-302",
+    "cat": "metal",
+    "badge": {
+      "tr": "PINARAKS BSN LAZER",
+      "en": "PINARAKS BSN LASER",
+      "ar": "نقشات BSN ليزرية"
+    },
+    "img": "assets/ref/prod_bsn_02.jpg",
+    "name": {
+      "tr": "Kabartmalı Lazer Kesim BSN Motif",
+      "en": "Embossed Laser-Cut BSN Graphic Motif",
+      "ar": "زخرفة BSN بارزة ومقطوعة بالليزر"
+    },
+    "desc": {
+      "tr": "Tekstil yüzeyine dikişsiz entegre olabilen modern sokak modası termal aplikasyonu.",
+      "en": "Seamless thermal applique integrating flush onto technical textiles for contemporary fashion.",
+      "ar": "تطبيق حراري عصري يندمج بسلاسة وبدون خياطة على أسطح الأقمشة لأزياء الموضة الحديثة."
+    },
+    "spec": "Lazer Kesim • Dikişsiz Entegrasyon • Yüksek Mukavemet",
+    "app": "Spor Giyim, Triko, Dış Giyim"
+  },
+  {
+    "id": "KLX-66",
+    "sku": "PIN-EL-701",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "SEDEX ONAYLI ZANAAT",
+      "en": "SEDEX-AUDITED CRAFT",
+      "ar": "حرف يدوية معتمدة من سيدكس"
+    },
+    "img": "assets/atelier_craft.jpg",
+    "name": {
+      "tr": "Usta Kadın Emeği Doğal İnci & Pul Nakışı",
+      "en": "Master Women Artisans Natural Pearl & Sequin Embroidery",
+      "ar": "تطريز لؤلؤ طبيعي وترتر بأيدي سيدات ماهرات"
+    },
+    "desc": {
+      "tr": "Türkiye çapındaki kadın zanaatkarlarımız tarafından etik çalışma ve SEDEX güvencesinde işlenen el emeği.",
+      "en": "Ethically produced under SEDEX social compliance by our network of master female artisans across Turkey.",
+      "ar": "صناعة يدوية أصيلة تنفذها حرفيات ماهرات في كافة أنحاء تركيا تحت مظلة معايير SEDEX الأخلاقية."
+    },
+    "spec": "Doğal İnci & Pul • SEDEX Etik Standart • 100% El İşçiliği",
+    "app": "Haute Couture, Abiye, Gelinlik"
+  },
+  {
+    "id": "KLX-67",
+    "sku": "PIN-EL-401",
+    "cat": "apolet_yaka",
+    "badge": {
+      "tr": "PINARAKS EL İŞİ ATÖLYESİ",
+      "en": "PINARAKS ATELIER HANDCRAFT",
+      "ar": "ورشة بيناراكس للحرف اليدوية"
+    },
+    "img": "assets/ref/prod_elisi_01.jpg",
+    "name": {
+      "tr": "Kristal Taş & Boru Boncuk Nakış Yakalık",
+      "en": "Crystal Stone & Bugle Bead Embroidered Collar",
+      "ar": "ياقة مطرزة بأحجار الكريستال والخرز الأنبوبي"
+    },
+    "desc": {
+      "tr": "Yüksek adetli ihracat terminlerine uygun, parça başı sıkı kalite kontrolden geçen el işçiliği.",
+      "en": "Export-scale handcrafted pieces vetted through rigorous piece-by-piece inspection under strict export schedules.",
+      "ar": "أعمال يدوية مصممة لتلبية كميات ومواعيد التصدير الكبرى، مع فحص جودة صارم لكل قطعة على حدة."
+    },
+    "spec": "Boru Boncuk & Kristal • Parça Başı Kontrol • Seri El İşçiliği",
+    "app": "Yaka, Manşet, Omuz Detayları"
+  },
+  {
+    "id": "KLX-68",
+    "sku": "PIN-IC-501",
+    "cat": "metal",
+    "badge": {
+      "tr": "OTOMATİK İNCİ ÇAKIM",
+      "en": "AUTOMATED PEARL RIVETING",
+      "ar": "ترصيع لؤلؤ آلي"
+    },
+    "img": "assets/ref/prod_inci_01.jpg",
+    "name": {
+      "tr": "Kılçıklı Vidalı Çivi İnci Çakım Deseni",
+      "en": "Barbed & Threaded Screw Pearl Setting",
+      "ar": "نمط ترصيع لؤلؤ بمسامير مسننة"
+    },
+    "desc": {
+      "tr": "Ağır yıkama ve kurutmaya dayanıklı, paslanmaz pirinç çivili otomatik makine çakımı inci süsleme.",
+      "en": "Heavy-wash resistant automated machine riveting with corrosion-proof brass barbed fasteners.",
+      "ar": "ترصيع آلي عالي التحمل ضد الغسيل الصناعي المكثف بمسامير نحاسية مسننة مقاومة للصدأ."
+    },
+    "spec": "Paslanmaz Pirinç Çivi • Otomatik Çakım • Kopmaz Bağlantı",
+    "app": "Denim, Triko, Dış Giyim, Ayakkabı"
+  },
+  {
+    "id": "KLX-69",
+    "sku": "PIN-IC-502",
+    "cat": "metal",
+    "badge": {
+      "tr": "KARMA İNCİ DİZİLİMİ",
+      "en": "MULTI-DIAMETER PEARL COMPOSITE",
+      "ar": "تشكيلة لؤلؤ ومسامير"
+    },
+    "img": "assets/ref/prod_inci_02.jpg",
+    "name": {
+      "tr": "Farklı Boyutlu İnci & Metal Çivi Deseni",
+      "en": "Graduated Pearl & Metal Stud Matrix",
+      "ar": "نقشة مصفوفة تجمع أحجام لؤلؤ ومسامير معدنية"
+    },
+    "desc": {
+      "tr": "Çeşitli boy ve parlaklıkta paslanmaz kılçıklı çiviler ile işlenmiş estetik inci dizilimi.",
+      "en": "Aesthetic pearl gradient pattern reinforced with anti-corrosion barbed shanks across various diameters.",
+      "ar": "توزيع جمالي للؤلؤ بمقاسات ولمعان متنوع مثبت بمسامير مسننة غير قابلة للصدأ."
+    },
+    "spec": "Çok Boyutlu İnci • Metal Çivi Kombin • Ağır Yıkama Testi",
+    "app": "Ceket, Triko, Çanta"
   }
 ];
