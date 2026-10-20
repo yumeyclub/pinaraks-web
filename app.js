@@ -1139,3 +1139,13 @@ function showCoutureToast(title, desc) {
     coutureToast.classList.remove('visible');
   }, 3200);
 }
+
+// Canlı Kalma & Uyanık Tutma Sinyali (Keep-Alive Heartbeat)
+(function initKeepAlive() {
+  const PING_INTERVAL = 4 * 60 * 1000; // 4 dakikada bir hafif sinyal
+  setInterval(() => {
+    if (document.visibilityState === 'visible') {
+      fetch('health.json?t=' + Date.now(), { method: 'GET', cache: 'no-store' }).catch(() => {});
+    }
+  }, PING_INTERVAL);
+})();

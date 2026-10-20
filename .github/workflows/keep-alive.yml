@@ -1,0 +1,31 @@
+name: Vercel Keep-Alive Heartbeat
+
+on:
+  schedule:
+    # Her 10 dakikada bir otomatik çalışır (Vercel cold start & sleep engeller)
+    - cron: '*/10 * * * *'
+  workflow_dispatch: # GitHub arayüzünden manuel tetikleme imkanı
+
+jobs:
+  ping:
+    name: Ping Vercel & Keep Alive
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Heartbeat Signal
+        run: |
+          echo "Sending keep-alive ping to prevent sleep mode..."
+          
+          # Ping hedef listesi
+          URLS=(
+            "https://pinaraks-web.vercel.app/health.json"
+            "https://pinaraks.vercel.app/health.json"
+            "https://pinaraks.com/health.json"
+            "https://yumeyclub.github.io/pinaraks-web/health.json"
+          )
+          
+          for url in "${URLS[@]}"; do
+            echo "Pinging: $url"
+            curl -s -o /dev/null -w "HTTP Response: %{http_code} for $url\n" --max-time 15 "$url" || true
+          done
+          
+          echo "Keep-alive ping completed successfully!"
