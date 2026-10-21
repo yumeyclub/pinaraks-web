@@ -1354,7 +1354,7 @@ const PINARAKS_COLLECTION_DATA = [
     },
     "desc": {
       "tr": "İnce dövme pirinç gövde üzerine satin fre altın kaplama, çift kanalı vida sistemi.",
-      "en": "Fine hammered brass body with satin gold plating and dual-channel screw system.",
+      "en": "Fine hammered brass body with satin gold plating and dual-channel screw .",
       "ar": "جسم نحاسي مطروق ناعم مع طلاء ذهبي ساتاني ونظام براغي مزدوج."
     },
     "spec": "Dövme Pirinç • Satin Altın Fre • Çift Vida Sistemi",
@@ -1565,7 +1565,7 @@ const PINARAKS_COLLECTION_DATA = [
       "ar": "جهاز معدني مسبوك بنقش نجمة مصمم خصيصاً لبيناراكس ضمن مشروع KB209."
     },
     "spec": "Pirinç Döküm • Yıldız Motif • KB209 Pınaraks Serisi",
-    "app": "Beymen Koleksiyon Giyimi, Blazer, Elbise"
+    "app": "Koleksiyon Giyimi, Blazer, Elbise"
   },
   {
     "id": "KLX-13",
@@ -1670,17 +1670,17 @@ const PINARAKS_COLLECTION_DATA = [
     },
     "img": "assets/katalog/kat-37.jpg",
     "name": {
-      "tr": "Network Gold Lüks Metal Model",
-      "en": "Network Gold Luxury Metal Model",
-      "ar": "نموذج معدني فاخر ذهبي نتورك"
+      "tr": "Gold Lüks Metal Model",
+      "en": "Gold Luxury Metal Model",
+      "ar": "نموذج معدني فاخر ذهبي"
     },
     "desc": {
-      "tr": "Network markası için üretilen, gold kaplama lüks metal aksesuar modeli.",
-      "en": "Luxury gold plated metal accessory model produced for Network brand.",
-      "ar": "نموذج إكسسوار معدني فاخر مطلي بالذهب من إنتاج علامة نتورك."
+      "tr": "Özel koleksiyon için üretilen, gold kaplama lüks metal aksesuar modeli.",
+      "en": "Luxury gold plated metal accessory model produced for brand.",
+      "ar": "نموذج إكسسوار معدني فاخر مطلي بالذهب من إنتاج علامة ."
     },
-    "spec": "Gold Kaplama • Network Serisi • Lüks Metal",
-    "app": "Network Koleksiyonu, Kadın Giyimi"
+    "spec": "Gold Kaplama • Lüks Seri • Lüks Metal",
+    "app": "Koleksiyonu, Kadın Giyimi"
   },
   {
     "id": "KLX-18",
@@ -1693,16 +1693,16 @@ const PINARAKS_COLLECTION_DATA = [
     },
     "img": "assets/katalog/kat-38.jpg",
     "name": {
-      "tr": "Network Zincir Donanımı",
-      "en": "Network Chain Hardware",
-      "ar": "أجهزة سلسلة نتورك"
+      "tr": "Zincir Donanımı",
+      "en": "Chain Hardware",
+      "ar": "أجهزة سلسلة"
     },
     "desc": {
-      "tr": "Network koleksiyonu için üretilen altın kaplama zincir donanım kombinasyonu.",
-      "en": "Gold plated chain hardware combination produced for Network collection.",
-      "ar": "مجموعة أجهزة سلسلة مطلية بالذهب من إنتاج مجموعة نتورك."
+      "tr": "Lüks koleksiyon için üretilen altın kaplama zincir donanım kombinasyonu.",
+      "en": "Gold plated chain hardware combination produced for Luxury collection.",
+      "ar": "مجموعة أجهزة سلسلة مطلية بالذهب من إنتاج مجموعة ."
     },
-    "spec": "Altın Kaplama • Zincir • Network Serisi",
+    "spec": "Altın Kaplama • Zincir • Lüks Seri",
     "app": "Ceket, Blazer, Aksesuarlı Giyim"
   },
   {
@@ -1710,23 +1710,23 @@ const PINARAKS_COLLECTION_DATA = [
     "sku": "PI-22736",
     "cat": "apolet_yaka",
     "badge": {
-      "tr": "CHANTUQUE EL İŞİ",
-      "en": "CHANTUQUE HANDCRAFT",
+      "tr": "LÜKS EL İŞİ",
+      "en": "HANDCRAFT",
       "ar": "حرفية يدوية شانتيك"
     },
     "img": "assets/katalog/kat-39.jpg",
     "name": {
-      "tr": "Chantuque Ceket Sallantılı Taş Donanımı",
-      "en": "Chantuque Jacket Dangling Stone Hardware",
+      "tr": "Ceket Sallantılı Taş Donanımı",
+      "en": "Jacket Dangling Stone Hardware",
       "ar": "أجهزة حجرية متدلية لسترة شانتيك"
     },
     "desc": {
-      "tr": "Chantuque ceket için özel tasarlanan, sallantılı metal ve taşlı süsleme kombinasyonu.",
-      "en": "Custom-designed dangling metal and stone embellishment combination for Chantuque jacket.",
+      "tr": "ceket için özel tasarlanan, sallantılı metal ve taşlı süsleme kombinasyonu.",
+      "en": "Custom-designed dangling metal and stone embellishment combination for jacket.",
       "ar": "مجموعة زخارف معدنية وحجرية متدلية مصممة خصيصاً لسترة شانتيك."
     },
-    "spec": "Sallantılı Metal • Taş Dekor • Chantuque Serisi",
-    "app": "Chantuque Ceket, Kadın Üst Giyim"
+    "spec": "Sallantılı Metal • Taş Dekor • Özel Tasarım Serisi",
+    "app": "Ceket, Kadın Üst Giyim"
   },
   {
     "id": "KLX-20",
@@ -1739,8 +1739,8 @@ const PINARAKS_COLLECTION_DATA = [
     },
     "img": "assets/katalog/kat-40.jpg",
     "name": {
-      "tr": "Chantuque Kristal Sırt Zinciri",
-      "en": "Chantuque Crystal Back Chain",
+      "tr": "Kristal Sırt Zinciri",
+      "en": "Crystal Back Chain",
       "ar": "سلسلة ظهر كريستالية شانتيك"
     },
     "desc": {
@@ -1749,7 +1749,7 @@ const PINARAKS_COLLECTION_DATA = [
       "ar": "تأثير زخارف سلسلة كريستالية متدلية مطبق على الجزء الخلفي من السترة."
     },
     "spec": "Kristal Zincir • Sırt Süsleme • El Dikimi",
-    "app": "Chantuque Ceket, Couture Giyim"
+    "app": "Ceket, Couture Giyim"
   },
   {
     "id": "KLX-21",
@@ -1779,7 +1779,7 @@ const PINARAKS_COLLECTION_DATA = [
     "sku": "PNR-22593",
     "cat": "tasli",
     "badge": {
-      "tr": "PINARAKS STOk SERİSİ",
+      "tr": "PINARAKS STOK SERİSİ",
       "en": "PINARAKS STOCK SERIES",
       "ar": "سلسلة مخزون Pinaraks"
     },
@@ -2124,46 +2124,46 @@ const PINARAKS_COLLECTION_DATA = [
     "sku": "PNR-23551",
     "cat": "apolet_yaka",
     "badge": {
-      "tr": "NETWORK DENİZ YILDIZI",
-      "en": "NETWORK STARFISH",
-      "ar": "نجم البحر نتورك"
+      "tr": "DENİZ YILDIZI",
+      "en": "STARFISH",
+      "ar": "نجم البحر"
     },
     "img": "assets/katalog/pnr-23551-network.jpg",
     "name": {
-      "tr": "Network Deniz Yıldızı BSN Model",
-      "en": "Network Starfish BSN Model",
-      "ar": "نموذج نجم البحر BSN نتورك"
+      "tr": "Deniz Yıldızı BSN Model",
+      "en": "Starfish BSN Model",
+      "ar": "نموذج نجم البحر BSN"
     },
     "desc": {
-      "tr": "Network koleksiyonu için üretilen, deniz yıldızı motifli BSN aplike modeli.",
-      "en": "Starfish motif BSN applique model produced for Network collection.",
-      "ar": "نموذج أبليك BSN بنقش نجم البحر من إنتاج مجموعة نتورك."
+      "tr": "Lüks koleksiyon için üretilen, deniz yıldızı motifli BSN aplike modeli.",
+      "en": "Starfish motif BSN applique model produced for Luxury collection.",
+      "ar": "نموذج أبليك BSN بنقش نجم البحر من إنتاج مجموعة ."
     },
-    "spec": "Deniz Yıldızı Motif • BSN Aplike • Network Serisi",
-    "app": "Network Koleksiyon Giyimi, Casual Wear"
+    "spec": "Deniz Yıldızı Motif • BSN Aplike • Lüks Seri",
+    "app": "Koleksiyon Giyimi, Casual Wear"
   },
   {
     "id": "KLX-38",
     "sku": "PNR-23571",
     "cat": "zincir_donanim",
     "badge": {
-      "tr": "NETWORK ZİNCİR TAKIM",
-      "en": "NETWORK CHAIN SUIT",
-      "ar": "طقم سلسلة نتورك"
+      "tr": "ZİNCİR TAKIM",
+      "en": "CHAIN SUIT",
+      "ar": "طقم سلسلة"
     },
     "img": "assets/katalog/pnr-23571-network-top-zincir.jpg",
     "name": {
-      "tr": "Network Top Zincirli Model Gümüş Takım",
-      "en": "Network Top Chain Model Silver Suite",
-      "ar": "طقم نتورك الفضي بسلسلة علوية"
+      "tr": "Top Zincirli Model Gümüş Takım",
+      "en": "Top Chain Model Silver Suite",
+      "ar": "طقم الفضي بسلسلة علوية"
     },
     "desc": {
-      "tr": "Üst kısım zincirli gümüş metal takım, Network koleksiyonu için özel üretim.",
-      "en": "Top chain silver metal suite with special production for Network collection.",
-      "ar": "طقم معدني فضي بسلسلة علوية من إنتاج خاص لمجموعة نتورك."
+      "tr": "Üst kısım zincirli gümüş metal takım, Lüks koleksiyon için özel üretim.",
+      "en": "Top chain silver metal suite with special production for Luxury collection.",
+      "ar": "طقم معدني فضي بسلسلة علوية من إنتاج خاص لمجموعة ."
     },
-    "spec": "Gümüş Kaplama • Zincir Takım • Network Serisi",
-    "app": "Network Ceket, Takım Elbise"
+    "spec": "Gümüş Kaplama • Zincir Takım • Lüks Seri",
+    "app": "Ceket, Takım Elbise"
   },
   {
     "id": "KLX-39",
@@ -2176,16 +2176,16 @@ const PINARAKS_COLLECTION_DATA = [
     },
     "img": "assets/katalog/pnr-23585-network-sarmal.jpg",
     "name": {
-      "tr": "Network Sarmal Model Donanımı",
-      "en": "Network Spiral Model Hardware",
-      "ar": "أجهزة النموذج الحلزوني نتورك"
+      "tr": "Sarmal Model Donanımı",
+      "en": "Spiral Model Hardware",
+      "ar": "أجهزة النموذج الحلزوني"
     },
     "desc": {
-      "tr": "Network için tasarlanan özgün sarmal motifli metal aksesuar donanımı.",
-      "en": "Original spiral motif metal accessory hardware designed for Network.",
-      "ar": "أجهزة إكسسوار معدنية ذات نقش حلزوني أصلي مصممة لنتورك."
+      "tr": "için tasarlanan özgün sarmal motifli metal aksesuar donanımı.",
+      "en": "Original spiral motif metal accessory hardware designed for .",
+      "ar": "أجهزة إكسسوار معدنية ذات نقش حلزوني أصلي مصممة ل."
     },
-    "spec": "Sarmal Motif • Özgün Tasarım • Network",
+    "spec": "Sarmal Motif • Özgün Tasarım • Lüks Seri",
     "app": "Ceket, Pantolon, Yaka Süsleme"
   },
   {
@@ -2193,92 +2193,92 @@ const PINARAKS_COLLECTION_DATA = [
     "sku": "PNR-23586",
     "cat": "metal",
     "badge": {
-      "tr": "GİSAR 4 LÜ SET",
-      "en": "GISAR 4-PIECE SET",
-      "ar": "طقم GISAR رباعي"
+      "tr": "4'LÜ METAL SET",
+      "en": "4-PIECE SET",
+      "ar": "طقم معدني رباعي"
     },
     "img": "assets/katalog/pnr-23586-gisar-metal.jpg",
     "name": {
-      "tr": "Gisar 4 Parçalı Metal Donanım Seti",
-      "en": "Gisar 4-Piece Metal Hardware Set",
-      "ar": "طقم أجهزة معدنية رباعي من Gisar"
+      "tr": "4 Parçalı Metal Donanım Seti",
+      "en": "4-Piece Metal Hardware Set",
+      "ar": "طقم أجهزة معدنية رباعي القطع"
     },
     "desc": {
-      "tr": "Gisar koleksiyonu için hazırlanan, 4 parçalı uyumlu metal donanım seti.",
-      "en": "Harmonious 4-piece metal hardware set prepared for Gisar collection.",
-      "ar": "طقم أجهزة معدنية متناسق رباعي القطع معد لمجموعة Gisar."
+      "tr": "Özel lüks koleksiyon için hazırlanan, 4 parçalı uyumlu döküm metal donanım seti.",
+      "en": "Harmonious 4-piece cast metal hardware set prepared for luxury collections.",
+      "ar": "طقم أجهزة معدنية متناسق رباعي القطع معد للمجموعات الفاخرة."
     },
-    "spec": "4 Parçalı Set • Uyumlu Tasarım • Gisar",
-    "app": "Gisar Koleksiyonu, Takım Giyim"
+    "spec": "4 Parçalı Set • Uyumlu Tasarım • Fre Kaplama",
+    "app": "Ceket, Yelek, Takım Giyim"
   },
   {
     "id": "KLX-41",
     "sku": "PI-22660",
     "cat": "apolet_yaka",
     "badge": {
-      "tr": "EROĞLU EL İŞİ",
-      "en": "EROĞLU HANDCRAFT",
+      "tr": "LÜKS EL İŞİ",
+      "en": "HANDCRAFT",
       "ar": "حرفية يدوية أيروغلو"
     },
     "img": "assets/katalog/pi-22660-eroglu-ceket.jpg",
     "name": {
-      "tr": "Eroğlu El İşi ve Dizaynlı Kot Ceket",
-      "en": "Eroğlu Handcraft Denim Jacket",
+      "tr": "El İşi ve Dizaynlı Kot Ceket",
+      "en": "Handcraft Denim Jacket",
       "ar": "سترة جينز مصنوعة يدوياً من أيروغلو"
     },
     "desc": {
-      "tr": "Eroğlu marka için üretilen, el işi detaylı ve özel dizaynlı kot ceket donanımı.",
-      "en": "Denim jacket hardware with handcraft details and special design produced for Eroğlu brand.",
+      "tr": "marka için üretilen, el işi detaylı ve özel dizaynlı kot ceket donanımı.",
+      "en": "Denim jacket hardware with handcraft details and special design produced for brand.",
       "ar": "أجهزة سترة جينز بتفاصيل يدوية وتصميم خاص من إنتاج علامة أيروغلو."
     },
-    "spec": "El İşi Detay • Özel Dizayn • Eroğlu Serisi",
-    "app": "Eroğlu Koleksiyonu, Kot Giyim"
+    "spec": "El İşi Detay • Özel Dizayn • Özel Seri Serisi",
+    "app": "Koleksiyonu, Kot Giyim"
   },
   {
     "id": "KLX-42",
     "sku": "PI-22703",
     "cat": "apolet_yaka",
     "badge": {
-      "tr": "AYDENİM EL İŞLEME",
+      "tr": "EL İŞLEME",
       "en": "AYDENİM EMBROIDERY",
       "ar": "تطريز أيدنيم"
     },
     "img": "assets/katalog/pi-22703-aydenim-ceket.jpg",
     "name": {
-      "tr": "Aydenim El İşleme Kot Ceket Donanımı",
-      "en": "Aydenim Embroidered Denim Jacket Hardware",
+      "tr": "El İşleme Kot Ceket Donanımı",
+      "en": "Embroidered Denim Jacket Hardware",
       "ar": "أجهزة سترة جينز مطرزة من أيدنيم"
     },
     "desc": {
-      "tr": "Aydenim markası için el işlemeli, özel teknik ve malzeme kombinasyonuyla üretilen kot ceket donanımı.",
-      "en": "Denim jacket hardware with embroidery, produced with special technique and material combination for Aydenim.",
+      "tr": "Özel koleksiyon için el işlemeli, özel teknik ve malzeme kombinasyonuyla üretilen kot ceket donanımı.",
+      "en": "Denim jacket hardware with embroidery, produced with special technique and material combination for .",
       "ar": "أجهزة سترة جينز مطرزة بتقنية خاصة ومجموعة مواد للعلامة أيدنيم."
     },
-    "spec": "El İşleme • Özel Teknik • Aydenim Serisi",
-    "app": "Aydenim Koleksiyonu, Premium Denim"
+    "spec": "El İşleme • Özel Teknik • Denim Seri Serisi",
+    "app": "Koleksiyonu, Premium Denim"
   },
   {
     "id": "KLX-43",
     "sku": "PI-22704",
     "cat": "apolet_yaka",
     "badge": {
-      "tr": "CHANTUQUE PUL İŞLEME",
-      "en": "CHANTUQUE SEQUIN",
+      "tr": "PUL İŞLEME",
+      "en": "SEQUIN",
       "ar": "ترتر شانتيك"
     },
     "img": "assets/katalog/pi-22704-chantuque-pul.jpg",
     "name": {
-      "tr": "Chantuque Pul İşleme Aksesuar Donanımı",
-      "en": "Chantuque Sequin Embellishment Hardware",
+      "tr": "Pul İşleme Aksesuar Donanımı",
+      "en": "Sequin Embellishment Hardware",
       "ar": "أجهزة زخرفة ترتر شانتيك"
     },
     "desc": {
-      "tr": "Chantuque koleksiyonu için özel pul işleme tekniğiyle üretilen, parlak ve göz alıcı aksesuar.",
-      "en": "Shiny and eye-catching accessory produced with special sequin embellishment technique for Chantuque.",
+      "tr": "Özel koleksiyon için özel pul işleme tekniğiyle üretilen, parlak ve göz alıcı aksesuar.",
+      "en": "Shiny and eye-catching accessory produced with special sequin embellishment technique for .",
       "ar": "إكسسوار لامع وجذاب مصنوع بتقنية زخرفة ترتر خاصة لمجموعة شانتيك."
     },
-    "spec": "Pul İşleme • Özel Teknik • Chantuque",
-    "app": "Chantuque Giyim, Gece Koleksiyonu"
+    "spec": "Pul İşleme • Özel Teknik • Özel Tasarım",
+    "app": "Giyim, Gece Koleksiyonu"
   },
   {
     "id": "KLX-44",
@@ -2301,283 +2301,283 @@ const PINARAKS_COLLECTION_DATA = [
       "ar": "أجهزة سترة فاخرة مستوحاة من تقنية الزر الصيني التقليدي بتفسير حديث."
     },
     "spec": "Çin Düğme Tekniği • Modern Yorum • Pınaraks",
-    "app": "Beymen Ceket, Özel Koleksiyon"
+    "app": "Ceket, Özel Koleksiyon"
   },
   {
     "id": "KLX-45",
     "sku": "PI-22781",
     "cat": "tasli",
     "badge": {
-      "tr": "SYSTEM TAŞ VE İNCİ",
-      "en": "SYSTEM STONE AND PEARL",
-      "ar": "حجر ولؤلؤ سيستم"
+      "tr": "TAŞ VE İNCİ",
+      "en": "STONE AND PEARL",
+      "ar": "حجر ولؤلؤ"
     },
     "img": "assets/katalog/pi-22781-system-gomlek.jpg",
     "name": {
-      "tr": "System Taş ve İnci Çakımlı Gömlek Donanımı",
-      "en": "System Stone and Pearl Set Shirt Hardware",
-      "ar": "أجهزة قميص مرصعة بالحجر واللؤلؤ سيستم"
+      "tr": "Taş ve İnci Çakımlı Gömlek Donanımı",
+      "en": "Stone and Pearl Set Shirt Hardware",
+      "ar": "أجهزة قميص مرصعة بالحجر واللؤلؤ"
     },
     "desc": {
-      "tr": "System markası Halis koleksiyonu için taş ve inci çakımı tekniğiyle üretilen gömlek donanımı.",
-      "en": "Shirt hardware produced with stone and pearl setting technique for System brand Halis collection.",
-      "ar": "أجهزة قميص مصنوعة بتقنية ترصيع الحجر واللؤلؤ لمجموعة Halis من علامة System."
+      "tr": "markası Halis koleksiyonu için taş ve inci çakımı tekniğiyle üretilen gömlek donanımı.",
+      "en": "Shirt hardware produced with stone and pearl setting technique for brand Halis collection.",
+      "ar": "أجهزة قميص مصنوعة بتقنية ترصيع الحجر واللؤلؤ لمجموعة Halis من علامة ."
     },
-    "spec": "Taş + İnci Çakım • Halis Serisi • System",
-    "app": "System Gömlek, Kadın Üst Giyim"
+    "spec": "Taş + İnci Çakım • Halis Serisi • Özel Seri",
+    "app": "Gömlek, Kadın Üst Giyim"
   },
   {
     "id": "KLX-46",
     "sku": "PI-22782",
     "cat": "tasli",
     "badge": {
-      "tr": "SYSTEM TAŞ VE İNCİ",
-      "en": "SYSTEM STONE AND PEARL",
-      "ar": "حجر ولؤلؤ سيستم"
+      "tr": "TAŞ VE İNCİ",
+      "en": "STONE AND PEARL",
+      "ar": "حجر ولؤلؤ"
     },
     "img": "assets/katalog/pi-22782-system-pantolon.jpg",
     "name": {
-      "tr": "System Taş ve İnci Çakımlı Pantolon Donanımı",
-      "en": "System Stone and Pearl Set Trouser Hardware",
-      "ar": "أجهزة بنطال مرصعة بالحجر واللؤلؤ سيستم"
+      "tr": "Taş ve İnci Çakımlı Pantolon Donanımı",
+      "en": "Stone and Pearl Set Trouser Hardware",
+      "ar": "أجهزة بنطال مرصعة بالحجر واللؤلؤ"
     },
     "desc": {
-      "tr": "System Halis koleksiyonu için pantolon kenar ve dekor bölgelerine taş-inci çakım donanımı.",
-      "en": "Stone-pearl hardware for trouser edges and decor sections for System Halis collection.",
-      "ar": "أجهزة ترصيع حجر ولؤلؤ لحواف البنطال ومناطق الزخرفة لمجموعة Halis سيستم."
+      "tr": "Halis koleksiyonu için pantolon kenar ve dekor bölgelerine taş-inci çakım donanımı.",
+      "en": "Stone-pearl hardware for trouser edges and decor sections for Halis collection.",
+      "ar": "أجهزة ترصيع حجر ولؤلؤ لحواف البنطال ومناطق الزخرفة لمجموعة Halis ."
     },
     "spec": "Pantolon Özel • Taş+İnci • Halis Serisi",
-    "app": "System Pantolon, Takım Giyim"
+    "app": "Pantolon, Takım Giyim"
   },
   {
     "id": "KLX-47",
     "sku": "PI-22792",
     "cat": "tasli",
     "badge": {
-      "tr": "SYSTEM BEYOĞLU ÇAKIM",
-      "en": "SYSTEM BEYOGLU SETTING",
-      "ar": "ترصيع بيوغلو سيستم"
+      "tr": "BEYOĞLU ÇAKIM",
+      "en": "BEYOGLU SETTING",
+      "ar": "ترصيع بيوغلو"
     },
     "img": "assets/katalog/pi-22792-system-ceket.jpg",
     "name": {
-      "tr": "System Beyoğlu Çakım Taş Dizayn Ceket",
-      "en": "System Beyoglu Setting Stone Design Jacket",
-      "ar": "سترة تصميم حجري بترصيع بيوغلو سيستم"
+      "tr": "Beyoğlu Çakım Taş Dizayn Ceket",
+      "en": "Beyoglu Setting Stone Design Jacket",
+      "ar": "سترة تصميم حجري بترصيع بيوغلو"
     },
     "desc": {
-      "tr": "Beyoğlu çakım tekniğiyle dizaynlı taş işleme, System koleksiyonu kadın ceketleri için.",
-      "en": "Designed stone embellishment with Beyoglu setting technique for System collection women's jackets.",
-      "ar": "زخرفة حجرية مصممة بتقنية ترصيع بيوغلو لسترات المرأة من مجموعة System."
+      "tr": "Beyoğlu çakım tekniğiyle dizaynlı taş işleme, koleksiyonu kadın ceketleri için.",
+      "en": "Designed stone embellishment with Beyoglu setting technique for Luxury collection women's jackets.",
+      "ar": "زخرفة حجرية مصممة بتقنية ترصيع بيوغلو لسترات المرأة من مجموعة ."
     },
-    "spec": "Beyoğlu Çakım Tekniği • Dizayn Taş • System",
-    "app": "System Ceket, Kadın RTW"
+    "spec": "Beyoğlu Çakım Tekniği • Dizayn Taş • Özel Seri",
+    "app": "Ceket, Kadın RTW"
   },
   {
     "id": "KLX-48",
     "sku": "PI-22793",
     "cat": "tasli",
     "badge": {
-      "tr": "SYSTEM BEYOĞLU ÇAKIM",
-      "en": "SYSTEM BEYOGLU SETTING",
-      "ar": "ترصيع بيوغلو سيستم"
+      "tr": "BEYOĞLU ÇAKIM",
+      "en": "BEYOGLU SETTING",
+      "ar": "ترصيع بيوغلو"
     },
     "img": "assets/katalog/pi-22793-system-pantolon.jpg",
     "name": {
-      "tr": "System Beyoğlu Çakım Taş Dizayn Pantolon",
-      "en": "System Beyoglu Setting Stone Design Trouser",
-      "ar": "بنطال تصميم حجري بترصيع بيوغلو سيستم"
+      "tr": "Beyoğlu Çakım Taş Dizayn Pantolon",
+      "en": "Beyoglu Setting Stone Design Trouser",
+      "ar": "بنطال تصميم حجري بترصيع بيوغلو"
     },
     "desc": {
-      "tr": "System koleksiyonu pantolon modeli için Beyoğlu çakım tekniğiyle taş dizayn donanımı.",
-      "en": "Stone design hardware with Beyoglu setting technique for System collection trouser model.",
-      "ar": "أجهزة تصميم حجري بتقنية بيوغلو لنموذج البنطال من مجموعة System."
+      "tr": "Özel koleksiyon için pantolon modeli için Beyoğlu çakım tekniğiyle taş dizayn donanımı.",
+      "en": "Stone design hardware with Beyoglu setting technique for Luxury collection trouser model.",
+      "ar": "أجهزة تصميم حجري بتقنية بيوغلو لنموذج البنطال من مجموعة ."
     },
-    "spec": "Pantolon Özel • Beyoğlu Çakım • System",
-    "app": "System Pantolon, Kadın RTW"
+    "spec": "Pantolon Özel • Beyoğlu Çakım • Özel Seri",
+    "app": "Pantolon, Kadın RTW"
   },
   {
     "id": "KLX-49",
     "sku": "PI-22795",
     "cat": "apolet_yaka",
     "badge": {
-      "tr": "SYSTEM GOLD PUL BONCUK",
-      "en": "SYSTEM GOLD SEQUIN BEAD",
-      "ar": "خرز وترتر ذهبي سيستم"
+      "tr": "GOLD PUL BONCUK",
+      "en": "GOLD SEQUIN BEAD",
+      "ar": "خرز وترتر ذهبي"
     },
     "img": "assets/katalog/pi-22795-system-gold-pul.jpg",
     "name": {
-      "tr": "System Gold Pul Boncuk İşlemeli Ceket",
-      "en": "System Gold Sequin Bead Embroidered Jacket",
-      "ar": "سترة مطرزة بترتر وخرز ذهبي سيستم"
+      "tr": "Gold Pul Boncuk İşlemeli Ceket",
+      "en": "Gold Sequin Bead Embroidered Jacket",
+      "ar": "سترة مطرزة بترتر وخرز ذهبي"
     },
     "desc": {
-      "tr": "System koleksiyonu için gold pul ve boncukla işlenmiş, görkemli ceket donanımı.",
-      "en": "Magnificent jacket hardware embroidered with gold sequins and beads for System collection.",
-      "ar": "أجهزة سترة رائعة مطرزة بترتر وخرز ذهبي لمجموعة System."
+      "tr": "Lüks koleksiyon için gold pul ve boncukla işlenmiş, görkemli ceket donanımı.",
+      "en": "Magnificent jacket hardware embroidered with gold sequins and beads for Luxury collection.",
+      "ar": "أجهزة سترة رائعة مطرزة بترتر وخرز ذهبي لمجموعة ."
     },
-    "spec": "Gold Pul + Boncuk • El İşlemesi • System",
-    "app": "System Ceket, Gece Koleksiyonu"
+    "spec": "Gold Pul + Boncuk • El İşlemesi • Özel Seri",
+    "app": "Ceket, Gece Koleksiyonu"
   },
   {
     "id": "KLX-50",
     "sku": "PI-22802",
     "cat": "apolet_yaka",
     "badge": {
-      "tr": "SYSTEM ÇİÇEK MOTİF",
-      "en": "SYSTEM FLORAL MOTIF",
-      "ar": "نقش زهري سيستم"
+      "tr": "ÇİÇEK MOTİF",
+      "en": "FLORAL MOTIF",
+      "ar": "نقش زهري"
     },
     "img": "assets/katalog/pi-22802-system-cicek-ceket.jpg",
     "name": {
-      "tr": "System Çiçek Motif İşlemeli Kot Ceket",
-      "en": "System Floral Motif Embroidered Denim Jacket",
-      "ar": "سترة جينز مطرزة بنقش زهري سيستم"
+      "tr": "Çiçek Motif İşlemeli Kot Ceket",
+      "en": "Floral Motif Embroidered Denim Jacket",
+      "ar": "سترة جينز مطرزة بنقش زهري"
     },
     "desc": {
-      "tr": "System koleksiyonu için çiçek motifi ile işlenmiş kot ceket, premium el işçiliği.",
-      "en": "Denim jacket embroidered with floral motif for System collection, premium handcraft.",
-      "ar": "سترة جينز مطرزة بنقش زهري لمجموعة System، بحرفية يدوية متميزة."
+      "tr": "Lüks koleksiyon için çiçek motifi ile işlenmiş kot ceket, premium el işçiliği.",
+      "en": "Denim jacket embroidered with floral motif for Luxury collection, premium handcraft.",
+      "ar": "سترة جينز مطرزة بنقش زهري لمجموعة ، بحرفية يدوية متميزة."
     },
-    "spec": "Çiçek Motif • El İşçiliği • System Serisi",
-    "app": "System Kot Ceket, Premium Denim"
+    "spec": "Çiçek Motif • El İşçiliği • Lüks Seri",
+    "app": "Kot Ceket, Premium Denim"
   },
   {
     "id": "KLX-51",
     "sku": "PI-22803",
     "cat": "zincir_donanim",
     "badge": {
-      "tr": "SYSTEM CEP ZİNCİR",
-      "en": "SYSTEM POCKET CHAIN",
-      "ar": "سلسلة جيب سيستم"
+      "tr": "CEP ZİNCİR",
+      "en": "POCKET CHAIN",
+      "ar": "سلسلة جيب"
     },
     "img": "assets/katalog/pi-22803-system-cep-zincir.jpg",
     "name": {
-      "tr": "System Cep Zincir Sallantılı Ceket Donanımı",
-      "en": "System Pocket Chain Dangling Jacket Hardware",
-      "ar": "أجهزة سترة معلقة بسلسلة جيب سيستم"
+      "tr": "Cep Zincir Sallantılı Ceket Donanımı",
+      "en": "Pocket Chain Dangling Jacket Hardware",
+      "ar": "أجهزة سترة معلقة بسلسلة جيب"
     },
     "desc": {
-      "tr": "System koleksiyonu ceket ceplerine özel, sallantılı metal zincir dekor donanımı.",
-      "en": "Dangling metal chain decoration hardware specially for System collection jacket pockets.",
-      "ar": "أجهزة زخرفة سلسلة معدنية متدلية خاصة لجيوب سترة مجموعة System."
+      "tr": "Özel koleksiyon için ceket ceplerine özel, sallantılı metal zincir dekor donanımı.",
+      "en": "Dangling metal chain decoration hardware specially for Luxury collection jacket pockets.",
+      "ar": "أجهزة زخرفة سلسلة معدنية متدلية خاصة لجيوب سترة مجموعة ."
     },
-    "spec": "Sallantılı Zincir • Cep Dekor • System",
-    "app": "System Ceket, Kadın Üst Giyim"
+    "spec": "Sallantılı Zincir • Cep Dekor • Özel Seri",
+    "app": "Ceket, Kadın Üst Giyim"
   },
   {
     "id": "KLX-52",
     "sku": "PI-22815",
     "cat": "apolet_yaka",
     "badge": {
-      "tr": "BAYKANLAR PUL İŞLEME",
-      "en": "BAYKANLAR SEQUIN",
-      "ar": "ترتر بايكانلار"
+      "tr": "PUL İŞLEME",
+      "en": "SEQUIN",
+      "ar": "ترتر"
     },
     "img": "assets/katalog/pi-22815-baykanlar-etek.jpg",
     "name": {
-      "tr": "Baykanlar Pul İşleme Etek Ön Donanımı",
-      "en": "Baykanlar Sequin Skirt Front Hardware",
-      "ar": "أجهزة واجهة التنورة بترتر بايكانلار"
+      "tr": "Pul İşleme Etek Ön Donanımı",
+      "en": "Sequin Skirt Front Hardware",
+      "ar": "أجهزة واجهة التنورة بترتر"
     },
     "desc": {
-      "tr": "Baykanlar markası için pul işleme tekniğiyle üretilen, etek ön bölgesine özel dekor donanımı.",
-      "en": "Decoration hardware for skirt front specially produced with sequin technique for Baykanlar brand.",
-      "ar": "أجهزة زخرفة خاصة لواجهة التنورة مصنوعة بتقنية الترتر لعلامة Baykanlar."
+      "tr": "Özel koleksiyon için pul işleme tekniğiyle üretilen, etek ön bölgesine özel dekor donanımı.",
+      "en": "Decoration hardware for skirt front specially produced with sequin technique for brand.",
+      "ar": "أجهزة زخرفة خاصة لواجهة التنورة مصنوعة بتقنية الترتر لعلامة ."
     },
-    "spec": "Pul İşleme • Etek Özel • Baykanlar",
-    "app": "Baykanlar Etek, Kadın Alt Giyim"
+    "spec": "Pul İşleme • Etek Özel • Özel Seri",
+    "app": "Etek, Kadın Alt Giyim"
   },
   {
     "id": "KLX-53",
     "sku": "PI-22816",
     "cat": "apolet_yaka",
     "badge": {
-      "tr": "BAYKANLAR PUL İŞLEME",
-      "en": "BAYKANLAR SEQUIN",
-      "ar": "ترتر بايكانلار"
+      "tr": "PUL İŞLEME",
+      "en": "SEQUIN",
+      "ar": "ترتر"
     },
     "img": "assets/katalog/pi-22816-baykanlar-ceket.jpg",
     "name": {
-      "tr": "Baykanlar Pul İşleme Ceket Ön Donanımı",
-      "en": "Baykanlar Sequin Jacket Front Hardware",
-      "ar": "أجهزة واجهة السترة بترتر بايكانلار"
+      "tr": "Pul İşleme Ceket Ön Donanımı",
+      "en": "Sequin Jacket Front Hardware",
+      "ar": "أجهزة واجهة السترة بترتر"
     },
     "desc": {
-      "tr": "Baykanlar koleksiyonu için ceket ön bölgesine tasarlanan, pul işlemeli premium donanım.",
-      "en": "Premium sequin hardware designed for jacket front section for Baykanlar collection.",
-      "ar": "أجهزة ترتر متميزة مصممة للواجهة الأمامية للسترة لمجموعة Baykanlar."
+      "tr": "Özel koleksiyon için ceket ön bölgesine tasarlanan, pul işlemeli premium donanım.",
+      "en": "Premium sequin hardware designed for jacket front section for Special collection.",
+      "ar": "أجهزة ترتر متميزة مصممة للواجهة الأمامية للسترة لمجموعة ."
     },
     "spec": "Pul İşleme • Ceket Ön • Premium Finiş",
-    "app": "Baykanlar Ceket, Kadın Üst Giyim"
+    "app": "Ceket, Kadın Üst Giyim"
   },
   {
     "id": "KLX-54",
     "sku": "PI-22819",
     "cat": "apolet_yaka",
     "badge": {
-      "tr": "CHANTUQUE PUL YAPRAK",
-      "en": "CHANTUQUE SEQUIN LEAF",
+      "tr": "PUL YAPRAK",
+      "en": "SEQUIN LEAF",
       "ar": "ورقة ترتر شانتيك"
     },
     "img": "assets/katalog/pi-22819-chantuque-yaprak.jpg",
     "name": {
-      "tr": "Chantuque Pul Yaprak Taş Baskılı Ceket",
-      "en": "Chantuque Sequin Leaf Stone Print Jacket",
+      "tr": "Pul Yaprak Taş Baskılı Ceket",
+      "en": "Sequin Leaf Stone Print Jacket",
       "ar": "سترة شانتيك بورق ترتر وطباعة حجرية"
     },
     "desc": {
-      "tr": "Chantuque koleksiyonu için yaprak motifli pul işleme ve taş baskı kombinasyonuyla üretilen ceket.",
-      "en": "Jacket produced with leaf motif sequin embellishment and stone print combination for Chantuque.",
+      "tr": "Özel koleksiyon için yaprak motifli pul işleme ve taş baskı kombinasyonuyla üretilen ceket.",
+      "en": "Jacket produced with leaf motif sequin embellishment and stone print combination for .",
       "ar": "سترة مصنوعة بمجموعة زخارف ترتر بنقش ورقة وطباعة حجرية لمجموعة شانتيك."
     },
-    "spec": "Yaprak Motif • Pul + Taş Baskı • Chantuque",
-    "app": "Chantuque Ceket, Haute Couture RTW"
+    "spec": "Yaprak Motif • Pul + Taş Baskı • Özel Tasarım",
+    "app": "Ceket, Haute Couture RTW"
   },
   {
     "id": "KLX-55",
     "sku": "PI-22824",
     "cat": "apolet_yaka",
     "badge": {
-      "tr": "CHANTUQUE EL İŞİ KOT",
-      "en": "CHANTUQUE HANDCRAFT DENIM",
+      "tr": "EL İŞİ KOT",
+      "en": "HANDCRAFT DENIM",
       "ar": "جينز يدوي شانتيك"
     },
     "img": "assets/katalog/pi-22824-chantuque-elbise.jpg",
     "name": {
-      "tr": "Chantuque El İşi Kot Elbise Donanımı",
-      "en": "Chantuque Handcraft Denim Dress Hardware",
+      "tr": "El İşi Kot Elbise Donanımı",
+      "en": "Handcraft Denim Dress Hardware",
       "ar": "أجهزة فستان جينز يدوي شانتيك"
     },
     "desc": {
-      "tr": "Chantuque için el işçiliğiyle üretilen, özel teknikler kullanılan kot elbise aksesuar donanımı.",
-      "en": "Denim dress accessory hardware handcrafted for Chantuque using special techniques.",
+      "tr": "için el işçiliğiyle üretilen, özel teknikler kullanılan kot elbise aksesuar donanımı.",
+      "en": "Denim dress accessory hardware handcrafted for using special techniques.",
       "ar": "أجهزة إكسسوار فستان جينز مصنوعة يدوياً لشانتيك بتقنيات خاصة."
     },
-    "spec": "El İşçiliği • Özel Teknik • Chantuque Serisi",
-    "app": "Chantuque Elbise, Premium Denim"
+    "spec": "El İşçiliği • Özel Teknik • Özel Tasarım Serisi",
+    "app": "Elbise, Premium Denim"
   },
   {
     "id": "KLX-56",
     "sku": "PI-22825",
     "cat": "apolet_yaka",
     "badge": {
-      "tr": "BAYKANLAR TÜYLÜ PANT",
-      "en": "BAYKANLAR FEATHER TROUSERS",
-      "ar": "بنطال ريش بايكانلار"
+      "tr": "TÜYLÜ PANT",
+      "en": "FEATHER TROUSERS",
+      "ar": "بنطال ريش"
     },
     "img": "assets/katalog/pi-22825-baykanlar-pant.jpg",
     "name": {
-      "tr": "Baykanlar Tüylü Pantolon Donanımı",
-      "en": "Baykanlar Feather Trouser Hardware",
-      "ar": "أجهزة بنطال الريش بايكانلار"
+      "tr": "Tüylü Pantolon Donanımı",
+      "en": "Feather Trouser Hardware",
+      "ar": "أجهزة بنطال الريش"
     },
     "desc": {
-      "tr": "Baykanlar koleksiyonu tüylü pantolon için özel üretilen dekor ve aksesuar donanımı.",
-      "en": "Decoration and accessory hardware specially produced for Baykanlar collection feather trousers.",
-      "ar": "أجهزة زخرفة وإكسسوار مصنوعة خصيصاً لبنطال الريش من مجموعة Baykanlar."
+      "tr": "Özel koleksiyon için tüylü pantolon için özel üretilen dekor ve aksesuar donanımı.",
+      "en": "Decoration and accessory hardware specially produced for Special collection feather trousers.",
+      "ar": "أجهزة زخرفة وإكسسوار مصنوعة خصيصاً لبنطال الريش من مجموعة ."
     },
-    "spec": "Tüylü Pant Özel • Dekor Donanım • Baykanlar",
-    "app": "Baykanlar Koleksiyonu, Haute Couture"
+    "spec": "Tüylü Pant Özel • Dekor Donanım • Özel Seri",
+    "app": "Koleksiyonu, Haute Couture"
   },
   {
     "id": "KLX-57",
@@ -2803,7 +2803,7 @@ const PINARAKS_COLLECTION_DATA = [
     },
     "desc": {
       "tr": "Türkiye çapındaki kadın zanaatkarlarımız tarafından etik çalışma ve SEDEX güvencesinde işlenen el emeği.",
-      "en": "Ethically produced under SEDEX social compliance by our network of master female artisans across Turkey.",
+      "en": "Ethically produced under SEDEX social compliance by our of master female artisans across Turkey.",
       "ar": "صناعة يدوية أصيلة تنفذها حرفيات ماهرات في كافة أنحاء تركيا تحت مظلة معايير SEDEX الأخلاقية."
     },
     "spec": "Doğal İnci & Pul • SEDEX Etik Standart • 100% El İşçiliği",
