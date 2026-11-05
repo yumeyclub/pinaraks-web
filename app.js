@@ -1140,12 +1140,47 @@ function showCoutureToast(title, desc) {
   }, 3200);
 }
 
-// Canlı Kalma & Uyanık Tutma Sinyali (Keep-Alive Heartbeat)
+// ============================================================
+// PINARAKS — Çok Katmanlı Uyanık Tutma Sistemi (Keep-Alive)
+// GitHub Actions cron (her 5 dk) + Ziyaretçi tabanlı ping
+// ============================================================
 (function initKeepAlive() {
-  const PING_INTERVAL = 4 * 60 * 1000; // 4 dakikada bir hafif sinyal
-  setInterval(() => {
+  const ENDPOINT = 'health.json';
+  const ACTIVE_INTERVAL   = 3 * 60 * 1000;  // Sayfa açıkken: her 3 dakika
+  const INACTIVE_INTERVAL = 8 * 60 * 1000;  // Arka planda: her 8 dakika
+
+  let timer = null;
+
+  function sendPing() {
+    fetch(ENDPOINT + '?t=' + Date.now(), {
+      method: 'GET',
+      cache: 'no-store',
+      headers: { 'X-Ping-Source': 'client-heartbeat' }
+    }).catch(function() {});  // Hata sessizce yutulur
+  }
+
+  function scheduleNext() {
+    clearTimeout(timer);
+    const interval = document.visibilityState === 'visible'
+      ? ACTIVE_INTERVAL
+      : INACTIVE_INTERVAL;
+    timer = setTimeout(function() {
+      sendPing();
+      scheduleNext();
+    }, interval);
+  }
+
+  // Sayfa görünürlüğü değişince aralığı yeniden ayarla
+  document.addEventListener('visibilitychange', function() {
     if (document.visibilityState === 'visible') {
-      fetch('health.json?t=' + Date.now(), { method: 'GET', cache: 'no-store' }).catch(() => {});
+      sendPing();      // Sekmeye dönünce hemen bir ping
     }
-  }, PING_INTERVAL);
+    scheduleNext();    // Yeni aralıkla zamanlayıcıyı sıfırla
+  });
+
+  // İlk ping sayfa yüklendikten 30 saniye sonra
+  setTimeout(function() {
+    sendPing();
+    scheduleNext();
+  }, 30 * 1000);
 })();

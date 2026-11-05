@@ -1,5 +1,7 @@
 {
   "status": "ok",
   "service": "pinaraks-web",
-  "alive": true
+  "alive": true,
+  "version": "2.0",
+  "note": "Bu endpoint GitHub Actions tarafından her 5 dakikada bir pinglenir. Vercel sleep modunu engeller."
 }

@@ -2,30 +2,51 @@ name: Vercel Keep-Alive Heartbeat
 
 on:
   schedule:
-    # Her 10 dakikada bir otomatik çalışır (Vercel cold start & sleep engeller)
-    - cron: '*/10 * * * *'
+    # Her 5 dakikada bir — Vercel cold start genellikle 5 dk hareketsizlikte başlar
+    - cron: '*/5 * * * *'
   workflow_dispatch: # GitHub arayüzünden manuel tetikleme imkanı
 
 jobs:
   ping:
     name: Ping Vercel & Keep Alive
     runs-on: ubuntu-latest
+    timeout-minutes: 3
     steps:
       - name: Send Heartbeat Signal
         run: |
-          echo "Sending keep-alive ping to prevent sleep mode..."
-          
-          # Ping hedef listesi
-          URLS=(
-            "https://pinaraks-web.vercel.app/health.json"
-            "https://pinaraks.vercel.app/health.json"
-            "https://pinaraks.com/health.json"
-            "https://yumeyclub.github.io/pinaraks-web/health.json"
-          )
-          
-          for url in "${URLS[@]}"; do
-            echo "Pinging: $url"
-            curl -s -o /dev/null -w "HTTP Response: %{http_code} for $url\n" --max-time 15 "$url" || true
-          done
-          
-          echo "Keep-alive ping completed successfully!"
+          echo "========================================"
+          echo "  PINARAKS — Keep-Alive Heartbeat"
+          echo "  Zaman: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "========================================"
+
+          # Ana Vercel deployment URL
+          PRIMARY="https://pinaraks-web.vercel.app"
+
+          # Ping fonksiyonu: yanıt kodu + süre loglanır
+          ping_url() {
+            local url="$1"
+            local label="$2"
+            local start=$(date +%s%N)
+            local code=$(curl -s -o /dev/null -w "%{http_code}" \
+              --max-time 20 \
+              --retry 2 \
+              --retry-delay 3 \
+              -H "Cache-Control: no-cache" \
+              -H "User-Agent: PinaraksKeepAlive/2.0" \
+              "$url" 2>/dev/null || echo "000")
+            local end=$(date +%s%N)
+            local ms=$(( (end - start) / 1000000 ))
+            echo "[$label] HTTP $code — ${ms}ms → $url"
+          }
+
+          # 1. Ana sayfa sıcak tut (en kritik)
+          ping_url "$PRIMARY/" "Ana Sayfa"
+
+          # 2. Health endpoint (cache bypass)
+          ping_url "$PRIMARY/health.json?ts=$(date +%s)" "Health Check"
+
+          # 3. CSS varlık (CDN cache canlı tut)
+          ping_url "$PRIMARY/style.css" "Style Asset"
+
+          echo "----------------------------------------"
+          echo "Heartbeat tamamlandı. Site uyanık tutuluyor."
