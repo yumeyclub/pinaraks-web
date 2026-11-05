@@ -5,31 +5,30 @@
 
 :root {
   /* ========================================================================
-     MODERN HAUTE COUTURE LUXURY PALETTE (Sıcak Obsidiyen & Şampanya Kadife)
-     Korku/Oyun hissi veren soğuk simsiyah tonlardan arındırılmış;
-     Vogue, Cartier ve Saint Laurent podyum zarafeti taşıyan yumuşatılmış palet.
+     SOFT LUXURY PALETTE — Dior / Giorgio Armani / Tom Ford Nefes Alan Karanlık
+     Çok koyu/sert tonlardan yumuşatılmış; lüks korunmuş, hava açılmış.
      ======================================================================== */
-  --bg-deep: #121316;              /* Sıcak Obsidiyen (Sert zifiri karanlık yerine derin kadife zemin) */
-  --bg-surface: #18191e;           /* Lüks Kömür İpek (Bölüm ve yüzey zeminleri) */
-  --bg-surface-elevated: #1e2026;  /* Yükseltilmiş yüzeyler & konsol */
-  --bg-card: rgba(28, 30, 36, 0.78); /* Yarı saydam vitrin camı */
-  --bg-card-hover: rgba(36, 38, 46, 0.95);
-  --bg-chamber: #16171c;          /* Ürün vitrin odası */
+  --bg-deep: #1a1b20;              /* Yumuşak Obsidiyen — Hafifçe açık, boğmayan zemin */
+  --bg-surface: #21222a;           /* Kadife Gece Moru — Sıcak & nefes alan bölüm zemini */
+  --bg-surface-elevated: #272830;  /* Yükseltilmiş yüzeyler — Kartlar arası derinlik */
+  --bg-card: rgba(38, 39, 48, 0.82); /* Yarı saydam vitrin camı — daha ışıklı */
+  --bg-card-hover: rgba(48, 50, 62, 0.97);
+  --bg-chamber: #1e1f27;          /* Ürün vitrin odası — hafif açık zemin */
   
-  /* Şampanya & Asil Altın Mimarisi */
-  --gold-antique: #c9a96e;        /* Sıcak Şampanya Altını */
-  --gold-champagne: #f5eedf;      /* Fildişi İpek Şampanya */
-  --gold-bronze: #9c7b44;         /* Muted Asil Bronz */
-  --gold-gradient: linear-gradient(135deg, #f7f1e5 0%, #d4b886 50%, #9c7b44 100%);
-  --gold-glow: 0 0 28px rgba(212, 184, 134, 0.16);
+  /* Şampanya & Asil Altın Mimarisi — daha parlak & sıcak */
+  --gold-antique: #d4aa6a;        /* Parlak Şampanya Altını — daha görünür vurgu */
+  --gold-champagne: #f8f0e0;      /* Işıklı Fildişi İpek */
+  --gold-bronze: #a8844e;         /* Zengin Asil Bronz */
+  --gold-gradient: linear-gradient(135deg, #faf4e8 0%, #dfc090 50%, #a8844e 100%);
+  --gold-glow: 0 0 36px rgba(212, 184, 134, 0.22);
   
-  /* Yumuşatılmış Lüks Tipografi Renkleri */
-  --text-pure: #fbfaf8;           /* Göz yormayan Fildişi Beyazı */
-  --text-body: #c4c8d2;           /* Sıcak Güvercin Grisi (Rahat okunabilir, zarif) */
-  --text-muted: #828896;          /* Narin Açık Antrasit */
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-gold: rgba(201, 169, 110, 0.28);
-  --border-gold-subtle: rgba(201, 169, 110, 0.14);
+  /* Daha Okunabilir Lüks Tipografi */
+  --text-pure: #fdfcfa;           /* Parlak Fildişi Beyazı */
+  --text-body: #cdd1dc;           /* Daha açık & rahat güvercin grisi */
+  --text-muted: #9299a8;          /* Belirgin Antrasit — artık kaybolmuyor */
+  --border-subtle: rgba(255, 255, 255, 0.10);
+  --border-gold: rgba(212, 170, 106, 0.32);
+  --border-gold-subtle: rgba(212, 170, 106, 0.16);
 
   /* 100% Türkçe Karakter Uyumlu Font Ailesi */
   --font-serif: 'Playfair Display', Georgia, serif;
