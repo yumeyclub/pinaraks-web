@@ -4,23 +4,32 @@
    ========================================================================== */
 
 :root {
-  /* Renk Mimarisi */
-  --bg-deep: #060709;
-  --bg-surface: #0c0e13;
-  --bg-card: rgba(16, 19, 26, 0.75);
-  --bg-card-hover: rgba(24, 28, 38, 0.95);
+  /* ========================================================================
+     MODERN HAUTE COUTURE LUXURY PALETTE (Sıcak Obsidiyen & Şampanya Kadife)
+     Korku/Oyun hissi veren soğuk simsiyah tonlardan arındırılmış;
+     Vogue, Cartier ve Saint Laurent podyum zarafeti taşıyan yumuşatılmış palet.
+     ======================================================================== */
+  --bg-deep: #121316;              /* Sıcak Obsidiyen (Sert zifiri karanlık yerine derin kadife zemin) */
+  --bg-surface: #18191e;           /* Lüks Kömür İpek (Bölüm ve yüzey zeminleri) */
+  --bg-surface-elevated: #1e2026;  /* Yükseltilmiş yüzeyler & konsol */
+  --bg-card: rgba(28, 30, 36, 0.78); /* Yarı saydam vitrin camı */
+  --bg-card-hover: rgba(36, 38, 46, 0.95);
+  --bg-chamber: #16171c;          /* Ürün vitrin odası */
   
-  --gold-antique: #c7a76c;
-  --gold-champagne: #f3e6ce;
-  --gold-bronze: #8f723e;
-  --gold-gradient: linear-gradient(135deg, #f7ecd7 0%, #c7a76c 50%, #7e602b 100%);
-  --gold-glow: 0 0 35px rgba(199, 167, 108, 0.28);
+  /* Şampanya & Asil Altın Mimarisi */
+  --gold-antique: #c9a96e;        /* Sıcak Şampanya Altını */
+  --gold-champagne: #f5eedf;      /* Fildişi İpek Şampanya */
+  --gold-bronze: #9c7b44;         /* Muted Asil Bronz */
+  --gold-gradient: linear-gradient(135deg, #f7f1e5 0%, #d4b886 50%, #9c7b44 100%);
+  --gold-glow: 0 0 28px rgba(212, 184, 134, 0.16);
   
-  --text-pure: #ffffff;
-  --text-body: #a4abb8;
-  --text-muted: #646b7a;
+  /* Yumuşatılmış Lüks Tipografi Renkleri */
+  --text-pure: #fbfaf8;           /* Göz yormayan Fildişi Beyazı */
+  --text-body: #c4c8d2;           /* Sıcak Güvercin Grisi (Rahat okunabilir, zarif) */
+  --text-muted: #828896;          /* Narin Açık Antrasit */
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-gold: rgba(199, 167, 108, 0.35);
+  --border-gold: rgba(201, 169, 110, 0.28);
+  --border-gold-subtle: rgba(201, 169, 110, 0.14);
 
   /* 100% Türkçe Karakter Uyumlu Font Ailesi */
   --font-serif: 'Playfair Display', Georgia, serif;
@@ -61,7 +70,7 @@ body.luxury-dark {
   position: relative;
 }
 
-/* Sinematik Gren Dokusu */
+/* Sinematik Gren Dokusu (Zarif İpeksi Podyum Efekti) */
 .film-grain {
   position: fixed;
   inset: 0;
@@ -69,7 +78,7 @@ body.luxury-dark {
   height: 100%;
   pointer-events: none;
   z-index: 999;
-  opacity: 0.032;
+  opacity: 0.008;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
@@ -80,7 +89,7 @@ body.luxury-dark {
   left: 0;
   width: 6px;
   height: 6px;
-  background: #ffffff;
+  background: var(--text-pure);
   border-radius: 50%;
   pointer-events: none;
   z-index: 10000;
@@ -92,9 +101,9 @@ body.luxury-dark {
   position: fixed;
   top: 0;
   left: 0;
-  width: 38px;
-  height: 38px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(201, 169, 110, 0.4);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
@@ -106,16 +115,16 @@ body.luxury-dark {
 }
 
 .cursor-ring.active {
-  width: 80px;
-  height: 80px;
+  width: 54px;
+  height: 54px;
   border-color: var(--gold-antique);
-  background: rgba(199, 167, 108, 0.12);
+  background: rgba(201, 169, 110, 0.12);
   backdrop-filter: blur(2px);
 }
 
 .cursor-text {
   font-family: var(--font-body);
-  font-size: 0.68rem;
+  font-size: 0.64rem;
   letter-spacing: 2px;
   font-weight: 700;
   color: var(--gold-champagne);
@@ -133,7 +142,7 @@ body.luxury-dark {
 .couture-preloader {
   position: fixed;
   inset: 0;
-  background: #040507;
+  background: #0f1013;
   z-index: 10001;
   display: flex;
   align-items: center;
@@ -209,7 +218,7 @@ body.luxury-dark {
    Üst Bilgi Şeridi
    ========================================================================== */
 .editorial-ribbon {
-  background: #090b0f;
+  background: #15161b;
   border-bottom: 1px solid var(--border-subtle);
   font-size: 0.74rem;
   letter-spacing: 1.5px;
@@ -302,7 +311,7 @@ body.luxury-dark {
   position: sticky;
   top: 0;
   z-index: 900;
-  background: rgba(6, 7, 9, 0.96);
+  background: rgba(18, 19, 22, 0.94);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-bottom: 1px solid var(--border-subtle);
@@ -334,7 +343,7 @@ body.luxury-dark {
   max-width: 250px;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 4px 18px rgba(0,0,0,0.85));
+  filter: drop-shadow(0 4px 18px rgba(0,0,0,0.45));
   transition: transform 0.3s var(--ease-luxury);
 }
 
@@ -410,7 +419,7 @@ body.luxury-dark {
 
 .sample-bag-trigger:hover {
   border-color: var(--gold-antique);
-  background: rgba(199, 167, 108, 0.12);
+  background: rgba(201, 169, 110, 0.12);
 }
 
 .bag-icon-wrap {
@@ -427,7 +436,7 @@ body.luxury-dark {
   height: 18px;
   border-radius: 50%;
   background: var(--gold-antique);
-  color: #060709;
+  color: #121316;
   font-size: 0.68rem;
   font-weight: 800;
   display: flex;
@@ -441,7 +450,7 @@ body.luxury-dark {
   justify-content: center;
   padding: 12px 24px;
   background: var(--gold-gradient);
-  color: #060709;
+  color: #121316;
   border-radius: 99px;
   font-family: var(--font-body);
   font-size: 0.78rem;
@@ -449,13 +458,13 @@ body.luxury-dark {
   letter-spacing: 1.5px;
   text-decoration: none;
   transition: all 0.3s var(--ease-luxury);
-  box-shadow: 0 4px 20px rgba(199, 167, 108, 0.35);
+  box-shadow: 0 4px 20px rgba(201, 169, 110, 0.32);
 }
 
 .btn-haute:hover {
-  filter: brightness(1.12);
+  filter: brightness(1.1);
   transform: translateY(-2px);
-  box-shadow: 0 6px 30px rgba(199, 167, 108, 0.55);
+  box-shadow: 0 6px 28px rgba(201, 169, 110, 0.45);
 }
 
 /* ==========================================================================
@@ -483,7 +492,7 @@ body.luxury-dark {
   height: 100%;
   object-fit: cover;
   object-position: center 25%;
-  filter: brightness(0.68) contrast(1.12);
+  filter: brightness(0.74) contrast(1.08);
   transform: scale(1.02);
   transition: transform 12s ease-out;
 }
@@ -497,10 +506,10 @@ body.luxury-dark {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(6, 7, 9, 0.45) 0%,
-    rgba(6, 7, 9, 0.15) 35%,
-    rgba(6, 7, 9, 0.85) 85%,
-    rgba(6, 7, 9, 1) 100%
+    rgba(18, 19, 22, 0.35) 0%,
+    rgba(18, 19, 22, 0.1) 35%,
+    rgba(18, 19, 22, 0.75) 85%,
+    var(--bg-deep) 100%
   );
 }
 
@@ -529,7 +538,7 @@ body.luxury-dark {
   padding: 5px 14px;
   border: 1px solid var(--border-gold);
   border-radius: 99px;
-  background: rgba(199, 167, 108, 0.1);
+  background: rgba(201, 169, 110, 0.1);
 }
 
 .editorial-coordinates {
@@ -576,7 +585,7 @@ body.luxury-dark {
   line-height: 0.95;
   color: #ffffff;
   text-transform: uppercase;
-  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.9), 0 2px 14px rgba(199, 167, 108, 0.3);
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 2px 14px rgba(201, 169, 110, 0.25);
   margin: 6px 0 12px;
 }
 
@@ -585,7 +594,7 @@ body.luxury-dark {
   font-size: clamp(0.95rem, 1.35vw, 1.25rem);
   font-weight: 600;
   letter-spacing: clamp(2px, 0.3vw, 4px);
-  color: rgba(243, 230, 206, 0.92);
+  color: rgba(245, 238, 223, 0.94);
   text-transform: uppercase;
   line-height: 1.4;
 }
@@ -620,20 +629,20 @@ body.luxury-dark {
   gap: 12px;
   padding: 18px 36px;
   background: var(--gold-gradient);
-  color: #060709;
+  color: #121316;
   border-radius: 99px;
   font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 800;
   letter-spacing: 1.5px;
   text-decoration: none;
-  box-shadow: 0 4px 30px rgba(199, 167, 108, 0.45);
+  box-shadow: 0 4px 30px rgba(201, 169, 110, 0.35);
   transition: all 0.3s var(--ease-luxury);
 }
 
 .btn-couture-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 40px rgba(199, 167, 108, 0.65);
+  box-shadow: 0 8px 40px rgba(201, 169, 110, 0.65);
   filter: brightness(1.1);
 }
 
@@ -725,7 +734,7 @@ body.luxury-dark {
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 2px;
-  color: #060709;
+  color: #121316;
   background: var(--gold-antique);
   padding: 3px 9px;
   border-radius: 4px;
@@ -790,7 +799,7 @@ body.luxury-dark {
   position: relative;
   background: radial-gradient(circle at 50% 10%, rgba(212, 175, 55, 0.06) 0%, transparent 60%),
               radial-gradient(circle at 85% 60%, rgba(184, 134, 11, 0.04) 0%, transparent 50%),
-              #060709;
+              var(--bg-deep);
 }
 
 /* Koleksiyon Konsol Barı (Arama + İstatistik + Filtreler) */
@@ -808,7 +817,7 @@ body.luxury-dark {
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
-  background: rgba(16, 20, 26, 0.7);
+  background: var(--bg-card);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(212, 175, 55, 0.22);
@@ -836,7 +845,7 @@ body.luxury-dark {
 .collection-search-input {
   width: 100%;
   padding: 14px 44px 14px 48px;
-  background: rgba(6, 7, 9, 0.85);
+  background: rgba(18, 19, 22, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
   color: #fff;
@@ -849,7 +858,7 @@ body.luxury-dark {
 
 .collection-search-input:focus {
   border-color: var(--gold-antique);
-  background: rgba(6, 7, 9, 0.98);
+  background: rgba(24, 25, 30, 0.98);
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
 }
 
@@ -973,7 +982,7 @@ body.luxury-dark {
 
 /* Tekil Koleksiyon Kartı (Ağır Lüks & Heykelsi) */
 .collection-card {
-  background: linear-gradient(160deg, #10141a 0%, #07090c 100%);
+  background: linear-gradient(160deg, #1e2026 0%, #15161b 100%);
   border: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: 18px;
   overflow: hidden;
@@ -1007,7 +1016,7 @@ body.luxury-dark {
   position: relative;
   width: 100%;
   aspect-ratio: 1 / 1;
-  background: #020304;
+  background: var(--bg-chamber);
   overflow: hidden;
 }
 
@@ -1029,10 +1038,10 @@ body.luxury-dark {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(6, 7, 9, 0.25) 0%,
+    rgba(18, 19, 22, 0.2) 0%,
     transparent 50%,
-    rgba(6, 7, 9, 0.85) 90%,
-    #07090c 100%
+    rgba(18, 19, 22, 0.75) 90%,
+    var(--bg-deep) 100%
   );
   pointer-events: none;
   z-index: 2;
@@ -1053,7 +1062,7 @@ body.luxury-dark {
 
 .badge-brand-ref {
   padding: 6px 12px;
-  background: rgba(6, 7, 9, 0.8);
+  background: rgba(18, 19, 22, 0.85);
   backdrop-filter: blur(8px);
   border: 1px solid var(--gold-antique);
   border-radius: 99px;
@@ -1105,7 +1114,7 @@ body.luxury-dark {
   justify-content: center;
   gap: 8px;
   padding: 10px 16px;
-  background: rgba(6, 7, 9, 0.88);
+  background: rgba(18, 19, 22, 0.88);
   backdrop-filter: blur(12px);
   border: 1px solid var(--border-gold);
   border-radius: 99px;
@@ -1120,7 +1129,7 @@ body.luxury-dark {
 
 .btn-quick-zoom:hover {
   background: var(--gold-antique);
-  color: #060709;
+  color: #121316;
 }
 
 .btn-quick-wa {
@@ -1140,7 +1149,7 @@ body.luxury-dark {
 
 .btn-quick-wa:hover {
   background: #25d366;
-  color: #060709;
+  color: #121316;
   transform: scale(1.08);
 }
 
@@ -1226,7 +1235,7 @@ body.luxury-dark {
 
 .btn-card-add-sample:hover {
   background: var(--gold-antique);
-  color: #060709;
+  color: #121316;
   box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
   transform: translateY(-2px);
 }
@@ -1257,7 +1266,7 @@ body.luxury-dark {
   grid-column: 1 / -1;
   text-align: center;
   padding: 80px 20px;
-  background: rgba(16, 20, 26, 0.5);
+  background: rgba(28, 30, 36, 0.5);
   border: 1px dashed rgba(212, 175, 55, 0.3);
   border-radius: 20px;
 }
@@ -1285,7 +1294,7 @@ body.luxury-dark {
   padding: 12px 28px;
   border-radius: 99px;
   background: var(--gold-antique);
-  color: #060709;
+  color: #121316;
   font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: 800;
@@ -1321,7 +1330,7 @@ body.luxury-dark {
 
 .btn-load-more:hover {
   background: var(--gold-antique);
-  color: #060709;
+  color: #121316;
   box-shadow: 0 15px 40px rgba(212, 175, 55, 0.45);
   transform: translateY(-3px);
 }
@@ -1352,7 +1361,7 @@ body.luxury-dark {
   align-items: center;
   gap: 16px;
   padding: 18px 26px;
-  background: rgba(12, 16, 22, 0.96);
+  background: rgba(24, 25, 30, 0.96);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--gold-antique);
@@ -1375,7 +1384,7 @@ body.luxury-dark {
   height: 36px;
   border-radius: 50%;
   background: var(--gold-antique);
-  color: #060709;
+  color: #121316;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1440,7 +1449,7 @@ body.lang-ar .couture-toast {
    Moda Markaları Showcase
    ========================================================================== */
 .fashion-brands-section {
-  background: #08090d;
+  background: var(--bg-surface);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
   padding: 60px 40px;
@@ -1529,7 +1538,7 @@ body.lang-ar .couture-toast {
 }
 
 .vision-mission-card {
-  background: rgba(199, 167, 108, 0.08);
+  background: rgba(201, 169, 110, 0.08);
   border: 1px solid var(--border-gold);
   border-radius: 12px;
   padding: 28px;
@@ -1596,7 +1605,7 @@ body.lang-ar .couture-toast {
 .stack-sub-card {
   position: static;
   width: 100%;
-  background: #0e1118;
+  background: var(--bg-surface-elevated);
   border: 1px solid var(--border-gold);
   border-radius: 12px;
   padding: 16px;
@@ -1678,7 +1687,7 @@ body.lang-ar .couture-toast {
   font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 800;
-  color: #060709;
+  color: #121316;
   background: var(--gold-gradient);
   padding: 4px 10px;
   border-radius: 6px;
@@ -1749,7 +1758,7 @@ body.lang-ar .couture-toast {
    İnteraktif Büyüteç (Macro Loupe)
    ========================================================================== */
 .macro-inspection-section {
-  background: #090a0d;
+  background: var(--bg-surface);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
 }
@@ -1805,7 +1814,7 @@ body.lang-ar .couture-toast {
 .macro-hint-badge {
   display: inline-block;
   padding: 10px 18px;
-  background: rgba(199, 167, 108, 0.1);
+  background: rgba(201, 169, 110, 0.1);
   border: 1px dashed var(--border-gold);
   border-radius: 99px;
   font-family: var(--font-body);
@@ -1842,7 +1851,7 @@ body.lang-ar .couture-toast {
   border-radius: 50%;
   pointer-events: none;
   display: none;
-  box-shadow: 0 0 0 7px rgba(0, 0, 0, 0.6), 0 0 30px rgba(199, 167, 108, 0.4);
+  box-shadow: 0 0 0 7px rgba(0, 0, 0, 0.6), 0 0 30px rgba(201, 169, 110, 0.4);
   background-repeat: no-repeat;
   z-index: 10;
 }
@@ -1877,9 +1886,9 @@ body.lang-ar .couture-toast {
 
 .runway-tab.active {
   background: var(--gold-gradient);
-  color: #060709;
+  color: #121316;
   border-color: var(--gold-antique);
-  box-shadow: 0 4px 20px rgba(199, 167, 108, 0.35);
+  box-shadow: 0 4px 20px rgba(201, 169, 110, 0.35);
 }
 
 .runway-rail-container {
@@ -1926,7 +1935,7 @@ body.lang-ar .couture-toast {
 .card-visual-chamber {
   width: 100%;
   height: 400px;
-  background: radial-gradient(circle at 50% 38%, #1e2433 0%, #10131a 55%, #050608 100%);
+  background: radial-gradient(circle at 50% 38%, #222530 0%, #181a22 55%, var(--bg-chamber) 100%);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -1945,7 +1954,7 @@ body.lang-ar .couture-toast {
   transform: translateX(-50%);
   width: 75%;
   height: 22px;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.9) 0%, rgba(199, 167, 108, 0.12) 50%, transparent 75%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.9) 0%, rgba(201, 169, 110, 0.12) 50%, transparent 75%);
   filter: blur(5px);
   pointer-events: none;
   z-index: 1;
@@ -1960,7 +1969,7 @@ body.lang-ar .couture-toast {
     135deg,
     rgba(255, 255, 255, 0.08) 0%,
     transparent 45%,
-    rgba(199, 167, 108, 0.04) 100%
+    rgba(201, 169, 110, 0.04) 100%
   );
   pointer-events: none;
   z-index: 2;
@@ -1982,7 +1991,7 @@ body.lang-ar .couture-toast {
 
 .runway-card:hover .card-visual-chamber img {
   transform: scale(1.06);
-  filter: contrast(1.2) saturate(1.18) brightness(1.06) drop-shadow(0 20px 35px rgba(199, 167, 108, 0.3));
+  filter: contrast(1.2) saturate(1.18) brightness(1.06) drop-shadow(0 20px 35px rgba(201, 169, 110, 0.3));
 }
 
 .card-body {
@@ -2003,8 +2012,8 @@ body.lang-ar .couture-toast {
 .card-tag {
   display: inline-flex;
   align-items: center;
-  background: rgba(199, 167, 108, 0.1);
-  border: 1px solid rgba(199, 167, 108, 0.3);
+  background: rgba(201, 169, 110, 0.1);
+  border: 1px solid rgba(201, 169, 110, 0.3);
   padding: 4px 12px;
   border-radius: 99px;
   font-family: var(--font-body);
@@ -2073,7 +2082,7 @@ body.lang-ar .couture-toast {
 
 .btn-card-sample:hover {
   background: var(--gold-gradient);
-  color: #060709;
+  color: #121316;
   border-color: var(--gold-antique);
 }
 
@@ -2119,7 +2128,7 @@ body.lang-ar .couture-toast {
 
 .rail-nav-btn:hover {
   border-color: var(--gold-antique);
-  background: rgba(199, 167, 108, 0.15);
+  background: rgba(201, 169, 110, 0.15);
   color: var(--gold-champagne);
 }
 
@@ -2165,7 +2174,7 @@ body.lang-ar .couture-toast {
 }
 
 .heritage-stamp-bar {
-  background: rgba(199, 167, 108, 0.08);
+  background: rgba(201, 169, 110, 0.08);
   border: 1px solid var(--border-gold);
   padding: 12px 24px;
   border-radius: 12px;
@@ -2245,7 +2254,7 @@ body.lang-ar .couture-toast {
    Müşteri Değerlendirmeleri Deck
    ========================================================================== */
 .testimonials-slider-section {
-  background: #08090d;
+  background: var(--bg-surface);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
 }
@@ -2306,7 +2315,7 @@ body.lang-ar .couture-toast {
    İletişim & Randevu Formu
    ========================================================================== */
 .concierge-card {
-  background: linear-gradient(145deg, #101218 0%, #08090d 100%);
+  background: linear-gradient(145deg, var(--bg-surface-elevated) 0%, var(--bg-surface) 100%);
   border: 1px solid var(--border-gold);
   border-radius: 20px;
   padding: 60px;
@@ -2398,7 +2407,7 @@ body.lang-ar .couture-toast {
   gap: 12px;
   padding: 16px 28px;
   background: #25d366;
-  color: #060709;
+  color: #121316;
   border-radius: 99px;
   font-family: var(--font-body);
   font-size: 0.84rem;
@@ -2453,7 +2462,7 @@ body.lang-ar .couture-toast {
 }
 
 .input-field select option {
-  background: #0e1014;
+  background: var(--bg-surface-elevated);
   color: #fff;
 }
 
@@ -2462,7 +2471,7 @@ body.lang-ar .couture-toast {
 .input-field textarea:focus {
   border-color: var(--gold-antique);
   background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 20px rgba(199, 167, 108, 0.2);
+  box-shadow: 0 0 20px rgba(201, 169, 110, 0.2);
   outline: none;
 }
 
@@ -2474,7 +2483,7 @@ body.lang-ar .couture-toast {
   gap: 12px;
   padding: 18px;
   background: var(--gold-gradient);
-  color: #060709;
+  color: #121316;
   border-radius: 99px;
   font-family: var(--font-body);
   font-size: 0.86rem;
@@ -2490,14 +2499,14 @@ body.lang-ar .couture-toast {
 .btn-submit-vip:hover {
   filter: brightness(1.15);
   transform: translateY(-2px);
-  box-shadow: 0 6px 30px rgba(199, 167, 108, 0.45);
+  box-shadow: 0 6px 30px rgba(201, 169, 110, 0.45);
 }
 
 /* ==========================================================================
    Alt Bilgi (Footer)
    ========================================================================== */
 .couture-footer {
-  background: #040507;
+  background: #0f1013;
   border-top: 1px solid var(--border-subtle);
   padding: 80px 40px 40px;
 }
@@ -2598,7 +2607,7 @@ body.lang-ar .couture-toast {
   width: 480px;
   max-width: 92vw;
   height: 100vh;
-  background: #090b10;
+  background: var(--bg-surface);
   border-left: 1px solid var(--border-gold);
   z-index: 2001;
   display: flex;
@@ -2751,7 +2760,7 @@ body.lang-ar .couture-toast {
 .drawer-checkout-area {
   padding: 30px;
   border-top: 1px solid var(--border-subtle);
-  background: #06070a;
+  background: var(--bg-surface-elevated);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -2771,7 +2780,7 @@ body.lang-ar .couture-toast {
 .btn-checkout-wa {
   padding: 16px;
   background: #25d366;
-  color: #060709;
+  color: #121316;
   border: none;
   border-radius: 99px;
   font-family: var(--font-body);
@@ -2832,7 +2841,7 @@ body.lang-ar .couture-toast {
 .modal-stage {
   position: relative;
   z-index: 2;
-  background: #0c0e14;
+  background: var(--bg-surface);
   border: 1px solid var(--border-gold);
   border-radius: 16px;
   max-width: 980px;
@@ -2871,7 +2880,7 @@ body.lang-ar .couture-toast {
 }
 
 .modal-photo-chamber {
-  background: #040507;
+  background: var(--bg-chamber);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2963,7 +2972,7 @@ body.lang-ar .couture-toast {
   font-size: 0.82rem;
   letter-spacing: 2px;
   font-weight: 800;
-  color: #060709;
+  color: #121316;
   transition: all 0.3s;
 }
 
@@ -3025,7 +3034,7 @@ body.lang-ar .couture-toast {
 .mobile-menu-toggle:hover,
 .mobile-menu-toggle.active {
   border-color: var(--gold-antique);
-  background: rgba(199, 167, 108, 0.15);
+  background: rgba(201, 169, 110, 0.15);
 }
 
 .burger-bar {
@@ -3071,7 +3080,7 @@ body.lang-ar .couture-toast {
   width: min(380px, 92vw);
   height: 100vh;
   height: 100dvh;
-  background: #080a0e;
+  background: var(--bg-surface);
   border-left: 1px solid var(--border-gold);
   z-index: 2501;
   display: flex;
@@ -3169,7 +3178,7 @@ html[dir="rtl"] .mobile-nav-drawer.active {
 .mobile-lang-pill:hover,
 .mobile-lang-pill.active {
   border-color: var(--gold-antique);
-  background: rgba(199, 167, 108, 0.18);
+  background: rgba(201, 169, 110, 0.18);
   color: var(--gold-champagne);
 }
 
@@ -3194,7 +3203,7 @@ html[dir="rtl"] .mobile-nav-drawer.active {
 
 .mobile-link:hover,
 .mobile-link:active {
-  background: rgba(199, 167, 108, 0.1);
+  background: rgba(201, 169, 110, 0.1);
   color: var(--gold-champagne);
 }
 
@@ -3225,7 +3234,7 @@ html[dir="rtl"] .mobile-nav-drawer.active {
   justify-content: center;
   padding: 14px;
   background: var(--gold-gradient);
-  color: #060709;
+  color: #121316;
   border-radius: 99px;
   font-size: 0.8rem;
   font-weight: 800;
@@ -3262,7 +3271,7 @@ html[dir="rtl"] .mobile-nav-drawer.active {
 
 .mobile-action-wa {
   background: #25d366;
-  color: #060709;
+  color: #121316;
   font-weight: 800;
 }
 
@@ -3312,12 +3321,12 @@ html[dir="rtl"] .mobile-nav-drawer.active {
 
 .mq-wa {
   background: #25d366;
-  color: #060709;
+  color: #121316;
   font-weight: 800;
 }
 
 .mq-bag {
-  background: rgba(199, 167, 108, 0.15);
+  background: rgba(201, 169, 110, 0.15);
   color: var(--gold-champagne);
   border: 1px solid var(--border-gold);
 }
@@ -3333,7 +3342,7 @@ html[dir="rtl"] .mobile-nav-drawer.active {
   top: -6px;
   right: -6px;
   background: var(--gold-antique);
-  color: #060709;
+  color: #121316;
   font-size: 0.62rem;
   font-weight: 800;
   width: 15px;
@@ -3875,7 +3884,7 @@ html[dir="rtl"] .mobile-nav-drawer.active {
 .ribbon-lang-btn.active {
   color: var(--gold-champagne);
   font-weight: 800;
-  background: rgba(199, 167, 108, 0.18);
+  background: rgba(201, 169, 110, 0.18);
 }
 
 .ribbon-lang-pipe {
@@ -3911,7 +3920,7 @@ html[dir="rtl"] .mobile-nav-drawer.active {
 .lang-current-btn:hover,
 .lang-selector-dropdown.open .lang-current-btn {
   border-color: var(--gold-antique);
-  background: rgba(199, 167, 108, 0.12);
+  background: rgba(201, 169, 110, 0.12);
   color: var(--gold-champagne);
 }
 
@@ -3939,7 +3948,7 @@ html[dir="rtl"] .mobile-nav-drawer.active {
   top: calc(100% + 8px);
   right: 0;
   min-width: 165px;
-  background: #0d0f15;
+  background: var(--bg-surface-elevated);
   border: 1px solid var(--border-gold);
   border-radius: 12px;
   padding: 6px;
@@ -3984,12 +3993,12 @@ html[dir="rtl"] .mobile-nav-drawer.active {
 }
 
 .lang-option:hover {
-  background: rgba(199, 167, 108, 0.12);
+  background: rgba(201, 169, 110, 0.12);
   color: #fff;
 }
 
 .lang-option.active {
-  background: rgba(199, 167, 108, 0.22);
+  background: rgba(201, 169, 110, 0.22);
   color: var(--gold-champagne);
   font-weight: 700;
 }
